@@ -1,5 +1,4 @@
-import Nav from '@/app/components/Nav'
-import Footer from '@/app/components/Footer'
+
 import Image from 'next/image'
 
 export default function Page() {
@@ -17,7 +16,6 @@ export default function Page() {
         <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-amber-400/40 rounded-full animate-pulse delay-1500"></div>
       </div>
 
-      <Nav />
       
       {/* HERO SECTION */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-24">
@@ -389,7 +387,6 @@ export default function Page() {
         </div>
       </section>
 
-      <Footer />
     </main>
   )
 }

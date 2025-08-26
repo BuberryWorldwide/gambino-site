@@ -1,5 +1,5 @@
-import Nav from '@/app/components/Nav'
-import Footer from '@/app/components/Footer'
+import Nav from '../app/components/Nav'
+import Footer from '../app/components/Footer'
 
 export default function Home() {
   return (
@@ -65,7 +65,6 @@ export default function Home() {
         <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent"></div>
         <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-amber-400/15 to-transparent"></div>
       </div>
-      <Nav />
 
       {/* HERO SECTION */}
       <section className="relative overflow-hidden border-b border-neutral-900 z-10">
@@ -178,10 +177,12 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-white lg:text-4xl">
             Solving Real <span className="text-yellow-500">Problems</span>
           </h2>
-          <p className="mt-4 text-lg text-neutral-400 max-w-2xl mx-auto">
-            Traditional wealth systems favor the already wealthy. We're building technology 
-            that redistributes opportunity and creates sustainable community wealth.
-          </p>
+            <p className="mt-4 text-lg text-neutral-400 max-w-2xl mx-auto">
+              Gambino is about access and innovation. Our platform creates new 
+              opportunities for anyone to take part in growth, build prosperity, 
+              and experience the next generation of financial technology—simple, 
+              transparent, and built for long-term success.
+            </p>
         </div>
         
         <div className="grid gap-6 md:grid-cols-3 relative">
@@ -275,7 +276,7 @@ export default function Home() {
             </h2>
             <p className="mt-4 text-lg text-neutral-400 max-w-2xl mx-auto">
               From inception, Gambino was structured as a utility token network. 
-              We work with regulators to ensure transparency, fairness, and sustainable growth within legal frameworks.
+              We work to ensure transparency, fairness, and sustainable growth within legal frameworks.
             </p>
           </div>
           
@@ -291,7 +292,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white">Utility Token Framework</h4>
-                  <p className="mt-1 text-neutral-400">Our tokens provide utility within our gaming ecosystem, not investment returns. This classification ensures regulatory clarity and sustainable operation.</p>
+                  <p className="mt-1 text-neutral-400">Our tokens provide utility within our gaming ecosystem, not investment returns.</p>
                 </div>
               </div>
               
@@ -305,7 +306,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white">Anti-Money Laundering</h4>
-                  <p className="mt-1 text-neutral-400">KYC/AML procedures and transaction monitoring fully integrated.</p>
+                  <p className="mt-1 text-neutral-400">KYC/AML procedures and transaction monitoring solutions.</p>
                 </div>
               </div>
               
@@ -393,7 +394,6 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer />
     </main>
   )
 }

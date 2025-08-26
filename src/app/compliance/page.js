@@ -1,5 +1,3 @@
-import Nav from '@/app/components/Nav'
-import Footer from '@/app/components/Footer'
 import Image from 'next/image'
 
 export default function Page() {
@@ -19,31 +17,37 @@ export default function Page() {
         <div className="absolute bottom-1/4 left-1/3 w-2.5 h-2.5 bg-blue-300/35 rounded-full animate-pulse delay-3000"></div>
       </div>
 
-      <Nav />
       
       {/* HERO SECTION */}
-      <section className="relative z-10 mx-auto max-w-6xl px-6 py-24">
-        <div className="text-center mb-16">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/50 px-4 py-2 text-sm text-neutral-300">
-            <div className="h-2 w-2 rounded-full bg-green-500"></div>
-            Built on Trust • Designed for Community Growth
-          </div>
-          
-          <h1 className="text-5xl font-extrabold leading-tight tracking-tight text-white lg:text-6xl">
-            Responsible{" "}
-            <span className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-600 bg-clip-text text-transparent">
-              Innovation
-            </span>
-          </h1>
-          
-          <p className="mt-6 max-w-3xl mx-auto text-xl text-neutral-300">
-            Gambino operates within today’s rules while actively helping to shape the future 
-            of digital community wealth. Our platform combines blockchain transparency 
-            with everyday responsibility—delivering opportunity, fairness, and innovation 
-            for everyone who participates.
-          </p>
-        </div>
-      </section>
+<section className="relative z-10 mx-auto max-w-6xl px-6 py-24">
+  <div className="text-center mb-16">
+    <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/50 px-4 py-2 text-sm text-neutral-300">
+      <div className="h-2 w-2 rounded-full bg-green-500"></div>
+      Built on Trust • Designed for Community Growth
+    </div>
+    
+    <h1 className="text-5xl font-extrabold leading-tight tracking-tight text-white lg:text-6xl">
+      Responsible{" "}
+      <span className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-600 bg-clip-text text-transparent">
+        Innovation
+      </span>
+    </h1>
+
+    {/* Visual tagline */}
+    <p className="mt-4 text-2xl font-semibold text-yellow-400 drop-shadow-lg">
+       Our machines are mining machines - Farm Luck, Mine Destiny
+    </p>
+    
+    <p className="mt-6 max-w-3xl mx-auto text-xl text-neutral-300">
+      Gambino operates within today’s rules while actively helping to shape the future 
+      of digital community wealth. Our machines aren’t just entertainment—they are{" "}
+      <b>mining machines</b>, creating new cryptocurrency supply as people play, 
+      just like Bitcoin miners secure the blockchain. Every spin adds to the network, 
+      powering opportunity, fairness, and innovation for everyone who participates.
+    </p>
+  </div>
+</section>
+
 
 
       {/* REGULATORY FRAMEWORKS */}
@@ -99,6 +103,8 @@ export default function Page() {
         </div>
       </div>
     </div>
+
+    
 
     {/* Compliance Commitment */}
     <div className="relative">
@@ -299,14 +305,14 @@ export default function Page() {
                   <span className="text-cyan-400 font-bold">99.9%</span>
                 </div>
               </div>
-            
+
               <div className="mt-6 pt-6 border-t border-neutral-800">
                 <p className="text-sm text-neutral-500">
                   * Data pulled from live network activity — updated in real time
                 </p>
               </div>
             </div>
-            
+
           </div>
         </div>
       </section>
@@ -489,7 +495,6 @@ export default function Page() {
         </div>
       </section>
 
-      <Footer />
     </main>
   )
 }

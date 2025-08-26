@@ -5,7 +5,12 @@ import CookieBanner from './components/CookieBanner'
 
 export const metadata = {
   title: 'Gambino Gold — Farm Luck. Mine Destiny.',
-  description: 'Utility-token gaming network that identifies lucky individuals and funds local good.'
+  description: 'Utility-token gaming network that identifies lucky individuals and funds local good.',
+  icons: {
+    icon: '/favicon.ico',            // default favicon
+    shortcut: '/favicon.ico',        // legacy browsers
+    apple: '/apple-touch-icon.png',  // for iOS home screens (optional, if you add one)
+  },
 }
 
 export default function RootLayout({ children }) {

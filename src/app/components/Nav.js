@@ -32,9 +32,6 @@ export default function Nav() {
           <Link href="/utility-token-gaming" className="hover:text-white">Platform</Link>
           <Link href="/dao-governance" className="hover:text-white">DAO</Link>
           <Link href="/compliance" className="hover:text-white">Compliance</Link>
-          {/*}
-          <Link href="/leaderboard" className="hover:text-white">Leaderboard</Link>
-          */}
           <Link href="/legal/whitepaper" className="hover:text-white">Docs</Link>
           <Link href="/legal/terms" className="hover:text-white">Legal</Link>
         </nav>
@@ -66,9 +63,6 @@ export default function Nav() {
             <Link href="/utility-token-gaming" className="px-3 py-3 text-sm hover:text-white hover:bg-neutral-800/30 rounded-lg" onClick={() => setMobileMenuOpen(false)}>Platform Overview</Link>
             <Link href="/dao-governance" className="px-3 py-3 text-sm hover:text-white hover:bg-neutral-800/30 rounded-lg" onClick={() => setMobileMenuOpen(false)}>DAO Governance</Link>
             <Link href="/compliance" className="px-3 py-3 text-sm hover:text-white hover:bg-neutral-800/30 rounded-lg" onClick={() => setMobileMenuOpen(false)}>Regulatory Compliance</Link>
-            {/*}
-            <Link href="/leaderboard" className="px-3 py-3 text-sm hover:text-white hover:bg-neutral-800/30 rounded-lg" onClick={() => setMobileMenuOpen(false)}>Leaderboard</Link>
-            */}
             <Link href="/legal/whitepaper" className="px-3 py-3 text-sm hover:text-white hover:bg-neutral-800/30 rounded-lg" onClick={() => setMobileMenuOpen(false)}>Documentation</Link>
             <Link href="/legal/terms" className="px-3 py-3 text-sm hover:text-white hover:bg-neutral-800/30 rounded-lg" onClick={() => setMobileMenuOpen(false)}>Legal Documentation</Link>
             

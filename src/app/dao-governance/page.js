@@ -308,7 +308,7 @@ export default function Page() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-yellow-400 mb-2">🏘️ Local Impact</h4>
-                  <p className="text-neutral-400 text-sm">Shape community projects and direct funding where it's needed most</p>
+                  <p className="text-neutral-400 text-sm">Shape community projects and direct funding where it&rsquo;s needed most</p>
                 </div>
               </div>
             </div>
@@ -380,7 +380,7 @@ export default function Page() {
               Ready to Rise Through <span className="text-yellow-500">Luck</span>?
             </h2>
             <p className="text-lg text-neutral-300 mb-8 max-w-2xl mx-auto">
-              Start building your Glück Score today. The luckiest players shape the network's future 
+              Start building your Glück Score today. The luckiest players shape the network&rsquo;s future 
               and direct millions in community funding.
             </p>
             

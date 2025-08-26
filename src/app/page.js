@@ -191,7 +191,7 @@ export default function Home() {
             </h1>
             
             <p className="mt-6 max-w-xl text-lg text-neutral-300">
-              The world's first utility token gaming network that transforms luck into community wealth. 
+              The world&rsquo;s first utility token gaming network that transforms luck into community wealth. 
               Where chance fuels prosperity, and every player has the power to shape their future.
             </p>
             

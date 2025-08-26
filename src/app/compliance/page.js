@@ -247,7 +247,7 @@ export default function Page() {
                     <h4 className="font-semibold text-white mb-2">Industry Best Practice Development</h4>
                     <p className="text-neutral-400">
                       Contributing to the development of new regulatory frameworks that balance innovation with consumer protection, 
-                      similar to EU's blockchain regulatory sandbox initiatives.
+                      similar to EUs blockchain regulatory sandbox initiatives.
                     </p>
                   </div>
                 </div>
@@ -450,10 +450,10 @@ export default function Page() {
         <div className="mx-auto max-w-4xl px-6 text-center">
           <div className="rounded-2xl border border-yellow-500/20 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-yellow-500/5 p-12">
             <h2 className="text-3xl font-bold text-white lg:text-4xl mb-6">
-              Building Tomorrow's <span className="text-yellow-500">Regulatory Framework</span>
+              Building Tomorrow&rsquo;s <span className="text-yellow-500">Regulatory Framework</span>
             </h2>
             <p className="text-xl text-neutral-300 mb-8 max-w-3xl mx-auto">
-              We're not just building a gaming platform—we're establishing the regulatory blueprint for 
+              We&rsquo;re not just building a gaming platform—we&rsquo;re establishing the regulatory blueprint for 
               responsible innovation in blockchain-based entertainment networks. Every compliance decision 
               we make helps shape industry standards for years to come.
             </p>

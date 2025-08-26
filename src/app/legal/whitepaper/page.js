@@ -149,6 +149,27 @@ export default function WhitepaperPage() {
               </ul>
             </div>
           </Section>
+          <Section id="market-impact" title="5.1 Market Impact & Circulation">
+            <p>
+              Not all token transfers affect the open market. Gambino distinguishes between{' '}
+              <strong>internal circulation</strong> (wallet-to-wallet transfers, stipends, community fund
+              routing) and <strong>price-forming events</strong> (cash-in purchases, jackpot emissions,
+              and redemptions through liquidity pools).
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong>Internal transfers:</strong> move balances between players, stores, and community
+              funds but do not change market price.</li>
+              <li><strong>Liquidity pool trades:</strong> occur when tokens are bought, burned, or redeemed
+              through pools, creating visible market impact.</li>
+              <li><strong>Strategic advantage:</strong> Gambino ensures gameplay costs stay predictable while
+              market activity is channeled into transparent, auditable events.</li>
+            </ul>
+            <p>
+              This separation allows Gambino to protect participants from unnecessary volatility while still
+              generating healthy liquidity and price discovery in public markets.
+            </p>
+          </Section>
+
 
           <Section id="governance" title="6. Governance: Proof-of-Luck DAO">
             <p>

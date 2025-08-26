@@ -62,51 +62,63 @@ export default function Page() {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-white">Tier 1: Strategy Leaders</h3>
-                      <p className="text-purple-300 font-semibold">7 Individuals</p>
+                      <p className="text-purple-300 font-semibold">
+                        A small council of the luckiest long-term participants
+                      </p>
                     </div>
                   </div>
-                  
+            
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-purple-400 rounded-full mt-2"></div>
-                      <p className="text-neutral-300">Set mission strategy and long-term network direction</p>
+                      <p className="text-neutral-300">
+                        Define long-term mission and strategic priorities
+                      </p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-purple-400 rounded-full mt-2"></div>
-                      <p className="text-neutral-300">Approve major protocol upgrades and partnerships</p>
+                      <p className="text-neutral-300">
+                        Approve major upgrades, partnerships, and treasury allocations
+                      </p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-purple-400 rounded-full mt-2"></div>
-                      <p className="text-neutral-300">Guide community fund allocation priorities</p>
+                      <p className="text-neutral-300">
+                        Act as guardians of fairness and compliance within the network
+                      </p>
                     </div>
                   </div>
-                  
+            
                   <div className="mt-6 pt-6 border-t border-purple-500/20">
-                    <div className="text-sm text-neutral-400">Selection: Top 7 luckiest network participants</div>
+                    <div className="text-sm text-neutral-400">
+                      <strong>Selection:</strong> Reserved for the highest proof-of-luck scores over sustained time.
+                      Exact size of this group may evolve as the network grows.
+                    </div>
                   </div>
                 </div>
               </div>
-              
+            
               <div className="order-1 lg:order-2 text-center">
                 <div className="relative inline-block">
                   <div className="w-48 h-48 rounded-full bg-gradient-to-br from-purple-500/20 to-purple-600/10 border-2 border-purple-500/30 flex items-center justify-center mx-auto">
                     <div className="w-32 h-32 rounded-full bg-gradient-to-br from-purple-400/30 to-purple-500/20 border border-purple-400/40 flex items-center justify-center">
                       <Image
                         src="/gold-control.png"
-                        alt="Strategy Control"
+                        alt="Strategy Leaders"
                         width={48}
                         height={48}
                         className="object-contain"
                       />
                     </div>
                   </div>
-                  {/* Floating elements around circle */}
+                  {/* Floating particles */}
                   <div className="absolute top-4 right-8 w-3 h-3 bg-purple-400/60 rounded-full animate-pulse"></div>
                   <div className="absolute bottom-6 left-6 w-2 h-2 bg-purple-300/50 rounded-full animate-pulse delay-1000"></div>
                 </div>
               </div>
             </div>
           </div>
+
 
           {/* Tier 2 */}
           <div className="relative">
@@ -129,7 +141,7 @@ export default function Page() {
                   <div className="absolute bottom-8 right-4 w-3 h-3 bg-blue-300/50 rounded-full animate-pulse delay-1500"></div>
                 </div>
               </div>
-              
+
               <div className="rounded-xl border border-blue-500/20 bg-gradient-to-br from-blue-950/50 to-neutral-950/80 backdrop-blur-sm p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-500/20 border-2 border-blue-500/30">
@@ -137,31 +149,35 @@ export default function Page() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-white">Tier 2: Operations Council</h3>
-                    <p className="text-blue-300 font-semibold">21 Leaders</p>
+                    <p className="text-blue-300 font-semibold">An intermediate council providing day-to-day oversight</p>
                   </div>
                 </div>
-                
+
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-blue-400 rounded-full mt-2"></div>
-                    <p className="text-neutral-300">Oversee risk management and compliance</p>
+                    <p className="text-neutral-300">Oversee risk management, compliance, and operational cadence</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-blue-400 rounded-full mt-2"></div>
-                    <p className="text-neutral-300">Manage operational expenses and budgets</p>
+                    <p className="text-neutral-300">Manage budgets and recurring network expenses</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-blue-400 rounded-full mt-2"></div>
-                    <p className="text-neutral-300">Coordinate between states and local communities</p>
+                    <p className="text-neutral-300">Coordinate across regions to translate policy into practice</p>
                   </div>
                 </div>
-                
+
                 <div className="mt-6 pt-6 border-t border-blue-500/20">
-                  <div className="text-sm text-neutral-400">Selection: Next 21 highest luck scores</div>
+                  <div className="text-sm text-neutral-400">
+                    Selection: Elevated from top luck earners with proven tenure and conduct.
+                    Exact participant counts and thresholds will adapt as the network scales.
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
 
           {/* Tier 3 */}
           <div className="relative">
@@ -174,31 +190,34 @@ export default function Page() {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-white">Tier 3: Community Scouts</h3>
-                      <p className="text-yellow-300 font-semibold">100 per State</p>
+                      <p className="text-yellow-300 font-semibold">A broad base of local contributors across active states</p>
                     </div>
                   </div>
-                  
+
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2"></div>
-                      <p className="text-neutral-300">Identify and propose local community projects</p>
+                      <p className="text-neutral-300">Identify and propose local community projects and partners</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2"></div>
-                      <p className="text-neutral-300">Promote Gambino within their communities</p>
+                      <p className="text-neutral-300">Promote Gambino participation and track outcomes on the ground</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2"></div>
-                      <p className="text-neutral-300">Receive monthly stipends for their service</p>
+                      <p className="text-neutral-300">Receive stipends tied to activity, reporting quality, and impact</p>
                     </div>
                   </div>
-                  
+
                   <div className="mt-6 pt-6 border-t border-yellow-500/20">
-                    <div className="text-sm text-neutral-400">Selection: Top 100 luck earners per active state</div>
+                    <div className="text-sm text-neutral-400">
+                      Selection: Luck-based eligibility with geographic distribution. Per-state counts and stipend
+                      levels are provisional and will be calibrated to demand and funding.
+                    </div>
                   </div>
                 </div>
               </div>
-              
+
               <div className="order-1 lg:order-2 text-center">
                 <div className="relative inline-block">
                   <div className="w-48 h-48 rounded-full bg-gradient-to-br from-yellow-500/20 to-yellow-600/10 border-2 border-yellow-500/30 flex items-center justify-center mx-auto">
@@ -386,6 +405,14 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <section className="relative z-10 py-12">
+        <div className="mx-auto max-w-3xl text-center text-neutral-500 text-sm">
+          *Governance tiers, thresholds, and participant counts are subject to refinement as the Gambino 
+          Network scales. Structures described are illustrative of the intended model, not fixed commitments.
+        </div>
+      </section>
+
 
     </main>
   )

@@ -1,7 +1,107 @@
-import Nav from '../app/components/Nav'
-import Footer from '../app/components/Footer'
+'use client';
+
+import { useEffect, useState } from 'react'
+import {
+  Shield, Coins, Users, ArrowRight,         // already planned
+  Target, BadgeCheck, Store, Scale, Sprout,  // section cards
+  Rocket, CheckCircle2, CircleDot            // checks & small accents
+} from 'lucide-react'
+
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:3001';
+
+// Format numbers for display (e.g., 1240 → "1,240" or 2100000 → "2.1M")
+function formatNumber(num) {
+  if (num >= 1000000) {
+    return (num / 1000000).toFixed(1) + 'M';
+  } else if (num >= 1000) {
+    return num.toLocaleString();
+  }
+  return num?.toString() || '0';
+}
+
+// Format currency
+function formatCurrency(num) {
+  if (num >= 1000000) {
+    return '$' + (num / 1000000).toFixed(1) + 'M';
+  } else if (num >= 1000) {
+    return '$' + (num / 1000).toFixed(0) + 'K';
+  }
+  return '$' + (num || 0).toLocaleString();
+}
 
 export default function Home() {
+  const [liveStats, setLiveStats] = useState({
+    statesLive: 7,
+    communityPool: 2100000,
+    activeMembers: 1240,
+    uptime: 94.7,
+    monthlyJoins: 2840,
+    // Additional stats we can pull from API
+    totalHolders: null,
+    circulatingSupply: null,
+    loading: true
+  });
+
+  useEffect(() => {
+    async function fetchLiveData() {
+      try {
+        // Fetch from your existing API endpoints
+        const responses = await Promise.all([
+          fetch(`${API_BASE}/api/holders/summary`, { cache: 'no-store' }).catch(() => null),
+          fetch(`${API_BASE}/api/network/stats`, { cache: 'no-store' }).catch(() => null),
+          fetch(`${API_BASE}/api/community/metrics`, { cache: 'no-store' }).catch(() => null)
+        ]);
+
+        let summary = null, networkStats = null, communityMetrics = null;
+
+        // Parse responses safely
+        if (responses[0]?.ok) {
+          const summaryData = await responses[0].json();
+          if (summaryData.success) summary = summaryData;
+        }
+        
+        if (responses[1]?.ok) {
+          const networkData = await responses[1].json();
+          if (networkData.success) networkStats = networkData;
+        }
+
+        if (responses[2]?.ok) {
+          const communityData = await responses[2].json();
+          if (communityData.success) communityMetrics = communityData;
+        }
+
+        // Update state with real data or keep fallbacks
+        setLiveStats(prev => ({
+          ...prev,
+          // From holders API
+          totalHolders: summary?.holderCount || prev.activeMembers,
+          circulatingSupply: summary?.circulating || null,
+          
+          // From network API
+          statesLive: networkStats?.data?.activeStates || prev.statesLive,
+          uptime: networkStats?.data?.uptimePercent || prev.uptime,
+          
+          // From community API  
+          communityPool: communityMetrics?.data?.totalPoolValue || prev.communityPool,
+          activeMembers: communityMetrics?.data?.activeLastMonth || summary?.holderCount || prev.activeMembers,
+          monthlyJoins: communityMetrics?.data?.newMembersThisMonth || prev.monthlyJoins,
+          
+          loading: false
+        }));
+
+      } catch (error) {
+        console.error('Failed to fetch live data:', error);
+        setLiveStats(prev => ({ ...prev, loading: false }));
+      }
+    }
+
+    fetchLiveData();
+    
+    // Refresh every 30 seconds
+    const interval = setInterval(fetchLiveData, 30000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <main className="min-h-dvh bg-black text-neutral-100 relative overflow-hidden">
       {/* Floating gold particles - MANY MORE */}
@@ -112,55 +212,81 @@ export default function Home() {
             
             <div className="mt-6 flex items-center gap-6 text-sm text-neutral-500">
               <div className="flex items-center gap-2">
-                <svg className="h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
+                <CheckCircle2 className="h-4 w-4 text-green-500" />
                 Utility Token Model
               </div>
               <div className="flex items-center gap-2">
-                <svg className="h-4 w-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                </svg>
+                <CheckCircle2 className="h-4 w-4 text-green-500" />
                 Regulatory Compliant
               </div>
             </div>
           </div>
-          
-          {/* Live Network Stats */}
+
+          {/* Live Network Stats - NOW DYNAMIC */}
           <div>
             <div className="rounded-2xl border border-neutral-800 bg-neutral-950 p-6">
               <div className="mb-4 flex items-center justify-between">
                 <div className="text-sm text-neutral-400">Live Network</div>
                 <div className="flex items-center gap-2 text-sm text-green-400">
-                  <div className="h-2 w-2 rounded-full bg-green-400 animate-pulse"></div>
-                  Active
+                  <div className={`h-2 w-2 rounded-full ${liveStats.loading ? 'bg-yellow-400 animate-pulse' : 'bg-green-400 animate-pulse'}`}></div>
+                  {liveStats.loading ? 'Loading...' : 'Active'}
                 </div>
               </div>
               
               <div className="grid grid-cols-2 gap-4 text-center">
                 <div className="rounded-lg border border-neutral-800 bg-black p-6">
-                  <div className="text-3xl font-extrabold text-yellow-500">7</div>
+                  <div className="text-3xl font-extrabold text-yellow-500">
+                    {liveStats.loading ? '—' : liveStats.statesLive}
+                  </div>
                   <div className="mt-2 text-xs uppercase tracking-wide text-neutral-400">States Live</div>
                 </div>
                 <div className="rounded-lg border border-neutral-800 bg-black p-6">
-                  <div className="text-3xl font-extrabold text-yellow-500">$2.1M</div>
+                  <div className="text-3xl font-extrabold text-yellow-500">
+                    {liveStats.loading ? '—' : formatCurrency(liveStats.communityPool)}
+                  </div>
                   <div className="mt-2 text-xs uppercase tracking-wide text-neutral-400">Community Pool</div>
                 </div>
                 <div className="rounded-lg border border-neutral-800 bg-black p-6">
-                  <div className="text-3xl font-extrabold text-yellow-500">1,240</div>
+                  <div className="text-3xl font-extrabold text-yellow-500">
+                    {liveStats.loading ? '—' : formatNumber(liveStats.activeMembers)}
+                  </div>
                   <div className="mt-2 text-xs uppercase tracking-wide text-neutral-400">Active Members</div>
                 </div>
                 <div className="rounded-lg border border-neutral-800 bg-black p-6">
-                  <div className="text-3xl font-extrabold text-yellow-500">94.7%</div>
+                  <div className="text-3xl font-extrabold text-yellow-500">
+                    {liveStats.loading ? '—' : `${liveStats.uptime}%`}
+                  </div>
                   <div className="mt-2 text-xs uppercase tracking-wide text-neutral-400">Uptime</div>
                 </div>
               </div>
               
               <div className="mt-4 rounded-lg bg-yellow-500/10 p-3 text-center">
                 <p className="text-sm text-yellow-200">
-                  <span className="font-semibold">2,840</span> members joined this month
+                  <span className="font-semibold">
+                    {liveStats.loading ? '—' : formatNumber(liveStats.monthlyJoins)}
+                  </span> members joined this month
                 </p>
               </div>
+
+              {/* Additional Stats Row - Optional */}
+              {liveStats.circulatingSupply && (
+                <div className="mt-4 pt-4 border-t border-neutral-800">
+                  <div className="grid grid-cols-2 gap-4 text-center text-sm">
+                    <div>
+                      <div className="text-lg font-bold text-amber-400">
+                        {formatNumber(liveStats.circulatingSupply)}
+                      </div>
+                      <div className="text-xs text-neutral-500">GG Circulating</div>
+                    </div>
+                    <div>
+                      <div className="text-lg font-bold text-amber-400">
+                        {formatNumber(liveStats.totalHolders)}
+                      </div>
+                      <div className="text-xs text-neutral-500">Total Holders</div>
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -199,9 +325,11 @@ export default function Home() {
               <path d="M 200 350 Q 400 300 600 350" stroke="url(#connectionGradient)" strokeWidth="1" fill="none"/>
             </svg>
           </div>
+          
+          {/* Card 1 */}
           <div className="rounded-xl border border-neutral-800 bg-neutral-950 p-6">
             <div className="flex items-center justify-between mb-4">
-              <div className="text-2xl">🎯</div>
+              <Target className="w-6 h-6 text-yellow-500" />
               <div className="rounded-full bg-yellow-500/10 px-2 py-1 text-xs font-semibold text-yellow-400">
                 Non-Gaming
               </div>
@@ -210,9 +338,10 @@ export default function Home() {
             <div className="text-neutral-400">Not gambling. Not speculation. USD-pegged credits for consistent gameplay while GAMBINO tokens generate real value through scarcity and network effects.</div>
           </div>
           
+          {/* Card 2 */}
           <div className="rounded-xl border border-neutral-800 bg-neutral-950 p-6">
             <div className="flex items-center justify-between mb-4">
-              <div className="text-2xl">🗳️</div>
+              <BadgeCheck className="w-6 h-6 text-yellow-500" />
               <div className="rounded-full bg-yellow-500/10 px-2 py-1 text-xs font-semibold text-yellow-400">
                 Transparent
               </div>
@@ -221,9 +350,10 @@ export default function Home() {
             <div className="text-neutral-400">Voting power is tied to proof-of-luck, not wealth. Lucky players rise into DAO tiers and gain real influence over network direction and community funding.</div>
           </div>
           
+          {/* Card 3 */}
           <div className="rounded-xl border border-neutral-800 bg-neutral-950 p-6">
             <div className="flex items-center justify-between mb-4">
-              <div className="text-2xl">🏪</div>
+              <Store className="w-6 h-6 text-yellow-500" />
               <div className="rounded-full bg-yellow-500/10 px-2 py-1 text-xs font-semibold text-yellow-400">
                 Real Impact
               </div>
@@ -232,9 +362,10 @@ export default function Home() {
             <div className="text-neutral-400">Partner stores become hubs of community wealth creation. Every participating location attracts foot traffic while sharing in network rewards and local prosperity.</div>
           </div>
           
+          {/* Card 4 */}
           <div className="rounded-xl border border-neutral-800 bg-neutral-950 p-6">
             <div className="flex items-center justify-between mb-4">
-              <div className="text-2xl">⚖️</div>
+              <Scale className="w-6 h-6 text-green-400" />
               <div className="rounded-full bg-green-500/10 px-2 py-1 text-xs font-semibold text-green-400">
                 SEC Framework
               </div>
@@ -243,9 +374,10 @@ export default function Home() {
             <div className="text-neutral-400">Engineered to operate within U.S. legal frameworks. Utility-based tokens, not securities. We work with regulators, not against them.</div>
           </div>
           
+          {/* Card 5 */}
           <div className="rounded-xl border border-neutral-800 bg-neutral-950 p-6">
             <div className="flex items-center justify-between mb-4">
-              <div className="text-2xl">🌱</div>
+              <Sprout className="w-6 h-6 text-yellow-500" />
               <div className="rounded-full bg-yellow-500/10 px-2 py-1 text-xs font-semibold text-yellow-400">
                 Proven Impact
               </div>
@@ -254,9 +386,10 @@ export default function Home() {
             <div className="text-neutral-400">Every transaction flows into community gardens, nonprofit funding, and DAO scout stipends. Gambino builds cycles of prosperity where luck becomes resilience.</div>
           </div>
           
+          {/* Card 6 */}
           <div className="rounded-xl border border-neutral-800 bg-neutral-950 p-6">
             <div className="flex items-center justify-between mb-4">
-              <div className="text-2xl">🚀</div>
+              <Rocket className="w-6 h-6 text-blue-400" />
               <div className="rounded-full bg-blue-500/10 px-2 py-1 text-xs font-semibold text-blue-400">
                 Enterprise Grade
               </div>
@@ -282,12 +415,11 @@ export default function Home() {
           
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="space-y-6">
+              {/* item 1 */}
               <div className="flex gap-4">
                 <div className="flex-shrink-0 mt-1">
                   <div className="h-6 w-6 rounded-lg bg-green-500/10 flex items-center justify-center">
-                    <svg className="h-3 w-3 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
+                    <CheckCircle2 className="h-3.5 w-3.5 text-green-400" />
                   </div>
                 </div>
                 <div>
@@ -295,13 +427,11 @@ export default function Home() {
                   <p className="mt-1 text-neutral-400">Our tokens provide utility within our gaming ecosystem, not investment returns.</p>
                 </div>
               </div>
-              
+              {/* item 2 */}
               <div className="flex gap-4">
                 <div className="flex-shrink-0 mt-1">
                   <div className="h-6 w-6 rounded-lg bg-green-500/10 flex items-center justify-center">
-                    <svg className="h-3 w-3 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
+                    <CheckCircle2 className="h-3.5 w-3.5 text-green-400" />
                   </div>
                 </div>
                 <div>
@@ -309,13 +439,11 @@ export default function Home() {
                   <p className="mt-1 text-neutral-400">KYC/AML procedures and transaction monitoring solutions.</p>
                 </div>
               </div>
-              
+              {/* item 3 */}
               <div className="flex gap-4">
                 <div className="flex-shrink-0 mt-1">
                   <div className="h-6 w-6 rounded-lg bg-green-500/10 flex items-center justify-center">
-                    <svg className="h-3 w-3 text-green-400" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
+                    <CheckCircle2 className="h-3.5 w-3.5 text-green-400" />
                   </div>
                 </div>
                 <div>
@@ -333,9 +461,7 @@ export default function Home() {
                     <div className="font-semibold text-white">Terms of Service</div>
                     <div className="text-sm text-neutral-400">Complete terms and conditions</div>
                   </div>
-                  <svg className="h-4 w-4 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                  <ArrowRight className="h-4 w-4 text-neutral-400" />
                 </a>
                 
                 <a href="/legal/privacy" className="flex items-center justify-between p-3 rounded-lg border border-neutral-800 hover:border-yellow-500/30 transition-colors">
@@ -343,9 +469,7 @@ export default function Home() {
                     <div className="font-semibold text-white">Privacy Policy</div>
                     <div className="text-sm text-neutral-400">Data handling and user privacy</div>
                   </div>
-                  <svg className="h-4 w-4 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                  <ArrowRight className="h-4 w-4 text-neutral-400" />
                 </a>
               </div>
             </div>
@@ -360,7 +484,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl px-6 text-center">
           <div className="rounded-2xl border border-yellow-500/20 bg-gradient-to-br from-yellow-500/5 to-neutral-950 p-8">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-yellow-500/10 px-3 py-2 text-sm font-semibold text-yellow-400">
-              <div className="h-2 w-2 rounded-full bg-yellow-400 animate-pulse"></div>
+              <CircleDot className="h-3.5 w-3.5 text-yellow-400" />
               Limited Beta Access
             </div>
             

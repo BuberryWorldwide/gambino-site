@@ -70,10 +70,10 @@ export default function WhitepaperPage() {
 
           <Section id="exec" title="Executive Summary">
             <p>
-              Gambino reimagines entertainment networks as **mining machines for community value**.
+              Gambino reimagines entertainment networks as <strong>mining machines for community value</strong>.
               Each play reduces token supply, jackpots re-emit from capped reserves, and cash-outs
               route a portion to local projects and oversight stipends. Instead of money leaving the
-              neighborhood, circulation compounds **social and financial outcomes**.
+              neighborhood, circulation compounds <strong>social and financial outcomes</strong>.
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Players</strong> mine luck with transparent rewards.</li>
@@ -85,16 +85,16 @@ export default function WhitepaperPage() {
 
           <Section id="problem" title="1. Problem Statement">
             <p>
-              Legacy entertainment machines are **money extraction devices**: opaque accounting, weak
+              Legacy entertainment machines are <strong>money extraction devices</strong>: opaque accounting, weak
               community return, and adversarial tax workflows. Value flows out; trust erodes.
             </p>
           </Section>
 
           <Section id="solution" title="2. The Gambino Solution">
             <p>
-              Gambino converts terminals into **token miners**. Plays <em>burn</em> tokens (creating scarcity),
+              Gambino converts terminals into <strong>token miners</strong>. Plays <em>burn</em> tokens (creating scarcity),
               jackpots <em>emit</em> tokens from a finite pool (sustaining excitement), and every cash-out
-              contributes to **community funds** and **scout stipends** with transparent, audit-ready records.
+              contributes to <strong>community funds</strong> and <strong>scout stipends</strong> with transparent, audit-ready records.
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Closed loop:</strong> cash → credits → play → burn → jackpots → cash-out → community share.</li>
@@ -105,8 +105,8 @@ export default function WhitepaperPage() {
 
           <Section id="extraction" title="3. From Extraction to Mining">
             <p>
-              The core innovation is **conceptual** and **mechanical**: terminals no longer drain neighborhoods;
-              they **mine** community value.
+              The core innovation is <strong>conceptual</strong> and <strong>mechanical</strong>: terminals no longer drain neighborhoods;
+              they <strong>mine</strong> community value.
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Players mine luck:</strong> each spin functions like a hash attempt.</li>
@@ -118,7 +118,7 @@ export default function WhitepaperPage() {
 
           <Section id="tokenomics" title="4. Tokenomics Overview">
             <p>
-              Gambino has a **capped supply of 777,000,000** tokens. Allocation spans circulating utility,
+              Gambino has a <strong>capped supply of 777,000,000</strong> tokens. Allocation spans circulating utility,
               a jackpot reserve, operations, and team incentives. Emissions are governed to prioritize
               longevity, fairness, and community outcomes.
             </p>
@@ -149,6 +149,7 @@ export default function WhitepaperPage() {
               </ul>
             </div>
           </Section>
+
           <Section id="market-impact" title="5.1 Market Impact & Circulation">
             <p>
               Not all token transfers affect the open market. Gambino distinguishes between{' '}
@@ -170,10 +171,9 @@ export default function WhitepaperPage() {
             </p>
           </Section>
 
-
           <Section id="governance" title="6. Governance: Proof-of-Luck DAO">
             <p>
-              Governance is earned through **Proof-of-Luck**, not wealth. Participation tiers are based on
+              Governance is earned through <strong>Proof-of-Luck</strong>, not wealth. Participation tiers are based on
               Glück Score, jackpots, and consistent engagement.
             </p>
             <ul className="list-disc pl-5 space-y-2">
@@ -193,13 +193,13 @@ export default function WhitepaperPage() {
               <li><strong>Store partners:</strong> earn revenue share while hosting compliant, transparent machines.</li>
             </ul>
             <p>
-              Every play therefore produces a **triple dividend**: entertainment value, player rewards, and tangible community benefit.
+              Every play therefore produces a <strong>triple dividend</strong>: entertainment value, player rewards, and tangible community benefit.
             </p>
           </Section>
 
           <Section id="compliance" title="8. Compliance & Risk">
             <p>
-              Gambino positions as a **utility-token mining network** with traceable activity and standardized
+              Gambino positions as a <strong>utility-token mining network</strong> with traceable activity and standardized
               records for taxation and oversight. The system incorporates reasonable identity and activity checks,
               rate-limits, and anomaly detection to deter abuse.
             </p>
@@ -212,7 +212,7 @@ export default function WhitepaperPage() {
 
           <Section id="architecture" title="9. System Architecture Overview">
             <p>
-              The Gambino Network uses a **modular, scalable architecture** designed for low-cost operations,
+              The Gambino Network uses a <strong>modular, scalable architecture</strong> designed for low-cost operations,
               verifiable accounting, and jurisdictional adaptability — without exposing implementation details.
             </p>
             <ul className="list-disc pl-5 space-y-2">

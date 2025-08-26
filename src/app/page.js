@@ -266,7 +266,14 @@ export default function Home() {
                     {liveStats.loading ? '—' : formatNumber(liveStats.monthlyJoins)}
                   </span> members joined this month
                 </p>
+
               </div>
+                <p className="mt-3 text-center text-xs text-neutral-500 italic">
+                  Disclaimer: These numbers are for demonstration only and do not represent real live data yet.
+                </p>
+              
+              
+              
 
               {/* Additional Stats Row - Optional */}
               {liveStats.circulatingSupply && (

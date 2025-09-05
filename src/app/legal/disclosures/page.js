@@ -92,9 +92,9 @@ export default function DisclosuresPage() {
           <Section title="2. What We License vs. What We Don't Do">
             <ul className="list-disc pl-5 space-y-2 text-neutral-300">
               <li><strong>We License:</strong> Cryptocurrency mining infrastructure software and community governance technology.</li>
-              <li><strong>We Don't Operate:</strong> Venues, consumer services, or end-user transactions.</li>
-              <li><strong>We Don't Guarantee:</strong> Implementation partner operations, consumer outcomes, or investment returns.</li>
-              <li><strong>We Don't Control:</strong> Venue operations, local compliance, or consumer relationships.</li>
+              <li><strong>We Don&apos;t Operate:</strong> Venues, consumer services, or end-user transactions.</li>
+              <li><strong>We Don&apos;t Guarantee:</strong> Implementation partner operations, consumer outcomes, or investment returns.</li>
+              <li><strong>We Don&apos;t Control:</strong> Venue operations, local compliance, or consumer relationships.</li>
             </ul>
           </Section>
 
@@ -139,7 +139,7 @@ export default function DisclosuresPage() {
               Our licensed technology may integrate with third-party blockchain networks, compliance services, 
               and operational tools. Third-party service availability, policies, and performance are outside 
               our control. Implementation partners and end users access third-party services through our 
-              technology at their own discretion and subject to those providers' terms.
+              technology at their own discretion and subject to those providers&apos; terms.
             </p>
           </Section>
 
@@ -200,7 +200,7 @@ export default function DisclosuresPage() {
 
           <Section title="14. Limitation of Technology Licensing Scope">
             <p>
-              Gambino's responsibility extends only to technology licensing, software support, and platform 
+              Gambino&apos;s responsibility extends only to technology licensing, software support, and platform 
               maintenance. We are not responsible for implementation partner business decisions, venue 
               operations, consumer disputes, local compliance failures, or operational outcomes. Implementation 
               partners assume full responsibility for their business operations and consumer relationships.

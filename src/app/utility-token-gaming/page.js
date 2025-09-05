@@ -269,7 +269,7 @@ export default function PlatformPage() {
                 <span className="text-2xl">🏢</span>
               </div>
               <h3 className="font-bold text-white mb-2">No Venue Operations</h3>
-              <p className="text-sm text-neutral-400">We don't run or manage physical locations</p>
+              <p className="text-sm text-neutral-400">We don&apos;t run or manage physical locations</p>
             </div>
             
             <div className="text-center p-4">
@@ -277,7 +277,7 @@ export default function PlatformPage() {
                 <span className="text-2xl">💰</span>
               </div>
               <h3 className="font-bold text-white mb-2">No Revenue Collection</h3>
-              <p className="text-sm text-neutral-400">We don't handle venue proceeds or customer payments</p>
+              <p className="text-sm text-neutral-400">We don&apos;t handle venue proceeds or customer payments</p>
             </div>
             
             <div className="text-center p-4">
@@ -285,7 +285,7 @@ export default function PlatformPage() {
                 <span className="text-2xl">⚙️</span>
               </div>
               <h3 className="font-bold text-white mb-2">No Operational Control</h3>
-              <p className="text-sm text-neutral-400">We don't control venue operations or outcomes</p>
+              <p className="text-sm text-neutral-400">We don&apos;t control venue operations or outcomes</p>
             </div>
           </div>
           

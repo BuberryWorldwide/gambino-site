@@ -86,8 +86,8 @@ export default function TermsPage() {
           <Section title="1. Acceptance of Terms">
             <p>
               By accessing our technology platform, creating an account, or using any Gambino services
-              (the <strong>"Services"</strong>), you agree to these Terms of Service
-              (the <strong>"Terms"</strong>) and our&nbsp;
+              (the <strong>&quot;Services&quot;</strong>), you agree to these Terms of Service
+              (the <strong>&quot;Terms&quot;</strong>) and our&nbsp;
               <Link href="/legal/privacy" className="text-yellow-400 hover:text-yellow-300 underline decoration-dotted">
                 Privacy Policy
               </Link>.
@@ -209,14 +209,14 @@ export default function TermsPage() {
               Our technology may integrate with third-party blockchain networks, payment processors, 
               or compliance services. We do not control third-party services and are not responsible 
               for their performance, policies, or availability. Implementation partners and end users 
-              access third-party services at their own discretion and subject to those providers' terms.
+              access third-party services at their own discretion and subject to those providers&apos; terms.
             </p>
           </Section>
 
           {/* Disclaimers */}
           <Section title="12. Technology Disclaimers">
             <p>
-              Our technology is provided on an "as is" and "as available" basis without warranties of 
+              Our technology is provided on an &quot;as is&quot; and &quot;as available&quot; basis without warranties of 
               any kind, express or implied, including fitness for a particular purpose, merchantability, 
               or non-infringement. We do not guarantee uninterrupted operation, specific outcomes, or 
               that all issues will be corrected. Implementation partners assume responsibility for 

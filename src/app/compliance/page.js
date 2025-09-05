@@ -77,7 +77,7 @@ export default function Page() {
             Gambino provides regulatory compliance technology and infrastructure services for 
             venue-based cryptocurrency mining operations. We enable transparent, auditable 
             community wealth generation through proof-of-luck mining protocols that operate 
-            within existing legal frameworks while building tomorrow's regulatory standards.
+            within existing legal frameworks while building tomorrow&apos;s regulatory standards.
           </p>
         </div>
       </section>
@@ -240,32 +240,32 @@ export default function Page() {
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-red-500/10">
                 <span className="text-2xl">🚫</span>
               </div>
-              <h3 className="font-bold text-white mb-2">Don't Own Hardware</h3>
-              <p className="text-sm text-neutral-400">We don't own or operate physical mining machines</p>
+              <h3 className="font-bold text-white mb-2">Don&apos;t Own Hardware</h3>
+              <p className="text-sm text-neutral-400">We don&apos;t own or operate physical mining machines</p>
             </div>
             
             <div className="text-center p-4">
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-red-500/10">
                 <span className="text-2xl">🎰</span>
               </div>
-              <h3 className="font-bold text-white mb-2">Don't Control Results</h3>
-              <p className="text-sm text-neutral-400">We don't control mining outcomes or operation results</p>
+              <h3 className="font-bold text-white mb-2">Don&apos;t Control Results</h3>
+              <p className="text-sm text-neutral-400">We don&apos;t control mining outcomes or operation results</p>
             </div>
             
             <div className="text-center p-4">
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-red-500/10">
                 <span className="text-2xl">🏢</span>
               </div>
-              <h3 className="font-bold text-white mb-2">Don't Operate Venues</h3>
-              <p className="text-sm text-neutral-400">We don't run or manage entertainment venues or facilities</p>
+              <h3 className="font-bold text-white mb-2">Don&apos;t Operate Venues</h3>
+              <p className="text-sm text-neutral-400">We don&apos;t run or manage entertainment venues or facilities</p>
             </div>
             
             <div className="text-center p-4">
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-red-500/10">
                 <span className="text-2xl">💰</span>
               </div>
-              <h3 className="font-bold text-white mb-2">Don't Take Revenue</h3>
-              <p className="text-sm text-neutral-400">We don't take mining proceeds or venue operational revenue</p>
+              <h3 className="font-bold text-white mb-2">Don&apos;t Take Revenue</h3>
+              <p className="text-sm text-neutral-400">We don&apos;t take mining proceeds or venue operational revenue</p>
             </div>
           </div>
         </div>
@@ -534,7 +534,7 @@ export default function Page() {
         <div className="mx-auto max-w-4xl px-6 text-center">
           <div className="rounded-2xl border border-yellow-500/20 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-yellow-500/5 p-12">
             <h2 className="text-3xl font-bold text-white lg:text-4xl mb-6">
-              Leading Tomorrow's <span className="text-yellow-500">Regulatory Standards</span>
+              Leading Tomorrow&apos;s <span className="text-yellow-500">Regulatory Standards</span>
             </h2>
             <p className="text-xl text-neutral-300 mb-8 max-w-3xl mx-auto">
               Our infrastructure sets the standard for responsible blockchain innovation. We deliver 

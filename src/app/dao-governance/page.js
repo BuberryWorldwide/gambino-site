@@ -342,7 +342,7 @@ export default function Page() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-yellow-400 mb-2">🏘️ Local Impact</h4>
-                  <p className="text-neutral-400 text-sm">Shape community projects and direct funding where it's needed most</p>
+                  <p className="text-neutral-400 text-sm">Shape community projects and direct funding where it&apos;s needed most</p>
                 </div>
               </div>
             </div>
@@ -414,7 +414,7 @@ export default function Page() {
               Ready to Build Your <span className="text-yellow-500">Community Impact</span>?
             </h2>
             <p className="text-lg text-neutral-300 mb-8 max-w-2xl mx-auto">
-              Start contributing to the network today. Active participants shape the community's future 
+              Start contributing to the network today. Active participants shape the community&apos;s future 
               and direct funding toward meaningful local projects.
             </p>
             

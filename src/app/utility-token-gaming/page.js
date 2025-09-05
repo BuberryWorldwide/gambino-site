@@ -230,7 +230,7 @@ export default function PlatformPage() {
             Ready to Join the <span className={styles.text.accent}>Network</span>?
           </h2>
           <p className={`text-xl mb-8 max-w-2xl mx-auto ${styles.text.secondary}`}>
-            Whether you're looking to implement our technology or participate as a community member, 
+            Whether you&apos;re looking to implement our technology or participate as a community member, 
             our platform provides the tools you need to build sustainable wealth together.
           </p>
 

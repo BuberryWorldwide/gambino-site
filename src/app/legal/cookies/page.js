@@ -107,7 +107,7 @@ export default function CookiesPage() {
         <p>
           Gambino currently uses only strictly-necessary mechanisms for security/basic functionality.
           We do <strong>not</strong> set advertising cookies. If we add optional analytics/functional cookies later,
-          you'll see them here and can opt in.
+          you&apos;ll see them here and can opt in.
         </p>
       </LegalSection>
 
@@ -167,7 +167,7 @@ export default function CookiesPage() {
           <li>Clearly disclose these partnerships</li>
           <li>Ensure they meet our privacy standards</li>
           <li>Provide opt-out mechanisms where required</li>
-          <li>Limit data sharing to what's necessary for the service</li>
+          <li>Limit data sharing to what&apos;s necessary for the service</li>
         </ul>
       </LegalSection>
 

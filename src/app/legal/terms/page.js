@@ -95,7 +95,7 @@ export default function TermsPage() {
           token holdings. Governance participants must:
         </p>
         <ul className="list-disc pl-5 space-y-2">
-          <li>Act in good faith and in the network's best interests</li>
+          <li>Act in good faith and in the network&apos;s best interests</li>
           <li>Comply with governance procedures and voting protocols</li>
           <li>Maintain active participation to retain governance privileges</li>
           <li>Disclose conflicts of interest in governance decisions</li>
@@ -105,7 +105,7 @@ export default function TermsPage() {
       {/* Implementation Partner Responsibilities */}
       <LegalSection title="8. Implementation Partner Framework">
         <p>
-          Implementation partners are independent operators who license our technology. Gambino's 
+          Implementation partners are independent operators who license our technology. Gambino&apos;s 
           responsibilities are limited to technology licensing and platform support. We are not 
           responsible for implementation partner business decisions, consumer service, or 
           operational outcomes.

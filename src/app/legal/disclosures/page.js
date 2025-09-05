@@ -132,7 +132,7 @@ export default function DisclosuresPage() {
 
       <LegalSection title="11. No Guarantees or Warranties">
         <p>
-          We provide our technology and services "as is" without warranties of any kind. We do not 
+          We provide our technology and services &quot;as is&quot; without warranties of any kind. We do not 
           guarantee:
         </p>
         <ul className="list-disc pl-5 space-y-2">
@@ -170,7 +170,7 @@ export default function DisclosuresPage() {
 
       <LegalSection title="14. Limitation of Technology Licensing Scope">
         <p>
-          Gambino's responsibility extends only to technology licensing, software support, and platform 
+          Gambino&apos;s responsibility extends only to technology licensing, software support, and platform 
           maintenance. We are not responsible for implementation partner business decisions, venue 
           operations, consumer disputes, local compliance failures, or operational outcomes. Implementation 
           partners assume full responsibility for their business operations and consumer relationships.

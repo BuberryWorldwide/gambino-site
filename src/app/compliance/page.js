@@ -22,9 +22,9 @@ export default function Page() {
         <div className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-yellow-500/55 rounded-full animate-pulse delay-800"></div>
 
         {/* Floating sparkles */}
-        <div className="absolute top-16 left-1/2 w-1 h-1 bg-yellow-200/70 rounded-full animate-ping" style={{animationDuration: '3s', animationDelay: '0.5s'}}></div>
-        <div className="absolute top-3/4 left-1/3 w-1 h-1 bg-amber-200/70 rounded-full animate-ping" style={{animationDuration: '2.5s', animationDelay: '1.2s'}}></div>
-        <div className="absolute bottom-16 right-1/2 w-1 h-1 bg-yellow-100/80 rounded-full animate-ping" style={{animationDuration: '3.5s', animationDelay: '2.1s'}}></div>
+        <div className="absolute top-16 left-1/2 w-1 h-1 bg-yellow-200/70 rounded-full animate-ping" style={{animationDuration: &apos;3s&apos;, animationDelay: &apos;0.5s&apos;}}></div>
+        <div className="absolute top-3/4 left-1/3 w-1 h-1 bg-amber-200/70 rounded-full animate-ping" style={{animationDuration: &apos;2.5s&apos;, animationDelay: &apos;1.2s&apos;}}></div>
+        <div className="absolute bottom-16 right-1/2 w-1 h-1 bg-yellow-100/80 rounded-full animate-ping" style={{animationDuration: &apos;3.5s&apos;, animationDelay: &apos;2.1s&apos;}}></div>
       </div>
 
       {/* Background geometric shapes - consistent with homepage */}
@@ -38,14 +38,14 @@ export default function Page() {
         <div className="absolute inset-0 opacity-[0.15]">
           <div className="absolute inset-0" style={{
             backgroundImage: `radial-gradient(circle at 1px 1px, rgba(234, 179, 8, 0.3) 1px, transparent 0)`,
-            backgroundSize: '80px 80px'
+            backgroundSize: &apos;80px 80px&apos;
           }}></div>
         </div>
         
         {/* Animated geometric shapes */}
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-yellow-500/20 rounded-lg rotate-45 animate-spin" style={{animationDuration: '25s'}}></div>
-        <div className="absolute bottom-1/3 right-1/3 w-24 h-24 border border-amber-400/15 rounded-full animate-ping" style={{animationDuration: '5s'}}></div>
-        <div className="absolute top-3/4 left-2/3 w-20 h-20 border-2 border-yellow-300/12 rounded-lg rotate-12 animate-pulse" style={{animationDuration: '6s'}}></div>
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-yellow-500/20 rounded-lg rotate-45 animate-spin" style={{animationDuration: &apos;25s&apos;}}></div>
+        <div className="absolute bottom-1/3 right-1/3 w-24 h-24 border border-amber-400/15 rounded-full animate-ping" style={{animationDuration: &apos;5s&apos;}}></div>
+        <div className="absolute top-3/4 left-2/3 w-20 h-20 border-2 border-yellow-300/12 rounded-lg rotate-12 animate-pulse" style={{animationDuration: &apos;6s&apos;}}></div>
         
         {/* Moving lines */}
         <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent"></div>
@@ -223,7 +223,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* WHAT WE DON'T DO - CLEAR BOUNDARIES */}
+      {/* WHAT WE DON&apos;T DO - CLEAR BOUNDARIES */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white lg:text-4xl">

@@ -1,10 +1,10 @@
-// app/whitepaper/page.js
+// app/legal/whitepaper/page.js
 import Link from 'next/link'
 
 export const metadata = {
   title: 'Gambino White Paper • Farm Luck. Mine Destiny.',
   description:
-    'Gambino redefines gaming terminals as token mining machines that grow community wealth, enable transparent compliance, and reward proof-of-luck.'
+    'Gambino provides cryptocurrency mining infrastructure technology that enables community wealth creation through transparent, compliant token mining operations.'
 }
 
 export default function WhitepaperPage() {
@@ -37,8 +37,8 @@ export default function WhitepaperPage() {
             Farm Luck. Mine Destiny.
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-neutral-400">
-            Gambino turns entertainment machines into community wealth engines: a tokenized system that
-            rewards proof-of-luck, funds local good, and aligns with transparent tax compliance.
+            Gambino provides cryptocurrency mining infrastructure technology that transforms traditional hardware into 
+            community wealth engines through transparent, compliant token mining operations and governance systems.
           </p>
           <p className="mx-auto mt-2 max-w-2xl text-sm text-neutral-500">
             Last updated: August 26, 2025
@@ -56,10 +56,10 @@ export default function WhitepaperPage() {
               <li><a className="hover:text-yellow-400" href="#exec">Executive Summary</a></li>
               <li><a className="hover:text-yellow-400" href="#problem">Problem Statement</a></li>
               <li><a className="hover:text-yellow-400" href="#solution">The Gambino Solution</a></li>
-              <li><a className="hover:text-yellow-400" href="#extraction">From Extraction to Mining</a></li>
+              <li><a className="hover:text-yellow-400" href="#infrastructure">Mining Infrastructure Technology</a></li>
               <li><a className="hover:text-yellow-400" href="#tokenomics">Tokenomics Overview</a></li>
               <li><a className="hover:text-yellow-400" href="#economy">Economic Model</a></li>
-              <li><a className="hover:text-yellow-400" href="#governance">Governance: Proof-of-Luck DAO</a></li>
+              <li><a className="hover:text-yellow-400" href="#governance">Community Governance Framework</a></li>
               <li><a className="hover:text-yellow-400" href="#community">Community Wealth Distribution</a></li>
               <li><a className="hover:text-yellow-400" href="#compliance">Compliance & Risk</a></li>
               <li><a className="hover:text-yellow-400" href="#architecture">System Architecture Overview</a></li>
@@ -70,174 +70,156 @@ export default function WhitepaperPage() {
 
           <Section id="exec" title="Executive Summary">
             <p>
-              Gambino reimagines entertainment networks as <strong>mining machines for community value</strong>.
-              Each play reduces token supply, jackpots re-emit from capped reserves, and cash-outs
-              route a portion to local projects and oversight stipends. Instead of money leaving the
-              neighborhood, circulation compounds <strong>social and financial outcomes</strong>.
+              Gambino reimagines cryptocurrency mining infrastructure as <strong>community wealth engines</strong>.
+              Our technology licensing platform enables implementation partners to operate transparent mining 
+              operations where each transaction reduces token supply, mining rewards emit from capped reserves, 
+              and proceeds route to local community benefit programs.
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Players</strong> mine luck with transparent rewards.</li>
-              <li><strong>Communities</strong> receive continuous funding from play.</li>
-              <li><strong>Regulators</strong> gain auditable visibility for fair taxation.</li>
-              <li><strong>Holders</strong> benefit from purposeful scarcity and healthy circulation.</li>
+              <li><strong>Token Holders</strong> access mining infrastructure with transparent reward systems.</li>
+              <li><strong>Communities</strong> receive continuous funding from mining operations.</li>
+              <li><strong>Regulators</strong> gain auditable visibility for compliant operations.</li>
+              <li><strong>Implementation Partners</strong> benefit from innovative technology and compliance frameworks.</li>
             </ul>
           </Section>
 
           <Section id="problem" title="1. Problem Statement">
             <p>
-              Legacy entertainment machines are <strong>money extraction devices</strong>: opaque accounting, weak
-              community return, and adversarial tax workflows. Value flows out; trust erodes.
+              Traditional cryptocurrency mining operations lack <strong>community integration</strong> and transparent 
+              benefit distribution. Value flows to large mining pools while local communities see no direct benefit 
+              from mining operations in their areas.
             </p>
           </Section>
 
           <Section id="solution" title="2. The Gambino Solution">
             <p>
-              Gambino converts terminals into <strong>token miners</strong>. Plays <em>burn</em> tokens (creating scarcity),
-              jackpots <em>emit</em> tokens from a finite pool (sustaining excitement), and every cash-out
-              contributes to <strong>community funds</strong> and <strong>scout stipends</strong> with transparent, audit-ready records.
+              Gambino provides technology that converts standard hardware into <strong>community-focused mining infrastructure</strong>. 
+              Mining operations <em>burn</em> tokens (creating scarcity), rewards <em>emit</em> tokens from finite reserves 
+              (sustaining network activity), and proceeds contribute to <strong>community funds</strong> and 
+              <strong>governance participant stipends</strong> with transparent, audit-ready records.
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Closed loop:</strong> cash → credits → play → burn → jackpots → cash-out → community share.</li>
-              <li><strong>Transparency by design:</strong> activity is traceable and policy-compliant.</li>
-              <li><strong>Aligned incentives:</strong> fairness and accountability benefit all participants.</li>
+              <li><strong>Closed loop:</strong> token acquisition → mining access → burn → rewards → community allocation.</li>
+              <li><strong>Transparency by design:</strong> all mining activity is traceable and compliance-ready.</li>
+              <li><strong>Aligned incentives:</strong> community benefit and network sustainability drive all operations.</li>
             </ul>
           </Section>
 
-          <Section id="extraction" title="3. From Extraction to Mining">
+          <Section id="infrastructure" title="3. Mining Infrastructure Technology">
             <p>
-              The core innovation is <strong>conceptual</strong> and <strong>mechanical</strong>: terminals no longer drain neighborhoods;
-              they <strong>mine</strong> community value.
+              The core innovation is <strong>technological</strong> and <strong>operational</strong>: hardware no longer 
+              serves only individual miners; it <strong>mines</strong> community value through our licensed infrastructure.
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Players mine luck:</strong> each spin functions like a hash attempt.</li>
-              <li><strong>Communities mine wealth:</strong> cash-outs route a fixed share to local good.</li>
-              <li><strong>Regulators mine taxes:</strong> standardized records simplify reporting.</li>
-              <li><strong>The network mines trust:</strong> transparency replaces suspicion.</li>
+              <li><strong>Token holders access mining capacity:</strong> each operation functions within our infrastructure protocol.</li>
+              <li><strong>Communities benefit from mining:</strong> operations route fixed shares to local benefit programs.</li>
+              <li><strong>Regulators access transparent records:</strong> standardized reporting simplifies compliance.</li>
+              <li><strong>The network builds trust:</strong> transparency and community focus replace traditional extraction models.</li>
             </ul>
           </Section>
 
           <Section id="tokenomics" title="4. Tokenomics Overview">
             <p>
-              Gambino has a <strong>capped supply of 777,000,000</strong> tokens. Allocation spans circulating utility,
-              a jackpot reserve, operations, and team incentives. Emissions are governed to prioritize
-              longevity, fairness, and community outcomes.
+              Gambino has a <strong>capped supply of 777,000,000</strong> tokens distributed across mining rewards, 
+              community allocation, governance participation, and network operations. Our deflationary mechanics 
+              balance token burns with strategic emissions to maintain long-term sustainability.
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Scarcity:</strong> each play burns tokens to reduce float.</li>
-              <li><strong>Emission:</strong> jackpots release tokens from a capped pool with a decreasing curve over time.</li>
-              <li><strong>Circulation:</strong> winnings re-enter the economy and can be redeemed with community and compliance routing.</li>
+              <li><strong>Mining access burns tokens:</strong> reducing circulating supply over time.</li>
+              <li><strong>Rewards emit from reserves:</strong> capped pools ensure sustainable token distribution.</li>
+              <li><strong>Community allocation:</strong> fixed percentage of operations fund local benefit programs.</li>
+              <li><strong>Governance participation:</strong> token holders access DAO voting and proposal systems.</li>
             </ul>
-            <p className="text-sm text-neutral-400">
-              Note: Detailed schedules and reserve policies are published separately and may be updated to preserve system integrity.
-            </p>
           </Section>
 
           <Section id="economy" title="5. Economic Model">
-            <ol className="list-decimal pl-5 space-y-2">
-              <li><strong>Cash-In:</strong> Players deposit fiat; receive credits pegged to USD for stable gameplay cost.</li>
-              <li><strong>Play:</strong> Credits power experiences; tokens are burned per interaction.</li>
-              <li><strong>Jackpots:</strong> Probabilistic rewards re-emit tokens from capped reserves.</li>
-              <li><strong>Cash-Out:</strong> Redemptions apply transparent fees that fund community and compliance layers.</li>
-              <li><strong>Circulation:</strong> Rewards and balances continue compounding local value rather than exiting the ecosystem.</li>
-            </ol>
-            <div className="mt-3 rounded-lg border border-neutral-800 bg-neutral-950 p-4 text-sm text-neutral-300">
-              <div className="font-semibold mb-1">Key Design Goals</div>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Predictable user experience with stable gameplay costs.</li>
-                <li>Deflationary pressure balanced by controlled jackpot emissions.</li>
-                <li>Always-on community funding and auditable compliance.</li>
-              </ul>
-            </div>
-          </Section>
-
-          <Section id="market-impact" title="5.1 Market Impact & Circulation">
             <p>
-              Not all token transfers affect the open market. Gambino distinguishes between{' '}
-              <strong>internal circulation</strong> (wallet-to-wallet transfers, stipends, community fund
-              routing) and <strong>price-forming events</strong> (cash-in purchases, jackpot emissions,
-              and redemptions through liquidity pools).
+              Gambino distinguishes between <strong>internal circulation</strong> (wallet-to-wallet transfers, stipends, 
+              community fund routing) and <strong>market-forming events</strong> (token acquisition, mining rewards, 
+              and liquidity pool interactions).
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Internal transfers:</strong> move balances between players, stores, and community
-              funds but do not change market price.</li>
-              <li><strong>Liquidity pool trades:</strong> occur when tokens are bought, burned, or redeemed
-              through pools, creating visible market impact.</li>
-              <li><strong>Strategic advantage:</strong> Gambino ensures gameplay costs stay predictable while
-              market activity is channeled into transparent, auditable events.</li>
+              <li><strong>Internal transfers:</strong> move balances between participants, implementation partners, 
+              and community funds without affecting market price.</li>
+              <li><strong>Liquidity pool interactions:</strong> occur when tokens are acquired, burned, or redeemed 
+              through market mechanisms, creating visible price impact.</li>
+              <li><strong>Strategic advantage:</strong> Gambino ensures mining access costs remain predictable while 
+              market activity flows through transparent, auditable systems.</li>
             </ul>
             <p>
-              This separation allows Gambino to protect participants from unnecessary volatility while still
-              generating healthy liquidity and price discovery in public markets.
+              This separation protects participants from unnecessary volatility while generating healthy liquidity 
+              and price discovery in public markets.
             </p>
           </Section>
 
-          <Section id="governance" title="6. Governance: Proof-of-Luck DAO">
+          <Section id="governance" title="6. Community Governance Framework">
             <p>
-              Governance is earned through <strong>Proof-of-Luck</strong>, not wealth. Participation tiers are based on
-              Glück Score, jackpots, and consistent engagement.
+              Governance participation is earned through <strong>network contribution</strong> and <strong>community engagement</strong>, 
+              not just token holdings. Participation tiers are based on mining activity, governance participation, 
+              and consistent community involvement.
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Tier 3 – Scouts (regional):</strong> up to 100 per state; receive annual stipends; surface local priorities.</li>
-              <li><strong>Tier 2 – Managers:</strong> oversee monthly budgets and risk; subject to steward approval.</li>
-              <li><strong>Tier 1 – Stewards (7):</strong> long-horizon guardians of mission alignment and major disbursements.</li>
+              <li><strong>Tier 3 – Community Scouts (regional):</strong> up to 100 per jurisdiction; receive governance stipends; identify local priorities.</li>
+              <li><strong>Tier 2 – Network Managers:</strong> oversee operational parameters and community fund allocation; subject to steward approval.</li>
+              <li><strong>Tier 1 – Protocol Stewards (7):</strong> long-term guardians of mission alignment and major technology decisions.</li>
             </ul>
             <p className="text-sm text-neutral-400">
-              DAO voting power is derived from luck-proof, tenure, and contribution — not capital deposits.
+              DAO voting power derives from network contribution, community engagement, and governance participation — not capital deposits alone.
             </p>
           </Section>
 
           <Section id="community" title="7. Community Wealth Distribution">
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>0.5% of every cash-out → Community Gardens Fund:</strong> food security and regenerative projects near host stores.</li>
-              <li><strong>0.5% of every cash-out → Scout Pool:</strong> stipends for Tier 3 members who track outcomes and accountability.</li>
-              <li><strong>Store partners:</strong> earn revenue share while hosting compliant, transparent machines.</li>
+              <li><strong>0.5% of mining proceeds → Community Development Fund:</strong> local infrastructure and benefit programs near implementation partner locations.</li>
+              <li><strong>0.5% of mining proceeds → Governance Pool:</strong> stipends for active DAO participants who ensure accountability and transparency.</li>
+              <li><strong>Implementation partners:</strong> earn technology licensing fees while operating compliant, transparent mining infrastructure.</li>
             </ul>
             <p>
-              Every play therefore produces a <strong>triple dividend</strong>: entertainment value, player rewards, and tangible community benefit.
+              Every mining operation therefore produces a <strong>triple benefit</strong>: infrastructure utility, network rewards, and tangible community development.
             </p>
           </Section>
 
           <Section id="compliance" title="8. Compliance & Risk">
             <p>
-              Gambino positions as a <strong>utility-token mining network</strong> with traceable activity and standardized
-              records for taxation and oversight. The system incorporates reasonable identity and activity checks,
-              rate-limits, and anomaly detection to deter abuse.
+              Gambino operates as a <strong>utility-token mining infrastructure provider</strong> with traceable activity and 
+              standardized records for taxation and regulatory oversight. The system incorporates identity verification, 
+              activity monitoring, and compliance controls to ensure responsible operations.
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Transparent tax mediation:</strong> built-in routing and reporting.</li>
-              <li><strong>Responsible use:</strong> eligibility rules and anti-abuse controls.</li>
-              <li><strong>Operational integrity:</strong> parameters may be adjusted to preserve fairness and compliance.</li>
+              <li><strong>Transparent compliance:</strong> built-in reporting and audit trails for regulatory requirements.</li>
+              <li><strong>Responsible access:</strong> eligibility requirements and anti-abuse systems protect network integrity.</li>
+              <li><strong>Operational flexibility:</strong> parameters may be adjusted to maintain compliance and community benefit.</li>
             </ul>
           </Section>
 
           <Section id="architecture" title="9. System Architecture Overview">
             <p>
-              The Gambino Network uses a <strong>modular, scalable architecture</strong> designed for low-cost operations,
-              verifiable accounting, and jurisdictional adaptability — without exposing implementation details.
+              The Gambino Network uses a <strong>modular, scalable architecture</strong> designed for low-cost operations, 
+              verifiable accounting, and jurisdictional adaptability while maintaining technology licensing control.
             </p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Transparent Ledgering:</strong> activity is recorded for audit and community reporting.</li>
-              <li><strong>Deflationary Mechanics:</strong> calibrated burn/emit logic maintains long-term sustainability.</li>
-              <li><strong>Community Allocation Layer:</strong> automated routing to gardens, stipends, and reserves.</li>
-              <li><strong>Governance Protocol:</strong> Proof-of-Luck eligibility and multi-tier decision-making.</li>
-              <li><strong>Scalability:</strong> plug-in modules for local policy, store operations, and analytics.</li>
+              <li><strong>Transparent Ledgering:</strong> all activity recorded for audit and community reporting.</li>
+              <li><strong>Deflationary Mechanics:</strong> calibrated burn/emit protocols maintain long-term sustainability.</li>
+              <li><strong>Community Allocation Layer:</strong> automated routing to development funds, stipends, and reserves.</li>
+              <li><strong>Governance Protocol:</strong> contribution-based eligibility and multi-tier decision-making systems.</li>
+              <li><strong>Licensing Framework:</strong> modular deployment through authorized implementation partners.</li>
             </ul>
           </Section>
 
           <Section id="roadmap" title="10. Roadmap">
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Phase 1:</strong> State-level pilots, community partnerships, compliance validation.</li>
-              <li><strong>Phase 2:</strong> Multi-state expansion and full Scout (Tier 3) onboarding.</li>
-              <li><strong>Phase 3:</strong> National DAO activation and mission-aligned investments.</li>
-              <li><strong>Phase 4:</strong> Hybrid web + device experiences and international pilots.</li>
+              <li><strong>Phase 1:</strong> Implementation partner onboarding, community partnerships, compliance validation.</li>
+              <li><strong>Phase 2:</strong> Multi-jurisdiction expansion and full Community Scout program activation.</li>
+              <li><strong>Phase 3:</strong> National DAO governance activation and community-aligned development programs.</li>
+              <li><strong>Phase 4:</strong> Advanced infrastructure features and international licensing opportunities.</li>
             </ul>
           </Section>
 
           <Section id="notice" title="11. Legal Notice">
             <p className="text-neutral-300">
-              This document is for informational purposes only and does not constitute an offer of securities
-              or solicitation for investment. Features described herein may evolve to preserve fairness,
-              compliance, and system integrity. Refer to our{' '}
+              This document is for informational purposes only and does not constitute an offer of securities 
+              or solicitation for investment. Features described herein may evolve to preserve compliance, 
+              community benefit, and system integrity. Refer to our{' '}
               <Link href="/legal/terms" className="text-yellow-400 hover:text-yellow-300 underline decoration-dotted">
                 Terms of Service
               </Link>,{' '}

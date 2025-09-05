@@ -3,16 +3,22 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTheme } from './ThemeProvider';
 
 function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { isDark, toggleTheme, bg, text, border } = useTheme();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-neutral-800 bg-black/80 backdrop-blur-xl">
+    <header className={`sticky top-0 z-40 border-b transition-colors duration-300 backdrop-blur-xl ${border.primary} ${bg.primary}/80`}>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-900/70 backdrop-blur-sm border border-neutral-700/50 shadow-lg shadow-black/25 overflow-hidden">
+          <div className={`flex h-10 w-10 items-center justify-center rounded-lg backdrop-blur-sm border shadow-lg overflow-hidden ${
+            isDark 
+              ? 'bg-neutral-900/70 border-neutral-700/50 shadow-black/25' 
+              : 'bg-neutral-100/70 border-neutral-300/50 shadow-black/10'
+          }`}>
             <Image
               src="/logo.png"
               alt="Gambino Gold Logo"
@@ -22,22 +28,40 @@ function Nav() {
             />
           </div>
           <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className="text-white">Gambino</span>{' '}
+            <span className={text.primary}>Gambino</span>{' '}
             <span className="text-yellow-500">Gold</span>
           </Link>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden gap-8 text-sm text-neutral-300 md:flex lg:gap-10">
-          <Link href="/utility-token-gaming" className="transition-colors hover:text-white">Platform</Link>
-          <Link href="/dao-governance" className="transition-colors hover:text-white">DAO</Link>
-          <Link href="/compliance" className="transition-colors hover:text-white">Compliance</Link>
-          <Link href="/legal/whitepaper" className="transition-colors hover:text-white">Docs</Link>
-          <Link href="/legal/terms" className="transition-colors hover:text-white">Legal</Link>
+        <nav className={`hidden gap-8 text-sm md:flex lg:gap-10 ${text.secondary}`}>
+          <Link href="/utility-token-gaming" className={`transition-colors ${text.hover}`}>Platform</Link>
+          <Link href="/dao-governance" className={`transition-colors ${text.hover}`}>DAO</Link>
+          <Link href="/compliance" className={`transition-colors ${text.hover}`}>Compliance</Link>
+          <Link href="/legal/whitepaper" className={`transition-colors ${text.hover}`}>Docs</Link>
+          <Link href="/legal/terms" className={`transition-colors ${text.hover}`}>Legal</Link>
         </nav>
 
-        {/* Desktop CTA (external stays <a>) */}
-        <div className="hidden md:block">
+        {/* Desktop Actions */}
+        <div className="hidden md:flex items-center gap-4">
+          {/* Theme Toggle */}
+          <button
+            onClick={toggleTheme}
+            className={`p-2 rounded-lg transition-colors ${text.secondary} ${text.hover} ${bg.hover}`}
+            aria-label="Toggle theme"
+          >
+            {isDark ? (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            ) : (
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+            )}
+          </button>
+
+          {/* CTA Button */}
           <a
             href="https://app.gambino.gold"
             target="_blank"
@@ -52,7 +76,7 @@ function Nav() {
         {/* Mobile menu button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 rounded-lg text-neutral-300 hover:text-white hover:bg-neutral-800/50 transition-colors"
+          className={`md:hidden p-2 rounded-lg transition-colors ${text.secondary} ${text.hover} ${bg.hover}`}
           aria-label="Toggle mobile menu"
         >
           <svg
@@ -70,17 +94,40 @@ function Nav() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-neutral-800 bg-black/95 backdrop-blur-xl">
+        <div className={`md:hidden border-t backdrop-blur-xl ${border.primary} ${bg.primary}/95`}>
           <nav className="flex flex-col px-6 py-4 space-y-1">
-            <Link href="/utility-token-gaming" className="px-3 py-3 text-sm text-neutral-300 transition-colors hover:text-white hover:bg-neutral-800/30 rounded-lg" onClick={() => setMobileMenuOpen(false)}>Platform Overview</Link>
-            <Link href="/dao-governance" className="px-3 py-3 text-sm text-neutral-300 transition-colors hover:text-white hover:bg-neutral-800/30 rounded-lg" onClick={() => setMobileMenuOpen(false)}>DAO Governance</Link>
-            <Link href="/compliance" className="px-3 py-3 text-sm text-neutral-300 transition-colors hover:text-white hover:bg-neutral-800/30 rounded-lg" onClick={() => setMobileMenuOpen(false)}>Regulatory Compliance</Link>
-            <Link href="/legal/whitepaper" className="px-3 py-3 text-sm text-neutral-300 transition-colors hover:text-white hover:bg-neutral-800/30 rounded-lg" onClick={() => setMobileMenuOpen(false)}>Documentation</Link>
-            <Link href="/legal/terms" className="px-3 py-3 text-sm text-neutral-300 transition-colors hover:text-white hover:bg-neutral-800/30 rounded-lg" onClick={() => setMobileMenuOpen(false)}>Legal Documentation</Link>
+            <Link href="/utility-token-gaming" className={`px-3 py-3 text-sm transition-colors rounded-lg ${text.secondary} ${text.hover} ${bg.hover}`} onClick={() => setMobileMenuOpen(false)}>Platform Overview</Link>
+            <Link href="/dao-governance" className={`px-3 py-3 text-sm transition-colors rounded-lg ${text.secondary} ${text.hover} ${bg.hover}`} onClick={() => setMobileMenuOpen(false)}>DAO Governance</Link>
+            <Link href="/compliance" className={`px-3 py-3 text-sm transition-colors rounded-lg ${text.secondary} ${text.hover} ${bg.hover}`} onClick={() => setMobileMenuOpen(false)}>Regulatory Compliance</Link>
+            <Link href="/legal/whitepaper" className={`px-3 py-3 text-sm transition-colors rounded-lg ${text.secondary} ${text.hover} ${bg.hover}`} onClick={() => setMobileMenuOpen(false)}>Documentation</Link>
+            <Link href="/legal/terms" className={`px-3 py-3 text-sm transition-colors rounded-lg ${text.secondary} ${text.hover} ${bg.hover}`} onClick={() => setMobileMenuOpen(false)}>Legal Documentation</Link>
           </nav>
 
-          {/* Mobile CTA */}
-          <div className="pt-4 mt-4 border-t border-neutral-800">
+          {/* Mobile Actions */}
+          <div className="px-6 pb-4 space-y-3">
+            {/* Mobile Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className={`flex items-center gap-3 w-full px-3 py-3 text-sm rounded-lg transition-colors ${text.secondary} ${text.hover} ${bg.hover}`}
+            >
+              {isDark ? (
+                <>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                  <span>Switch to Light Mode</span>
+                </>
+              ) : (
+                <>
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                  </svg>
+                  <span>Switch to Dark Mode</span>
+                </>
+              )}
+            </button>
+            
+            {/* Mobile CTA */}
             <a
               href="https://app.gambino.gold"
               target="_blank"

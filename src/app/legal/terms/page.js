@@ -1,31 +1,61 @@
-// app/legal/terms/page.js
-
 import Link from 'next/link'
 
 export const metadata = {
   title: 'Terms of Service • Gambino',
-  description: 'Gambino Terms of Service'
+  description: 'Gambino Technology Licensing Terms'
 }
 
 export default function TermsPage() {
   return (
     <main className="min-h-dvh bg-black text-neutral-100 relative overflow-hidden">
-      {/* Subtle ambient background */}
-      <div className="pointer-events-none absolute inset-0 z-0">
-        <div className="absolute top-0 right-[-10%] w-[38rem] h-[38rem] bg-gradient-to-br from-yellow-500/10 to-amber-600/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-[-10%] left-[-10%] w-[32rem] h-[32rem] bg-gradient-to-tr from-amber-500/10 to-yellow-500/5 rounded-full blur-3xl" />
-        <div className="absolute inset-0 opacity-[0.12]">
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage:
-                'radial-gradient(circle at 1px 1px, rgba(234,179,8,0.25) 1px, transparent 0)',
-              backgroundSize: '64px 64px'
-            }}
-          />
-        </div>
+      {/* Standardized Background Effects */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        {/* Floating particles - consistent with homepage */}
+        <div className="absolute top-20 left-10 w-3 h-3 bg-yellow-400/50 rounded-full animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-2 h-2 bg-yellow-300/60 rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute top-60 left-1/3 w-4 h-4 bg-amber-400/40 rounded-full animate-pulse delay-2000"></div>
+        <div className="absolute bottom-40 right-10 w-3 h-3 bg-yellow-500/50 rounded-full animate-pulse delay-3000"></div>
+        <div className="absolute bottom-20 left-20 w-2 h-2 bg-yellow-400/60 rounded-full animate-pulse delay-500"></div>
+        <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-amber-300/50 rounded-full animate-pulse delay-1500"></div>
+        
+        {/* Mid-section particles */}
+        <div className="absolute top-1/2 left-16 w-3 h-3 bg-yellow-500/45 rounded-full animate-pulse delay-2500"></div>
+        <div className="absolute top-3/4 right-32 w-2 h-2 bg-amber-400/55 rounded-full animate-pulse delay-4000"></div>
+        <div className="absolute top-1/4 left-2/3 w-2.5 h-2.5 bg-yellow-300/50 rounded-full animate-pulse delay-3500"></div>
+        <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-yellow-400/60 rounded-full animate-pulse delay-1200"></div>
+        <div className="absolute top-2/3 right-16 w-3 h-3 bg-amber-500/45 rounded-full animate-pulse delay-2800"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-yellow-500/55 rounded-full animate-pulse delay-800"></div>
+
+        {/* Floating sparkles */}
+        <div className="absolute top-16 left-1/2 w-1 h-1 bg-yellow-200/70 rounded-full animate-ping" style={{animationDuration: '3s', animationDelay: '0.5s'}}></div>
+        <div className="absolute top-3/4 left-1/3 w-1 h-1 bg-amber-200/70 rounded-full animate-ping" style={{animationDuration: '2.5s', animationDelay: '1.2s'}}></div>
+        <div className="absolute bottom-16 right-1/2 w-1 h-1 bg-yellow-100/80 rounded-full animate-ping" style={{animationDuration: '3.5s', animationDelay: '2.1s'}}></div>
       </div>
 
+      {/* Background geometric shapes - consistent with homepage */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-yellow-500/12 to-amber-600/8 rounded-full blur-3xl transform translate-x-32 -translate-y-32"></div>
+        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-amber-600/15 to-yellow-500/8 rounded-full blur-3xl transform -translate-x-24 translate-y-24"></div>
+        <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-gradient-to-br from-yellow-400/8 to-transparent rounded-full blur-2xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-gradient-to-tr from-amber-500/10 to-transparent rounded-full blur-xl"></div>
+        
+        {/* Grid pattern - consistent opacity */}
+        <div className="absolute inset-0 opacity-[0.15]">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(234, 179, 8, 0.3) 1px, transparent 0)`,
+            backgroundSize: '80px 80px'
+          }}></div>
+        </div>
+        
+        {/* Animated geometric shapes */}
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-yellow-500/20 rounded-lg rotate-45 animate-spin" style={{animationDuration: '25s'}}></div>
+        <div className="absolute bottom-1/3 right-1/3 w-24 h-24 border border-amber-400/15 rounded-full animate-ping" style={{animationDuration: '5s'}}></div>
+        <div className="absolute top-3/4 left-2/3 w-20 h-20 border-2 border-yellow-300/12 rounded-lg rotate-12 animate-pulse" style={{animationDuration: '6s'}}></div>
+        
+        {/* Moving lines */}
+        <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent"></div>
+        <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-amber-400/15 to-transparent"></div>
+      </div>
 
       {/* HERO */}
       <section className="relative z-10 border-b border-neutral-900">
@@ -39,10 +69,10 @@ export default function TermsPage() {
               Clear. Fair. Professional.
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-neutral-400">
-              These Terms govern your access to and use of the Gambino platform. Please read them carefully.
+              These Terms govern your access to and use of Gambino technology licensing services. Please read them carefully.
             </p>
             <p className="mx-auto mt-2 max-w-2xl text-sm text-neutral-500">
-              Last updated: August 26, 2025
+              Last updated: September 4, 2025
             </p>
           </div>
         </div>
@@ -51,12 +81,13 @@ export default function TermsPage() {
       {/* TERMS BODY */}
       <section className="relative z-10">
         <div className="mx-auto max-w-3xl px-6 py-16 leading-relaxed">
+          
           {/* Intro / Acceptance */}
           <Section title="1. Acceptance of Terms">
             <p>
-              By creating an account, accessing our applications, or using any Gambino services
-              (the <strong>“Services”</strong>), you agree to these Terms of Service
-              (the <strong>“Terms”</strong>) and our&nbsp;
+              By accessing our technology platform, creating an account, or using any Gambino services
+              (the <strong>"Services"</strong>), you agree to these Terms of Service
+              (the <strong>"Terms"</strong>) and our&nbsp;
               <Link href="/legal/privacy" className="text-yellow-400 hover:text-yellow-300 underline decoration-dotted">
                 Privacy Policy
               </Link>.
@@ -64,164 +95,185 @@ export default function TermsPage() {
             </p>
           </Section>
 
+          {/* Business Model Clarification */}
+          <Section title="2. Our Business Model">
+            <p>
+              Gambino is a technology licensing company that provides cryptocurrency mining infrastructure 
+              software and community management platforms to authorized implementation partners. We do not 
+              directly operate venues, provide consumer services, or handle end-user transactions. All 
+              consumer-facing services are provided by licensed implementation partners who contract 
+              directly with venues and end users.
+            </p>
+          </Section>
+
           {/* Eligibility */}
-          <Section title="2. Eligibility">
+          <Section title="3. Eligibility">
             <ul className="list-disc pl-5 space-y-2 text-neutral-300">
               <li>You must be at least 18 years old (or the age of majority in your jurisdiction).</li>
-              <li>You must be legally permitted to use utility-token products and digital applications where you live.</li>
+              <li>You must be legally authorized to enter into technology licensing agreements.</li>
+              <li>If accessing our technology through an implementation partner, you must comply with their additional terms and eligibility requirements.</li>
               <li>We may require verification steps to confirm eligibility and prevent misuse.</li>
             </ul>
           </Section>
 
           {/* Accounts */}
-          <Section title="3. Accounts & Security">
+          <Section title="4. Accounts & Access">
             <p>
-              You are responsible for the activity that occurs under your account and for maintaining the
-              confidentiality of login credentials and any linked wallet keys. Notify us immediately of any
-              unauthorized use. We may suspend or terminate access to protect users and the network.
+              Access to our technology platform is provided through authorized implementation partners or 
+              direct licensing agreements. You are responsible for maintaining the confidentiality of any 
+              access credentials and for all activity under your account. Notify us immediately of any 
+              unauthorized use. We may suspend or terminate access to protect the integrity of our technology 
+              and licensed partners.
             </p>
           </Section>
 
-          {/* Tokens & Credits */}
-          <Section title="4. Tokens, Credits & Network Utility">
+          {/* Technology Licensing */}
+          <Section title="5. Technology Licensing & Gambino Gold Tokens">
             <p>
-              Gambino uses network credits and utility tokens to enable gameplay, rewards, and access to
-              features (collectively, <strong>“Network Utility”</strong>). Utility tokens are designed for
-              use within the ecosystem—not as investment products. Prices, availability, and features may
-              change over time to maintain fair use and system integrity.
+              Our technology platform utilizes Gambino Gold utility tokens to enable cryptocurrency mining 
+              infrastructure and community governance systems. These tokens provide access to licensed 
+              technology features and are designed for infrastructure utility—not as investment products. 
+              Token functionality, availability, and licensing terms may be modified to maintain system 
+              integrity and regulatory compliance.
             </p>
             <ul className="mt-3 list-disc pl-5 space-y-2 text-neutral-300">
-              <li><strong>Non-custodial or custodial wallets:</strong> You may connect an external wallet or use a wallet provided in-app.</li>
-              <li><strong>Balances:</strong> Balance displays reflect on-chain or synchronized data; minor delays may occur.</li>
-              <li><strong>Transfers & redemptions:</strong> Certain features may be subject to limits, cool-downs, or checks that deter abuse.</li>
+              <li><strong>Licensing Model:</strong> Technology access is provided through authorized implementation partners.</li>
+              <li><strong>Token Utility:</strong> Tokens enable infrastructure access and community governance participation.</li>
+              <li><strong>Implementation Partners:</strong> Licensed partners handle all consumer-facing operations and compliance.</li>
             </ul>
           </Section>
 
-          {/* Gameplay & Rewards */}
-          <Section title="5. Gameplay & Rewards">
+          {/* Implementation Partner Framework */}
+          <Section title="6. Implementation Partners & Service Delivery">
             <p>
-              Our experiences are entertainment products powered by digital utility. Outcomes may involve
-              luck, skill, or a mix of both depending on the experience. Rewards, leaderboards, and perks
-              are granted according to posted rules and may be updated to ensure fairness, transparency,
-              and responsible participation.
+              Our technology is deployed through licensed implementation partners who handle all venue 
+              relationships, consumer services, and operational compliance. Implementation partners are 
+              responsible for local business registration, regulatory compliance, venue operations, and 
+              end-user support. Gambino provides technology licensing and support services only.
             </p>
-          </Section>
-
-          {/* Store Partners */}
-          <Section title="6. Locations & Partner Stores">
-            <p>
-              Partner stores may host devices, tournaments, or promotions. Store-specific rules, availability,
-              and hours can vary. The Services may show store information for convenience; we are not responsible
-              for third-party premises or policies.
-            </p>
-          </Section>
-
-          {/* Fair Use / Prohibited Conduct */}
-          <Section title="7. Fair Use & Prohibited Conduct">
-            <p>To keep the network safe and fair, you agree not to:</p>
             <ul className="mt-3 list-disc pl-5 space-y-2 text-neutral-300">
-              <li>Use bots, exploits, or unauthorized automation.</li>
-              <li>Interfere with, disrupt, or overload the Services or underlying networks.</li>
-              <li>Attempt to bypass permissions, security, or eligibility checks.</li>
-              <li>Engage in fraud, money laundering, or unlawful activity of any kind.</li>
-              <li>Impersonate others or misuse another person’s account or wallet.</li>
+              <li>Implementation partners handle all venue contracts and relationships.</li>
+              <li>Partners are responsible for local regulatory compliance and business registration.</li>
+              <li>Consumer services, support, and dispute resolution are managed by implementation partners.</li>
+              <li>Gambino maintains technology ownership and licensing rights.</li>
             </ul>
           </Section>
 
-          {/* Compliance (plain, non-technical) */}
-          <Section title="8. Responsible Use & Compliance">
+          {/* Technology Use & Restrictions */}
+          <Section title="7. Technology Use & Restrictions">
+            <p>To protect our technology and licensed partners, users agree not to:</p>
+            <ul className="mt-3 list-disc pl-5 space-y-2 text-neutral-300">
+              <li>Reverse engineer, decompile, or attempt to extract our proprietary technology.</li>
+              <li>Use bots, exploits, or unauthorized automation to access our systems.</li>
+              <li>Interfere with, disrupt, or overload our technology infrastructure.</li>
+              <li>Attempt to bypass licensing restrictions or security measures.</li>
+              <li>Engage in fraud, money laundering, or unlawful activity through our technology.</li>
+              <li>Sublicense or redistribute our technology without explicit authorization.</li>
+            </ul>
+          </Section>
+
+          {/* Compliance & Regulatory Framework */}
+          <Section title="8. Regulatory Compliance & Cooperation">
             <p>
-              We operate with a commitment to responsible use and transparency. We may implement
-              identity checks, activity monitoring, and reasonable limits to protect users and the
-              network. Where required, we cooperate with lawful requests from authorities.
+              Our technology is designed to support regulatory compliance and transparency. Implementation 
+              partners are responsible for ensuring local regulatory compliance in their operating 
+              jurisdictions. We may implement additional monitoring, verification, or reporting features 
+              to support compliance requirements. We cooperate with lawful requests from authorities 
+              related to our technology licensing activities.
             </p>
           </Section>
 
-          {/* Fees */}
-          <Section title="9. Fees & Pricing">
+          {/* Licensing Fees & Technology Access */}
+          <Section title="9. Licensing Fees & Technology Access">
             <p>
-              Some activities may include fees (for example, purchases, blockchain network fees, or
-              premium features). Posted rates and in-app confirmations will apply. Taxes, if any, are
-              your responsibility based on your location and applicable laws.
+              Technology licensing may include fees for software access, maintenance, support, and updates. 
+              Implementation partners handle all consumer-facing fees and transactions. Posted licensing 
+              rates and partner agreements govern our fee structure. Taxes related to licensing 
+              arrangements are the responsibility of the contracting party based on applicable laws.
             </p>
           </Section>
 
-          {/* IP */}
-          <Section title="10. Intellectual Property">
+          {/* Intellectual Property */}
+          <Section title="10. Intellectual Property & Technology Ownership">
             <p>
-              The Services, including the brand, content, software, and visual design, are protected by
-              intellectual-property laws. You may not copy, modify, distribute, or create derivative works
-              except as expressly permitted by us or by law.
+              All technology, software, algorithms, designs, content, and intellectual property remain 
+              the exclusive property of Gambino. Licensed partners receive limited usage rights as 
+              specified in their licensing agreements. No transfer of ownership occurs through licensing. 
+              Unauthorized use, copying, modification, or distribution of our technology is strictly prohibited.
             </p>
           </Section>
 
-          {/* Third-Party Services */}
-          <Section title="11. Third-Party Services & Links">
+          {/* Third-Party Integrations */}
+          <Section title="11. Third-Party Services & Integrations">
             <p>
-              The Services may link to third-party sites, wallets, or block explorers. We do not control
-              or endorse third-party services and are not responsible for their content, policies, or
-              performance. Use them at your discretion.
+              Our technology may integrate with third-party blockchain networks, payment processors, 
+              or compliance services. We do not control third-party services and are not responsible 
+              for their performance, policies, or availability. Implementation partners and end users 
+              access third-party services at their own discretion and subject to those providers' terms.
             </p>
           </Section>
 
           {/* Disclaimers */}
-          <Section title="12. Disclaimers">
+          <Section title="12. Technology Disclaimers">
             <p>
-              The Services are provided on an “as is” and “as available” basis without warranties of any
-              kind, express or implied, including fitness for a particular purpose, merchantability, or
-              non-infringement. We do not guarantee uninterrupted or error-free operation, specific
-              outcomes, or that any issue will be corrected.
+              Our technology is provided on an "as is" and "as available" basis without warranties of 
+              any kind, express or implied, including fitness for a particular purpose, merchantability, 
+              or non-infringement. We do not guarantee uninterrupted operation, specific outcomes, or 
+              that all issues will be corrected. Implementation partners assume responsibility for 
+              service delivery to end users.
             </p>
           </Section>
 
-          {/* Liability */}
+          {/* Limitation of Liability */}
           <Section title="13. Limitation of Liability">
             <p>
-              To the maximum extent permitted by law, Gambino and its affiliates will not be liable for any
-              indirect, incidental, special, consequential, exemplary, or punitive damages, or for lost
-              profits or data, arising from or related to your use of the Services.
+              To the maximum extent permitted by law, Gambino and its affiliates will not be liable for 
+              any indirect, incidental, special, consequential, exemplary, or punitive damages, or for 
+              lost profits or data, arising from technology licensing or implementation partner activities.
             </p>
             <p className="mt-3">
-              Our total liability for any claim will not exceed the amount you paid to use the Services
-              in the twelve (12) months prior to the event giving rise to the claim, or one hundred U.S.
-              dollars (US$100), whichever is greater.
+              Our total liability for any claim related to technology licensing will not exceed the 
+              amount paid for licensing services in the twelve (12) months prior to the event giving 
+              rise to the claim, or one hundred U.S. dollars (US$100), whichever is greater.
             </p>
           </Section>
 
-          {/* Suspension / Termination */}
-          <Section title="14. Suspension & Termination">
+          {/* License Termination */}
+          <Section title="14. License Suspension & Termination">
             <p>
-              We may suspend or terminate access if we believe a violation of these Terms has occurred,
-              to protect users and the network, or as required by law. You may stop using the Services
-              at any time. Certain provisions survive termination, including ownership, disclaimers, and
-              limitations of liability.
+              We may suspend or terminate technology access if we believe a violation of these Terms 
+              or licensing agreements has occurred, to protect our intellectual property, or as required 
+              by law. Implementation partners may terminate their licensing agreements according to 
+              contract terms. Certain provisions survive termination, including intellectual property 
+              rights, disclaimers, and limitations of liability.
             </p>
           </Section>
 
-          {/* Changes */}
-          <Section title="15. Changes to the Services or Terms">
+          {/* Updates & Modifications */}
+          <Section title="15. Technology Updates & Terms Modifications">
             <p>
-              We may update the Services and these Terms to improve performance, enhance security, or
-              reflect operational or legal changes. If updates materially affect your rights, we will
-              provide reasonable notice. Continued use after updates constitutes acceptance.
+              We may update our technology and these Terms to improve performance, enhance security, add 
+              features, or reflect legal changes. Material updates affecting licensing rights will be 
+              communicated to implementation partners with reasonable notice. Continued use of our 
+              technology after updates constitutes acceptance of modified terms.
             </p>
           </Section>
 
           {/* Governing Law / Dispute Resolution */}
           <Section title="16. Governing Law & Dispute Resolution">
             <p>
-              These Terms are governed by the laws of the State of Tennessee, excluding its conflict-of-law
-              rules. You agree to first attempt to resolve any dispute with us informally. If we cannot
-              resolve a dispute, the parties agree to binding arbitration on an individual basis in
-              Tennessee, unless you opt-out in writing within 30 days of accepting these Terms. Class
+              These Terms are governed by the laws of the State of Florida, excluding its conflict-of-law 
+              rules. You agree to first attempt to resolve any dispute with us informally. If we cannot 
+              resolve a dispute, the parties agree to binding arbitration on an individual basis in 
+              Florida, unless you opt-out in writing within 30 days of accepting these Terms. Class 
               actions are not permitted.
             </p>
           </Section>
 
           {/* Contact */}
-          <Section title="17. Contact">
+          <Section title="17. Contact Information">
             <p>
-              Questions about these Terms? Reach us at&nbsp;
+              Questions about these Terms or our technology licensing services? Contact us at&nbsp;
               <a href="mailto:support@gambino.gold" className="text-yellow-400 hover:text-yellow-300 underline decoration-dotted">
                 support@gambino.gold
               </a>.
@@ -236,11 +288,11 @@ export default function TermsPage() {
               </Link>
               <span className="text-neutral-700">•</span>
               <Link href="/legal/disclosures" className="text-neutral-300 hover:text-white underline decoration-dotted">
-                Disclosures
+                Technology Disclosures
               </Link>
               <span className="text-neutral-700">•</span>
-              <Link href="/legal/cookies" className="text-neutral-300 hover:text-white underline decoration-dotted">
-                Cookie Preferences
+              <Link href="/compliance" className="text-neutral-300 hover:text-white underline decoration-dotted">
+                Compliance Framework
               </Link>
             </div>
           </div>
@@ -251,7 +303,6 @@ export default function TermsPage() {
   )
 }
 
-/** ---------- Small presentational helper ---------- */
 function Section({ title, children }) {
   return (
     <section className="mb-10">

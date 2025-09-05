@@ -52,239 +52,205 @@ export default function Home() {
         <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-amber-400/15 to-transparent"></div>
       </div>
       
-      {/* HERO SECTION - FOCUSED & CLEAR */}
+ {/* HERO SECTION */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-24 text-center">
         <div className="mx-auto max-w-4xl">
-          {/* Trust indicator */}
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/5 px-4 py-2 text-sm text-green-400">
-            <div className="h-2 w-2 rounded-full bg-green-500"></div>
-            Infrastructure Provider • Regulatory Compliant • Community Focused
+          {/* Welcoming badge */}
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-yellow-500/30 bg-yellow-500/5 px-4 py-2 text-sm text-yellow-400">
+            <div className="h-2 w-2 rounded-full bg-yellow-500"></div>
+            Community-Powered Mining Network
           </div>
           
           <h1 className="text-5xl font-extrabold tracking-tight lg:text-7xl mb-6">
-            <span className="text-white">Cryptocurrency Mining</span>{' '}
+            <span className="text-white">Mining Infrastructure</span>{' '}
             <span className="bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent">
-              Infrastructure
+              That Works for Everyone
             </span>
           </h1>
           
-          <p className="text-2xl text-neutral-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-            We provide compliance technology that transforms venue hardware into 
-            transparent, community-benefiting cryptocurrency mining operations.
+          <p className="text-xl text-neutral-300 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Gambino Gold connects venues with mining infrastructure and token holders with mining access. 
+            Building sustainable community wealth through transparent, distributed cryptocurrency operations.
           </p>
-          
-          {/* Clear, focused CTAs */}
-          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center mb-6">
+
+          {/* Dual CTAs */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="/utility-token-gaming"
+              className="group relative overflow-hidden rounded-xl bg-gradient-to-r from-yellow-500 to-amber-500 px-8 py-4 text-lg font-bold text-black transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/25"
+            >
+              <span className="relative z-10">Learn How It Works</span>
+            </a>
             <a
               href="https://app.gambino.gold"
-              className="rounded-lg bg-gradient-to-r from-yellow-500 to-amber-600 px-8 py-4 text-lg font-semibold text-black hover:brightness-110 transition-all duration-300 shadow-lg shadow-yellow-500/25"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl border border-yellow-500/50 bg-transparent px-8 py-4 text-lg font-semibold text-yellow-500 transition-all duration-300 hover:bg-yellow-500/10 hover:border-yellow-500"
             >
-              Access Platform
+              Access Network
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW IT WORKS - DUAL AUDIENCE */}
+      <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-white mb-4">
+            Two Ways to <span className="text-yellow-500">Participate</span>
+          </h2>
+          <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
+            Whether you&apos;re a venue looking to host or a token holder seeking access, 
+            our network creates value for your community.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* For Venues */}
+          <div className="bg-neutral-900/50 backdrop-blur-sm rounded-2xl p-8 border border-neutral-800 hover:border-yellow-500/30 transition-all duration-300">
+            <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-amber-500 rounded-xl flex items-center justify-center mb-6">
+              <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-4">For Venues</h3>
+            <p className="text-neutral-300 mb-6 leading-relaxed">
+              Transform your space into a revenue-generating mining operation. We provide the technology, 
+              compliance framework, and ongoing support to help your business participate in the crypto economy.
+            </p>
+            <ul className="space-y-3 text-neutral-400 mb-6">
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Complete infrastructure setup and management</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Regulatory compliance and transparent operations</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Community benefit programs and local impact</span>
+              </li>
+            </ul>
+            <a 
+              href="/compliance" 
+              className="inline-flex items-center gap-2 text-yellow-500 hover:text-yellow-400 transition-colors font-semibold"
+            >
+              Learn About Hosting
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+          {/* For Token Holders */}
+          <div className="bg-neutral-900/50 backdrop-blur-sm rounded-2xl p-8 border border-neutral-800 hover:border-yellow-500/30 transition-all duration-300">
+            <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-xl flex items-center justify-center mb-6">
+              <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-4">For Token Holders</h3>
+            <p className="text-neutral-300 mb-6 leading-relaxed">
+              Use your Gambino Gold utility tokens to access distributed mining capacity across our network. 
+              Participate in community-focused mining operations with full transparency.
+            </p>
+            <ul className="space-y-3 text-neutral-400 mb-6">
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Access to distributed mining network capacity</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Transparent operations and real-time reporting</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-1.5 h-1.5 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                <span>Community governance and decision making</span>
+              </li>
+            </ul>
+            <a 
+              href="/dao-governance" 
+              className="inline-flex items-center gap-2 text-yellow-500 hover:text-yellow-400 transition-colors font-semibold"
+            >
+              Join the Network
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* TRUST & VALUES */}
+      <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-white mb-8">
+            Built on <span className="text-yellow-500">Trust & Transparency</span>
+          </h2>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-6 h-6 bg-green-500 rounded-full"></div>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Regulatory Compliant</h3>
+              <p className="text-neutral-400 text-sm">
+                Full compliance framework ensuring legitimate, transparent operations
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-6 h-6 bg-blue-500 rounded-full"></div>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Community Focused</h3>
+              <p className="text-neutral-400 text-sm">
+                Every operation designed to benefit local communities and participants
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-6 h-6 bg-purple-500 rounded-full"></div>
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Built with Care</h3>
+              <p className="text-neutral-400 text-sm">
+                Thoughtfully designed infrastructure that prioritizes simplicity and reliability
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="relative z-10 mx-auto max-w-4xl px-6 py-16 text-center">
+        <div className="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 rounded-2xl p-8 border border-yellow-500/20">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Ready to Join the Network?
+          </h2>
+          <p className="text-lg text-neutral-300 mb-8">
+            Whether you&apos;re looking to license our infrastructure technology or access the network with utility tokens, 
+            we&apos;re here to help you get started.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="/utility-token-gaming"
+              className="rounded-xl bg-gradient-to-r from-yellow-500 to-amber-500 px-8 py-3 font-bold text-black transition-all duration-300 hover:shadow-lg hover:shadow-yellow-500/25"
+            >
+              Explore Platform
             </a>
             <a
-              href="/legal/whitepaper"
-              className="rounded-lg border border-neutral-600 px-8 py-4 text-lg font-semibold hover:border-yellow-500/50 transition-all duration-300"
+              href="https://app.gambino.gold"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl border border-yellow-500 bg-transparent px-8 py-3 font-semibold text-yellow-500 transition-all duration-300 hover:bg-yellow-500/10"
             >
-              Read Documentation
-            </a>
-          </div>
-          
-          <p className="text-sm text-neutral-500">
-            Infrastructure service provider • Not a machine operator or venue owner
-          </p>
-        </div>
-      </section>
-
-      {/* WHAT WE DO - SIMPLIFIED 3-CARD LAYOUT */}
-      <section className="relative z-10 mx-auto max-w-6xl px-6 py-20">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            What We <span className="text-yellow-500">Provide</span>
-          </h2>
-          <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
-            Three core infrastructure services for compliant cryptocurrency mining operations.
-          </p>
-        </div>
-        
-        <div className="grid gap-8 lg:grid-cols-3">
-          {/* Mining Technology */}
-          <div className="rounded-xl border border-blue-500/20 bg-gradient-to-br from-blue-950/30 to-neutral-950/80 backdrop-blur-sm p-8 text-center">
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-xl bg-blue-500/10">
-              <Image
-                src="/gold-production.png"
-                alt="Mining Technology"
-                width={32}
-                height={32}
-                className="object-contain"
-              />
-            </div>
-            
-            <h3 className="text-xl font-bold text-white mb-4">Mining Technology</h3>
-            <p className="text-neutral-400 mb-6">
-              Proof-of-luck mining software that converts traditional hardware into 
-              transparent cryptocurrency mining operations.
-            </p>
-            
-            <a href="/utility-token-gaming" className="text-blue-400 font-semibold hover:text-blue-300 transition-colors">
-              Learn More →
-            </a>
-          </div>
-
-          {/* Compliance Tools */}
-          <div className="rounded-xl border border-green-500/20 bg-gradient-to-br from-green-950/30 to-neutral-950/80 backdrop-blur-sm p-8 text-center">
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-xl bg-green-500/10">
-              <Image
-                src="/gold-utilities.png"
-                alt="Compliance Tools"
-                width={32}
-                height={32}
-                className="object-contain"
-              />
-            </div>
-            
-            <h3 className="text-xl font-bold text-white mb-4">Compliance Systems</h3>
-            <p className="text-neutral-400 mb-6">
-              Automated regulatory reporting and transparent audit trails for 
-              complete compliance cooperation.
-            </p>
-            
-            <a href="/compliance" className="text-green-400 font-semibold hover:text-green-300 transition-colors">
-              Learn More →
-            </a>
-          </div>
-
-          {/* Community Management */}
-          <div className="rounded-xl border border-yellow-500/20 bg-gradient-to-br from-yellow-950/30 to-neutral-950/80 backdrop-blur-sm p-8 text-center">
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-xl bg-yellow-500/10">
-              <Image
-                src="/gold-file.png"
-                alt="Community Systems"
-                width={32}
-                height={32}
-                className="object-contain"
-              />
-            </div>
-            
-            <h3 className="text-xl font-bold text-white mb-4">Community Systems</h3>
-            <p className="text-neutral-400 mb-6">
-              Automated allocation of mining rewards to local projects and 
-              community governance initiatives.
-            </p>
-            
-            <a href="/dao-governance" className="text-yellow-400 font-semibold hover:text-yellow-300 transition-colors">
-              Learn More →
+              Access Network
             </a>
           </div>
         </div>
       </section>
-
-      {/* HOW IT WORKS - SIMPLE 3-STEP PROCESS */}
-      <section className="relative z-10 mx-auto max-w-6xl px-6 py-20">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            How It <span className="text-yellow-500">Works</span>
-          </h2>
-          <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
-            Simple process for venues to integrate our cryptocurrency mining infrastructure.
-          </p>
-        </div>
-        
-        <div className="grid gap-12 md:grid-cols-3">
-          <div className="text-center">
-            <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 text-2xl font-bold text-white">
-              1
-            </div>
-            <h3 className="text-2xl font-bold text-white mb-4">Integration</h3>
-            <p className="text-neutral-400 text-lg">
-              Venues install our mining infrastructure software on existing hardware systems.
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-green-500 to-blue-500 text-2xl font-bold text-white">
-              2
-            </div>
-            <h3 className="text-2xl font-bold text-white mb-4">Operation</h3>
-            <p className="text-neutral-400 text-lg">
-              Community participants engage with proof-of-luck mining protocols creating transparent activity.
-            </p>
-          </div>
-          
-          <div className="text-center">
-            <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-yellow-500 to-amber-600 text-2xl font-bold text-white">
-              3
-            </div>
-            <h3 className="text-2xl font-bold text-white mb-4">Distribution</h3>
-            <p className="text-neutral-400 text-lg">
-              Mining rewards automatically flow to community projects and local initiatives.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* SOCIAL PROOF - SIMPLE METRICS */}
-      <section className="relative z-10 mx-auto max-w-6xl px-6 py-20">
-        <div className="rounded-2xl border border-neutral-800 bg-gradient-to-br from-neutral-950/90 to-neutral-900/50 backdrop-blur-sm p-12">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Built for <span className="text-yellow-500">Trust & Transparency</span>
-            </h2>
-            <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
-              Our infrastructure operates with complete regulatory transparency and community focus.
-            </p>
-          </div>
-          
-          <div className="grid gap-8 md:grid-cols-4 text-center">
-            <div>
-              <div className="text-4xl font-bold text-blue-400 mb-2">7</div>
-              <div className="text-neutral-400">States with Regulatory Dialogue</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-green-400 mb-2">100%</div>
-              <div className="text-neutral-400">Transaction Transparency</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-yellow-400 mb-2">$2.1M</div>
-              <div className="text-neutral-400">Community Benefit Generated</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-purple-400 mb-2">$0</div>
-              <div className="text-neutral-400">Regulatory Violations</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FINAL CTA - CLEAN & FOCUSED */}
-      <section className="relative z-10 mx-auto max-w-4xl px-6 py-24 text-center">
-        <h2 className="text-4xl font-bold text-white lg:text-5xl mb-6">
-          Ready to Get <span className="text-yellow-500">Started</span>?
-        </h2>
-        <p className="text-xl text-neutral-300 mb-8 max-w-2xl mx-auto">
-          Transform your venue into a community-benefiting cryptocurrency mining operation 
-          with our compliant infrastructure technology.
-        </p>
-        
-        <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-          <a 
-            href="https://app.gambino.gold"
-            className="rounded-lg bg-gradient-to-r from-yellow-500 to-amber-600 px-8 py-4 text-lg font-semibold text-black hover:brightness-110 transition-all duration-300"
-          >
-            Access Platform
-          </a>
-          <a 
-            href="/utility-token-gaming"
-            className="rounded-lg border border-neutral-600 px-8 py-4 text-lg font-semibold hover:border-yellow-500/50 transition-all duration-300"
-          >
-            Learn About Our Services
-          </a>
-        </div>
-        
-        <p className="mt-6 text-sm text-neutral-500">
-          Infrastructure service provider for venue-based cryptocurrency mining operations
-        </p>
-      </section>
-
     </main>
   )
 }

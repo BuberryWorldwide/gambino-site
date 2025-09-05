@@ -121,8 +121,8 @@ export default function Footer() {
           </div>
           
           <div className="flex flex-wrap gap-4 text-xs">
-            <span>Delaware C-Corp • EIN: [TBD]</span>
-            <span>MSB Registration: [TBD]</span>
+            <span></span>
+            <span></span>
           </div>
         </div>
         

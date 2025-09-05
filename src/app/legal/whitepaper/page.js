@@ -1,46 +1,35 @@
 // app/legal/whitepaper/page.js
-import Link from 'next/link'
+'use client';
 
-export const metadata = {
-  title: 'Gambino White Paper • Farm Luck. Mine Destiny.',
-  description:
-    'Gambino provides cryptocurrency mining infrastructure technology that enables community wealth creation through transparent, compliant token mining operations.'
-}
+import Link from 'next/link'
+import { useTheme } from '../../components/ThemeProvider'
+import { getThemeStyles, BackgroundEffects } from '../../styles/themeStyles'
 
 export default function WhitepaperPage() {
+  const { isDark } = useTheme();
+  const styles = getThemeStyles(isDark);
+
   return (
-    <main className="min-h-dvh bg-black text-neutral-100 relative overflow-hidden">
-      {/* Subtle ambient background */}
-      <div className="pointer-events-none absolute inset-0 z-0">
-        <div className="absolute top-0 right-[-10%] w-[38rem] h-[38rem] bg-gradient-to-br from-yellow-500/10 to-amber-600/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-[-10%] left-[-10%] w-[32rem] h-[32rem] bg-gradient-to-tr from-amber-500/10 to-yellow-500/5 rounded-full blur-3xl" />
-        <div className="absolute inset-0 opacity-[0.12]">
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage:
-                'radial-gradient(circle at 1px 1px, rgba(234,179,8,0.25) 1px, transparent 0)',
-              backgroundSize: '64px 64px'
-            }}
-          />
-        </div>
-      </div>
+    <main className={styles.layout.main}>
+      <BackgroundEffects isDark={isDark} />
 
       {/* HERO */}
-      <section className="relative z-10 border-b border-neutral-900">
+      <section className={`relative z-10 border-b ${
+        isDark ? 'border-neutral-900' : 'border-neutral-200'
+      }`}>
         <div className="mx-auto max-w-6xl px-6 py-20 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/60 px-4 py-2 text-sm text-neutral-300">
-            <div className="h-2 w-2 rounded-full bg-yellow-500" />
+          <div className={styles.badges.primary}>
+            <div className={`h-2 w-2 rounded-full ${styles.badges.dot}`} />
             White Paper
           </div>
-          <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-white lg:text-5xl">
+          <h1 className={`mt-6 text-4xl font-extrabold tracking-tight lg:text-5xl ${styles.text.primary}`}>
             Farm Luck. Mine Destiny.
           </h1>
-          <p className="mx-auto mt-4 max-w-3xl text-neutral-400">
+          <p className={`mx-auto mt-4 max-w-3xl ${styles.text.secondary}`}>
             Gambino provides cryptocurrency mining infrastructure technology that transforms traditional hardware into 
             community wealth engines through transparent, compliant token mining operations and governance systems.
           </p>
-          <p className="mx-auto mt-2 max-w-2xl text-sm text-neutral-500">
+          <p className={`mx-auto mt-2 max-w-2xl text-sm ${styles.text.tertiary}`}>
             Last updated: August 26, 2025
           </p>
         </div>
@@ -50,25 +39,25 @@ export default function WhitepaperPage() {
       <section className="relative z-10">
         <div className="mx-auto max-w-3xl px-6 py-14 leading-relaxed">
           {/* Table of Contents */}
-          <div className="mb-12 rounded-xl border border-neutral-800 bg-neutral-950 p-5">
-            <div className="text-sm text-neutral-300 font-semibold mb-3">Contents</div>
-            <ol className="list-decimal pl-5 space-y-2 text-neutral-400 text-sm">
-              <li><a className="hover:text-yellow-400" href="#exec">Executive Summary</a></li>
-              <li><a className="hover:text-yellow-400" href="#problem">Problem Statement</a></li>
-              <li><a className="hover:text-yellow-400" href="#solution">The Gambino Solution</a></li>
-              <li><a className="hover:text-yellow-400" href="#infrastructure">Mining Infrastructure Technology</a></li>
-              <li><a className="hover:text-yellow-400" href="#tokenomics">Tokenomics Overview</a></li>
-              <li><a className="hover:text-yellow-400" href="#economy">Economic Model</a></li>
-              <li><a className="hover:text-yellow-400" href="#governance">Community Governance Framework</a></li>
-              <li><a className="hover:text-yellow-400" href="#community">Community Wealth Distribution</a></li>
-              <li><a className="hover:text-yellow-400" href="#compliance">Compliance & Risk</a></li>
-              <li><a className="hover:text-yellow-400" href="#architecture">System Architecture Overview</a></li>
-              <li><a className="hover:text-yellow-400" href="#roadmap">Roadmap</a></li>
-              <li><a className="hover:text-yellow-400" href="#notice">Legal Notice</a></li>
+          <div className={`mb-12 ${styles.layout.card}`}>
+            <div className={`text-sm font-semibold mb-3 ${styles.text.secondary}`}>Contents</div>
+            <ol className={`list-decimal pl-5 space-y-2 text-sm ${styles.text.tertiary}`}>
+              <li><a className={`${styles.text.accentHover}`} href="#exec">Executive Summary</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#problem">Problem Statement</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#solution">The Gambino Solution</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#infrastructure">Mining Infrastructure Technology</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#tokenomics">Tokenomics Overview</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#economy">Economic Model</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#governance">Community Governance Framework</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#community">Community Wealth Distribution</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#compliance">Compliance & Risk</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#architecture">System Architecture Overview</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#roadmap">Roadmap</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#notice">Legal Notice</a></li>
             </ol>
           </div>
 
-          <Section id="exec" title="Executive Summary">
+          <Section id="exec" title="Executive Summary" styles={styles}>
             <p>
               Gambino reimagines cryptocurrency mining infrastructure as <strong>community wealth engines</strong>.
               Our technology licensing platform enables implementation partners to operate transparent mining 
@@ -83,7 +72,7 @@ export default function WhitepaperPage() {
             </ul>
           </Section>
 
-          <Section id="problem" title="1. Problem Statement">
+          <Section id="problem" title="1. Problem Statement" styles={styles}>
             <p>
               Traditional cryptocurrency mining operations lack <strong>community integration</strong> and transparent 
               benefit distribution. Value flows to large mining pools while local communities see no direct benefit 
@@ -91,7 +80,7 @@ export default function WhitepaperPage() {
             </p>
           </Section>
 
-          <Section id="solution" title="2. The Gambino Solution">
+          <Section id="solution" title="2. The Gambino Solution" styles={styles}>
             <p>
               Gambino provides technology that converts standard hardware into <strong>community-focused mining infrastructure</strong>. 
               Mining operations <em>burn</em> tokens (creating scarcity), rewards <em>emit</em> tokens from finite reserves 
@@ -105,7 +94,7 @@ export default function WhitepaperPage() {
             </ul>
           </Section>
 
-          <Section id="infrastructure" title="3. Mining Infrastructure Technology">
+          <Section id="infrastructure" title="3. Mining Infrastructure Technology" styles={styles}>
             <p>
               The core innovation is <strong>technological</strong> and <strong>operational</strong>: hardware no longer 
               serves only individual miners; it <strong>mines</strong> community value through our licensed infrastructure.
@@ -118,7 +107,7 @@ export default function WhitepaperPage() {
             </ul>
           </Section>
 
-          <Section id="tokenomics" title="4. Tokenomics Overview">
+          <Section id="tokenomics" title="4. Tokenomics Overview" styles={styles}>
             <p>
               Gambino has a <strong>capped supply of 777,000,000</strong> tokens distributed across mining rewards, 
               community allocation, governance participation, and network operations. Our deflationary mechanics 
@@ -132,7 +121,7 @@ export default function WhitepaperPage() {
             </ul>
           </Section>
 
-          <Section id="economy" title="5. Economic Model">
+          <Section id="economy" title="5. Economic Model" styles={styles}>
             <p>
               Gambino distinguishes between <strong>internal circulation</strong> (wallet-to-wallet transfers, stipends, 
               community fund routing) and <strong>market-forming events</strong> (token acquisition, mining rewards, 
@@ -152,7 +141,7 @@ export default function WhitepaperPage() {
             </p>
           </Section>
 
-          <Section id="governance" title="6. Community Governance Framework">
+          <Section id="governance" title="6. Community Governance Framework" styles={styles}>
             <p>
               Governance participation is earned through <strong>network contribution</strong> and <strong>community engagement</strong>, 
               not just token holdings. Participation tiers are based on mining activity, governance participation, 
@@ -163,12 +152,12 @@ export default function WhitepaperPage() {
               <li><strong>Tier 2 – Network Managers:</strong> oversee operational parameters and community fund allocation; subject to steward approval.</li>
               <li><strong>Tier 1 – Protocol Stewards (7):</strong> long-term guardians of mission alignment and major technology decisions.</li>
             </ul>
-            <p className="text-sm text-neutral-400">
+            <p className={`text-sm ${styles.text.tertiary}`}>
               DAO voting power derives from network contribution, community engagement, and governance participation — not capital deposits alone.
             </p>
           </Section>
 
-          <Section id="community" title="7. Community Wealth Distribution">
+          <Section id="community" title="7. Community Wealth Distribution" styles={styles}>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>0.5% of mining proceeds → Community Development Fund:</strong> local infrastructure and benefit programs near implementation partner locations.</li>
               <li><strong>0.5% of mining proceeds → Governance Pool:</strong> stipends for active DAO participants who ensure accountability and transparency.</li>
@@ -179,7 +168,7 @@ export default function WhitepaperPage() {
             </p>
           </Section>
 
-          <Section id="compliance" title="8. Compliance & Risk">
+          <Section id="compliance" title="8. Compliance & Risk" styles={styles}>
             <p>
               Gambino operates as a <strong>utility-token mining infrastructure provider</strong> with traceable activity and 
               standardized records for taxation and regulatory oversight. The system incorporates identity verification, 
@@ -192,7 +181,7 @@ export default function WhitepaperPage() {
             </ul>
           </Section>
 
-          <Section id="architecture" title="9. System Architecture Overview">
+          <Section id="architecture" title="9. System Architecture Overview" styles={styles}>
             <p>
               The Gambino Network uses a <strong>modular, scalable architecture</strong> designed for low-cost operations, 
               verifiable accounting, and jurisdictional adaptability while maintaining technology licensing control.
@@ -206,7 +195,7 @@ export default function WhitepaperPage() {
             </ul>
           </Section>
 
-          <Section id="roadmap" title="10. Roadmap">
+          <Section id="roadmap" title="10. Roadmap" styles={styles}>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Phase 1:</strong> Implementation partner onboarding, community partnerships, compliance validation.</li>
               <li><strong>Phase 2:</strong> Multi-jurisdiction expansion and full Community Scout program activation.</li>
@@ -215,18 +204,18 @@ export default function WhitepaperPage() {
             </ul>
           </Section>
 
-          <Section id="notice" title="11. Legal Notice">
-            <p className="text-neutral-300">
+          <Section id="notice" title="11. Legal Notice" styles={styles}>
+            <p className={styles.text.secondary}>
               This document is for informational purposes only and does not constitute an offer of securities 
               or solicitation for investment. Features described herein may evolve to preserve compliance, 
               community benefit, and system integrity. Refer to our{' '}
-              <Link href="/legal/terms" className="text-yellow-400 hover:text-yellow-300 underline decoration-dotted">
+              <Link href="/legal/terms" className={`${styles.text.accent} ${styles.text.accentHover} underline decoration-dotted`}>
                 Terms of Service
               </Link>,{' '}
-              <Link href="/legal/privacy" className="text-yellow-400 hover:text-yellow-300 underline decoration-dotted">
+              <Link href="/legal/privacy" className={`${styles.text.accent} ${styles.text.accentHover} underline decoration-dotted`}>
                 Privacy Policy
               </Link>, and{' '}
-              <Link href="/legal/disclosures" className="text-yellow-400 hover:text-yellow-300 underline decoration-dotted">
+              <Link href="/legal/disclosures" className={`${styles.text.accent} ${styles.text.accentHover} underline decoration-dotted`}>
                 Disclosures
               </Link>{' '}
               for additional details.
@@ -235,7 +224,7 @@ export default function WhitepaperPage() {
 
           {/* Back to top */}
           <div className="mt-12 flex justify-end">
-            <a href="#top" className="text-sm text-neutral-400 hover:text-yellow-400 underline decoration-dotted">
+            <a href="#top" className={`text-sm underline decoration-dotted ${styles.text.tertiary} ${styles.text.accentHover}`}>
               Back to top
             </a>
           </div>
@@ -245,11 +234,11 @@ export default function WhitepaperPage() {
   )
 }
 
-function Section({ id, title, children }) {
+function Section({ id, title, children, styles }) {
   return (
     <section id={id} className="mb-10 scroll-mt-24">
-      <h2 className="text-xl font-bold text-white">{title}</h2>
-      <div className="mt-3 text-neutral-300 space-y-3">{children}</div>
+      <h2 className={`text-xl font-bold ${styles.text.primary}`}>{title}</h2>
+      <div className={`mt-3 space-y-3 ${styles.text.secondary}`}>{children}</div>
     </section>
   )
 }

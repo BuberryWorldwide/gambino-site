@@ -66,8 +66,8 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* For Implementation Partners */}
           <div className={styles.layout.card}>
-            <div className={`w-16 h-16 mb-6 ${styles.icons.primary}`}>
-              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <div className={`w-16 h-16 mb-6 rounded-xl flex items-center justify-center ${isDark ? 'bg-yellow-500/20' : 'bg-yellow-600/20'}`}>
+              <svg className={`w-8 h-8 ${styles.text.accent}`} fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
               </svg>
             </div>
@@ -103,8 +103,8 @@ export default function Home() {
 
           {/* For Token Holders */}
           <div className={styles.layout.card}>
-            <div className={`w-16 h-16 mb-6 ${styles.icons.secondary}`}>
-              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <div className={`w-16 h-16 mb-6 rounded-xl flex items-center justify-center ${isDark ? 'bg-amber-500/20' : 'bg-amber-600/20'}`}>
+              <svg className={`w-8 h-8 ${isDark ? 'text-amber-400' : 'text-amber-600'}`} fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>
             </div>
@@ -150,8 +150,10 @@ export default function Home() {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className={`w-12 h-12 mx-auto mb-4 ${styles.badges.success}`}>
-                <div className="w-6 h-6 bg-green-500 rounded-full"></div>
+              <div className={`w-12 h-12 mx-auto mb-4 rounded-lg flex items-center justify-center ${isDark ? 'bg-green-500/20' : 'bg-green-500/10'}`}>
+                <svg className={`w-6 h-6 ${isDark ? 'text-green-400' : 'text-green-600'}`} fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
               </div>
               <h3 className={`text-lg font-semibold mb-2 ${styles.text.primary}`}>Regulatory Compliant</h3>
               <p className={`text-sm ${styles.text.tertiary}`}>
@@ -160,8 +162,10 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className={`w-12 h-12 mx-auto mb-4 ${styles.badges.info}`}>
-                <div className="w-6 h-6 bg-blue-500 rounded-full"></div>
+              <div className={`w-12 h-12 mx-auto mb-4 rounded-lg flex items-center justify-center ${isDark ? 'bg-blue-500/20' : 'bg-blue-500/10'}`}>
+                <svg className={`w-6 h-6 ${isDark ? 'text-blue-400' : 'text-blue-600'}`} fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
               </div>
               <h3 className={`text-lg font-semibold mb-2 ${styles.text.primary}`}>Community Focused</h3>
               <p className={`text-sm ${styles.text.tertiary}`}>
@@ -170,8 +174,10 @@ export default function Home() {
             </div>
             
             <div className="text-center">
-              <div className={`w-12 h-12 mx-auto mb-4 ${styles.badges.warning}`}>
-                <div className="w-6 h-6 bg-purple-500 rounded-full"></div>
+              <div className={`w-12 h-12 mx-auto mb-4 rounded-lg flex items-center justify-center ${isDark ? 'bg-purple-500/20' : 'bg-purple-500/10'}`}>
+                <svg className={`w-6 h-6 ${isDark ? 'text-purple-400' : 'text-purple-600'}`} fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                </svg>
               </div>
               <h3 className={`text-lg font-semibold mb-2 ${styles.text.primary}`}>Built with Care</h3>
               <p className={`text-sm ${styles.text.tertiary}`}>
@@ -193,7 +199,7 @@ export default function Home() {
             we&apos;re here to help you get started.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/utility-token-gaming" className={styles.buttons.small}>
+            <a href="/utility-token-gaming" className={styles.buttons.primary}>
               Explore Platform
             </a>
             <a

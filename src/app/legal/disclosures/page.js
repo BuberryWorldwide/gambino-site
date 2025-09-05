@@ -1,248 +1,190 @@
-import Link from 'next/link'
+// app/legal/disclosures/page.js
+'use client';
 
-export const metadata = {
-  title: 'Disclosures • Gambino',
-  description: 'Gambino Technology Licensing Disclosures'
-}
+import Link from 'next/link'
+import LegalPageLayout, { LegalSection } from '../../components/LegalPageLayout'
+import { useTheme } from '../../components/ThemeProvider'
+import { getThemeStyles } from '../../styles/themeStyles'
 
 export default function DisclosuresPage() {
+  const { isDark } = useTheme();
+  const styles = getThemeStyles(isDark);
+
   return (
-    <main className="min-h-dvh bg-black text-neutral-100 relative overflow-hidden">
-      {/* Standardized Background Effects */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        {/* Floating particles - consistent with homepage */}
-        <div className="absolute top-20 left-10 w-3 h-3 bg-yellow-400/50 rounded-full animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-2 h-2 bg-yellow-300/60 rounded-full animate-pulse delay-1000"></div>
-        <div className="absolute top-60 left-1/3 w-4 h-4 bg-amber-400/40 rounded-full animate-pulse delay-2000"></div>
-        <div className="absolute bottom-40 right-10 w-3 h-3 bg-yellow-500/50 rounded-full animate-pulse delay-3000"></div>
-        <div className="absolute bottom-20 left-20 w-2 h-2 bg-yellow-400/60 rounded-full animate-pulse delay-500"></div>
-        <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-amber-300/50 rounded-full animate-pulse delay-1500"></div>
-        
-        {/* Mid-section particles */}
-        <div className="absolute top-1/2 left-16 w-3 h-3 bg-yellow-500/45 rounded-full animate-pulse delay-2500"></div>
-        <div className="absolute top-3/4 right-32 w-2 h-2 bg-amber-400/55 rounded-full animate-pulse delay-4000"></div>
-        <div className="absolute top-1/4 left-2/3 w-2.5 h-2.5 bg-yellow-300/50 rounded-full animate-pulse delay-3500"></div>
-        <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-yellow-400/60 rounded-full animate-pulse delay-1200"></div>
-        <div className="absolute top-2/3 right-16 w-3 h-3 bg-amber-500/45 rounded-full animate-pulse delay-2800"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-yellow-500/55 rounded-full animate-pulse delay-800"></div>
+    <LegalPageLayout
+      title="Technology Disclosures"
+      subtitle="Important information about risks, limitations, and our technology licensing model."
+      badgeText="Disclosures"
+      lastUpdated="September 4, 2025"
+    >
+      <LegalSection title="1. No Investment or Financial Advice">
+        <p>
+          <strong>Gambino provides technology licensing services, not financial or investment advice.</strong> 
+          Our utility tokens provide access to mining infrastructure, not investment opportunities. 
+          Nothing on our platform should be construed as a recommendation to buy, sell, or hold 
+          any financial instrument.
+        </p>
+      </LegalSection>
 
-        {/* Floating sparkles */}
-        <div className="absolute top-16 left-1/2 w-1 h-1 bg-yellow-200/70 rounded-full animate-ping" style={{animationDuration: '3s', animationDelay: '0.5s'}}></div>
-        <div className="absolute top-3/4 left-1/3 w-1 h-1 bg-amber-200/70 rounded-full animate-ping" style={{animationDuration: '2.5s', animationDelay: '1.2s'}}></div>
-        <div className="absolute bottom-16 right-1/2 w-1 h-1 bg-yellow-100/80 rounded-full animate-ping" style={{animationDuration: '3.5s', animationDelay: '2.1s'}}></div>
-      </div>
+      <LegalSection title="2. Technology Risk Disclosures">
+        <p>
+          Cryptocurrency mining infrastructure involves inherent technical risks:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Hardware Failure:</strong> Mining equipment may malfunction or become obsolete</li>
+          <li><strong>Network Risks:</strong> Blockchain networks may experience congestion or technical issues</li>
+          <li><strong>Software Bugs:</strong> Our technology may contain errors or vulnerabilities</li>
+          <li><strong>Maintenance Downtime:</strong> Regular maintenance may temporarily interrupt services</li>
+        </ul>
+      </LegalSection>
 
-      {/* Background geometric shapes - consistent with homepage */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-yellow-500/12 to-amber-600/8 rounded-full blur-3xl transform translate-x-32 -translate-y-32"></div>
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-amber-600/15 to-yellow-500/8 rounded-full blur-3xl transform -translate-x-24 translate-y-24"></div>
-        <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-gradient-to-br from-yellow-400/8 to-transparent rounded-full blur-2xl"></div>
-        <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-gradient-to-tr from-amber-500/10 to-transparent rounded-full blur-xl"></div>
-        
-        {/* Grid pattern - consistent opacity */}
-        <div className="absolute inset-0 opacity-[0.15]">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(234, 179, 8, 0.3) 1px, transparent 0)`,
-            backgroundSize: '80px 80px'
-          }}></div>
-        </div>
-        
-        {/* Animated geometric shapes */}
-        <div className="absolute top-1/4 left-1/4 w-32 h-32 border border-yellow-500/20 rounded-lg rotate-45 animate-spin" style={{animationDuration: '25s'}}></div>
-        <div className="absolute bottom-1/3 right-1/3 w-24 h-24 border border-amber-400/15 rounded-full animate-ping" style={{animationDuration: '5s'}}></div>
-        <div className="absolute top-3/4 left-2/3 w-20 h-20 border-2 border-yellow-300/12 rounded-lg rotate-12 animate-pulse" style={{animationDuration: '6s'}}></div>
-        
-        {/* Moving lines */}
-        <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-500/20 to-transparent"></div>
-        <div className="absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-amber-400/15 to-transparent"></div>
-      </div>
+      <LegalSection title="3. Market Risk Disclosures">
+        <p>
+          Cryptocurrency markets are highly volatile and unpredictable:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Price Volatility:</strong> Token values can fluctuate dramatically</li>
+          <li><strong>Mining Profitability:</strong> Mining rewards vary with market conditions and network difficulty</li>
+          <li><strong>Regulatory Changes:</strong> Government regulations may impact operations</li>
+          <li><strong>Market Liquidity:</strong> Token trading may have limited liquidity</li>
+        </ul>
+      </LegalSection>
 
-      {/* HERO */}
-      <section className="relative z-10 border-b border-neutral-900">
-        <div className="mx-auto max-w-6xl px-6 py-20 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/60 px-4 py-2 text-sm text-neutral-300">
-            <div className="h-2 w-2 rounded-full bg-yellow-500" />
-            Technology Licensing Disclosures
-          </div>
-          <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-white lg:text-5xl">
-            Transparency. Responsibility. Clarity.
-          </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-neutral-400">
-            Important information about our technology licensing services, implementation partnerships, and service boundaries.
-          </p>
-          <p className="mx-auto mt-2 max-w-2xl text-sm text-neutral-500">
-            Last updated: September 4, 2025
-          </p>
-        </div>
-      </section>
+      <LegalSection title="4. Regulatory Risk Disclosures">
+        <p>
+          Cryptocurrency regulations are evolving and may impact our services:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Regulatory Uncertainty:</strong> Future regulations may restrict or prohibit operations</li>
+          <li><strong>Compliance Costs:</strong> New regulations may increase operational expenses</li>
+          <li><strong>Jurisdictional Variations:</strong> Different regions may have conflicting requirements</li>
+          <li><strong>Enforcement Actions:</strong> Regulatory enforcement may disrupt services</li>
+        </ul>
+      </LegalSection>
 
-      {/* BODY */}
-      <section className="relative z-10">
-        <div className="mx-auto max-w-3xl px-6 py-16 leading-relaxed">
+      <LegalSection title="5. Implementation Partner Risks">
+        <p>
+          Our technology is deployed through independent implementation partners:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Partner Performance:</strong> Implementation partners operate independently and may underperform</li>
+          <li><strong>Business Continuity:</strong> Partners may cease operations or change business models</li>
+          <li><strong>Service Quality:</strong> We cannot guarantee consistent service quality across all partners</li>
+          <li><strong>Local Compliance:</strong> Partners are responsible for local regulatory compliance</li>
+        </ul>
+      </LegalSection>
 
-          <Section title="1. Our Technology Licensing Business">
-            <p>
-              Gambino is a technology licensing company that provides cryptocurrency mining infrastructure 
-              software and community management platforms to authorized implementation partners. We do not 
-              directly operate venues, provide consumer services, or handle end-user transactions. All 
-              consumer-facing operations are conducted by licensed implementation partners.
-            </p>
-          </Section>
+      <LegalSection title="6. Governance Participation Risks">
+        <p>
+          DAO governance participation involves risks and responsibilities:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Decision Impact:</strong> Governance decisions may negatively affect network operations</li>
+          <li><strong>Participation Requirements:</strong> Active participation is required to maintain governance rights</li>
+          <li><strong>Conflict Resolution:</strong> Governance disputes may be difficult to resolve</li>
+          <li><strong>Time Investment:</strong> Effective participation requires significant time commitment</li>
+        </ul>
+      </LegalSection>
 
-          <Section title="2. What We License vs. What We Don&apos;t Do">
-            <ul className="list-disc pl-5 space-y-2 text-neutral-300">
-              <li><strong>We License:</strong> Cryptocurrency mining infrastructure software and community governance technology.</li>
-              <li><strong>We Don&apos;t Operate:</strong> Venues, consumer services, or end-user transactions.</li>
-              <li><strong>We Don&apos;t Guarantee:</strong> Implementation partner operations, consumer outcomes, or investment returns.</li>
-              <li><strong>We Don&apos;t Control:</strong> Venue operations, local compliance, or consumer relationships.</li>
-            </ul>
-          </Section>
+      <LegalSection title="7. Community Fund Allocation">
+        <p>
+          Community fund allocations are subject to governance decisions and may not guarantee benefits:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Democratic Decisions:</strong> Fund allocations depend on community voting</li>
+          <li><strong>Variable Benefits:</strong> Individual benefits may vary based on contribution and participation</li>
+          <li><strong>Geographic Limitations:</strong> Some programs may be limited to specific regions</li>
+          <li><strong>Program Changes:</strong> Benefit programs may be modified or discontinued</li>
+        </ul>
+      </LegalSection>
 
-          <Section title="3. Implementation Partner Framework">
-            <p>
-              Our technology is deployed exclusively through licensed implementation partners who handle 
-              all venue relationships, consumer services, regulatory compliance, and operational responsibilities. 
-              Implementation partners are independent businesses responsible for their own operations, 
-              compliance, and consumer relationships within their licensed territories.
-            </p>
-          </Section>
+      <LegalSection title="8. Technical Limitations">
+        <p>
+          Our technology platform has inherent limitations:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Scalability:</strong> Platform capacity may limit user access during peak demand</li>
+          <li><strong>Interoperability:</strong> Integration with external systems may have limitations</li>
+          <li><strong>Data Accuracy:</strong> Real-time data may have delays or inaccuracies</li>
+          <li><strong>Feature Development:</strong> New features may not perform as expected initially</li>
+        </ul>
+      </LegalSection>
 
-          <Section title="4. Gambino Gold Token Technology">
-            <p>
-              Our technology platform utilizes Gambino Gold utility tokens to enable cryptocurrency mining 
-              infrastructure and community governance systems. These tokens are designed for technology 
-              access and network participation—not as investment products. Token functionality and 
-              licensing terms may be modified to maintain system integrity and regulatory compliance.
-            </p>
-          </Section>
+      <LegalSection title="9. Security Risks">
+        <p>
+          Despite security measures, risks remain:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Cyber Attacks:</strong> Platforms may be targeted by malicious actors</li>
+          <li><strong>Data Breaches:</strong> Personal information may be compromised</li>
+          <li><strong>Account Security:</strong> User accounts may be compromised if security practices are poor</li>
+          <li><strong>Smart Contract Risks:</strong> Blockchain-based contracts may contain vulnerabilities</li>
+        </ul>
+      </LegalSection>
 
-          <Section title="5. Technology Licensing Fees & Support">
-            <ul className="list-disc pl-5 space-y-2 text-neutral-300">
-              <li>Technology licensing includes fees for software access, maintenance, updates, and support.</li>
-              <li>Implementation partners handle all consumer-facing fees and revenue collection.</li>
-              <li>Licensing fees are separate from any consumer transactions managed by implementation partners.</li>
-              <li>Technology access may be subject to compliance monitoring and usage verification.</li>
-            </ul>
-          </Section>
+      <LegalSection title="10. Forward-Looking Statements">
+        <p>
+          Statements about future plans, expectations, or projections are forward-looking and subject 
+          to significant risks and uncertainties. Actual results may differ materially from those 
+          expressed or implied in forward-looking statements.
+        </p>
+      </LegalSection>
 
-          <Section title="6. Implementation Partner Responsibilities">
-            <p>
-              Licensed implementation partners are responsible for venue operations, local regulatory 
-              compliance, consumer services, business registration, and all operational decisions within 
-              their territories. Gambino provides technology licensing and support services only. We are 
-              not responsible for implementation partner operations, consumer disputes, or venue management.
-            </p>
-          </Section>
+      <LegalSection title="11. No Guarantees or Warranties">
+        <p>
+          We provide our technology and services "as is" without warranties of any kind. We do not 
+          guarantee:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Continuous or uninterrupted service availability</li>
+          <li>Profitability of mining operations</li>
+          <li>Accuracy of all platform data</li>
+          <li>Compatibility with all systems or devices</li>
+          <li>Achievement of projected outcomes</li>
+        </ul>
+      </LegalSection>
 
-          <Section title="7. Technology Dependencies & Third-Party Services">
-            <p>
-              Our licensed technology may integrate with third-party blockchain networks, compliance services, 
-              and operational tools. Third-party service availability, policies, and performance are outside 
-              our control. Implementation partners and end users access third-party services through our 
-              technology at their own discretion and subject to those providers&apos; terms.
-            </p>
-          </Section>
+      <LegalSection title="12. Tax Implications">
+        <p>
+          Cryptocurrency activities may have tax consequences:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Tax Liability:</strong> You are responsible for understanding and complying with tax obligations</li>
+          <li><strong>Professional Advice:</strong> Consult qualified tax professionals for guidance</li>
+          <li><strong>Record Keeping:</strong> Maintain detailed records of all transactions and activities</li>
+          <li><strong>Regulatory Changes:</strong> Tax treatment may change with evolving regulations</li>
+        </ul>
+      </LegalSection>
 
-          <Section title="8. Regulatory Compliance Framework">
-            <p>
-              Our technology includes compliance monitoring and reporting capabilities designed to support 
-              regulatory transparency. Implementation partners are responsible for ensuring local regulatory 
-              compliance in their operating jurisdictions. We may implement additional monitoring or reporting 
-              features to support compliance requirements and cooperate with lawful requests related to our 
-              technology licensing activities.
-            </p>
-          </Section>
+      <LegalSection title="13. Geographic Restrictions">
+        <p>
+          Our services may not be available in all jurisdictions:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li><strong>Regulatory Compliance:</strong> Services may be restricted in certain countries</li>
+          <li><strong>Implementation Partners:</strong> Local partners may not be available everywhere</li>
+          <li><strong>Service Variations:</strong> Features may vary by geographic region</li>
+          <li><strong>Legal Requirements:</strong> Additional compliance may be required in specific jurisdictions</li>
+        </ul>
+      </LegalSection>
 
-          <Section title="9. Technology Security & Intellectual Property">
-            <p>
-              We implement industry-standard security measures to protect our technology platform and 
-              intellectual property. All technology remains the exclusive property of Gambino. Implementation 
-              partners receive limited usage rights as specified in licensing agreements. No system is 
-              completely secure—partners and users should maintain proper security practices.
-            </p>
-          </Section>
+      <LegalSection title="14. Limitation of Technology Licensing Scope">
+        <p>
+          Gambino's responsibility extends only to technology licensing, software support, and platform 
+          maintenance. We are not responsible for implementation partner business decisions, venue 
+          operations, consumer disputes, local compliance failures, or operational outcomes. Implementation 
+          partners assume full responsibility for their business operations and consumer relationships.
+        </p>
+      </LegalSection>
 
-          <Section title="10. Tax & Regulatory Considerations">
-            <p>
-              Technology licensing arrangements may have tax implications for licensing parties. Participation 
-              in cryptocurrency mining operations through our licensed technology may have additional tax 
-              considerations depending on jurisdiction. Implementation partners and end users are responsible 
-              for understanding and fulfilling their tax obligations and regulatory compliance requirements.
-            </p>
-          </Section>
-
-          <Section title="11. Licensing Relationships & Potential Conflicts">
-            <p>
-              Gambino may have business relationships with multiple implementation partners, technology 
-              providers, or service vendors. We maintain policies to manage potential conflicts of interest 
-              fairly and disclose material relationships where appropriate. Implementation partners operate 
-              independently and may compete with each other in overlapping territories.
-            </p>
-          </Section>
-
-          <Section title="12. Regulatory Environment & Technology Evolution">
-            <p>
-              The regulatory framework for cryptocurrency mining technology and utility token systems 
-              continues to evolve across jurisdictions. Regulatory changes may require modifications to 
-              our licensed technology, operational procedures, or availability in certain regions. We 
-              monitor regulatory developments and update our technology accordingly.
-            </p>
-          </Section>
-
-          <Section title="13. Technology Updates & Licensing Modifications">
-            <p>
-              Our technology platform, licensing terms, and operational procedures may be updated to 
-              improve performance, enhance security, ensure compliance, or adapt to regulatory requirements. 
-              Material changes affecting licensing rights will be communicated to implementation partners 
-              with reasonable notice. Continued use of our technology constitutes acceptance of updates.
-            </p>
-          </Section>
-
-          <Section title="14. Limitation of Technology Licensing Scope">
-            <p>
-              Gambino&apos;s responsibility extends only to technology licensing, software support, and platform 
-              maintenance. We are not responsible for implementation partner business decisions, venue 
-              operations, consumer disputes, local compliance failures, or operational outcomes. Implementation 
-              partners assume full responsibility for their business operations and consumer relationships.
-            </p>
-          </Section>
-
-          <Section title="15. Contact & Technology Support">
-            <p>
-              For questions about these disclosures or our technology licensing services, contact&nbsp;
-              <a href="mailto:support@gambino.gold" className="text-yellow-400 hover:text-yellow-300 underline decoration-dotted">
-                support@gambino.gold
-              </a>. Consumer service inquiries should be directed to the appropriate implementation partner.
-            </p>
-          </Section>
-
-          {/* Links to other legal docs */}
-          <div className="mt-10 rounded-xl border border-neutral-800 bg-neutral-950 p-5">
-            <div className="flex flex-wrap items-center gap-3 text-sm">
-              <Link href="/legal/terms" className="text-neutral-300 hover:text-white underline decoration-dotted">
-                Terms of Service
-              </Link>
-              <span className="text-neutral-700">•</span>
-              <Link href="/legal/privacy" className="text-neutral-300 hover:text-white underline decoration-dotted">
-                Privacy Policy
-              </Link>
-              <span className="text-neutral-700">•</span>
-              <Link href="/compliance" className="text-neutral-300 hover:text-white underline decoration-dotted">
-                Compliance Framework
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  )
-}
-
-function Section({ title, children }) {
-  return (
-    <section className="mb-10">
-      <h2 className="text-xl font-bold text-white">{title}</h2>
-      <div className="mt-3 text-neutral-300 space-y-3">{children}</div>
-    </section>
-  )
+      <LegalSection title="15. Contact & Technology Support">
+        <p>
+          For questions about these disclosures or our technology licensing services, contact{' '}
+          <a href="mailto:support@gambino.gold" className={`${styles.text.accent} ${styles.text.accentHover} underline decoration-dotted`}>
+            support@gambino.gold
+          </a>. Consumer service inquiries should be directed to the appropriate implementation partner.
+        </p>
+      </LegalSection>
+    </LegalPageLayout>
+  );
 }

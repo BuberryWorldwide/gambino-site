@@ -7,10 +7,14 @@ import { useTheme } from './ThemeProvider';
 
 function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { isDark, toggleTheme, bg, text, border } = useTheme();
+  const { isDark, toggleTheme } = useTheme();
 
   return (
-    <header className={`sticky top-0 z-40 border-b transition-colors duration-300 backdrop-blur-xl ${border.primary} ${bg.primary}/80`}>
+    <header className={`sticky top-0 z-40 border-b transition-colors duration-300 backdrop-blur-xl ${
+      isDark 
+        ? 'border-neutral-800 bg-black/80' 
+        : 'border-neutral-200 bg-white/80'
+    }`}>
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <div className="flex items-center gap-3">
@@ -28,18 +32,30 @@ function Nav() {
             />
           </div>
           <Link href="/" className="text-xl font-extrabold tracking-tight">
-            <span className={text.primary}>Gambino</span>{' '}
+            <span className={isDark ? 'text-white' : 'text-neutral-900'}>Gambino</span>{' '}
             <span className="text-yellow-500">Gold</span>
           </Link>
         </div>
 
         {/* Desktop Nav */}
-        <nav className={`hidden gap-8 text-sm md:flex lg:gap-10 ${text.secondary}`}>
-          <Link href="/utility-token-gaming" className={`transition-colors ${text.hover}`}>Platform</Link>
-          <Link href="/dao-governance" className={`transition-colors ${text.hover}`}>DAO</Link>
-          <Link href="/compliance" className={`transition-colors ${text.hover}`}>Compliance</Link>
-          <Link href="/legal/whitepaper" className={`transition-colors ${text.hover}`}>Docs</Link>
-          <Link href="/legal/terms" className={`transition-colors ${text.hover}`}>Legal</Link>
+        <nav className={`hidden gap-8 text-sm md:flex lg:gap-10 ${
+          isDark ? 'text-neutral-300' : 'text-neutral-600'
+        }`}>
+          <Link href="/utility-token-gaming" className={`transition-colors ${
+            isDark ? 'hover:text-white' : 'hover:text-neutral-900'
+          }`}>Platform</Link>
+          <Link href="/dao-governance" className={`transition-colors ${
+            isDark ? 'hover:text-white' : 'hover:text-neutral-900'
+          }`}>DAO</Link>
+          <Link href="/compliance" className={`transition-colors ${
+            isDark ? 'hover:text-white' : 'hover:text-neutral-900'
+          }`}>Compliance</Link>
+          <Link href="/legal/whitepaper" className={`transition-colors ${
+            isDark ? 'hover:text-white' : 'hover:text-neutral-900'
+          }`}>Docs</Link>
+          <Link href="/legal/terms" className={`transition-colors ${
+            isDark ? 'hover:text-white' : 'hover:text-neutral-900'
+          }`}>Legal</Link>
         </nav>
 
         {/* Desktop Actions */}
@@ -47,7 +63,11 @@ function Nav() {
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
-            className={`p-2 rounded-lg transition-colors ${text.secondary} ${text.hover} ${bg.hover}`}
+            className={`p-2 rounded-lg transition-colors ${
+              isDark 
+                ? 'text-neutral-300 hover:text-white hover:bg-neutral-800' 
+                : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'
+            }`}
             aria-label="Toggle theme"
           >
             {isDark ? (
@@ -76,7 +96,11 @@ function Nav() {
         {/* Mobile menu button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className={`md:hidden p-2 rounded-lg transition-colors ${text.secondary} ${text.hover} ${bg.hover}`}
+          className={`md:hidden p-2 rounded-lg transition-colors ${
+            isDark 
+              ? 'text-neutral-300 hover:text-white hover:bg-neutral-800' 
+              : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'
+          }`}
           aria-label="Toggle mobile menu"
         >
           <svg
@@ -94,13 +118,37 @@ function Nav() {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className={`md:hidden border-t backdrop-blur-xl ${border.primary} ${bg.primary}/95`}>
+        <div className={`md:hidden border-t backdrop-blur-xl ${
+          isDark 
+            ? 'border-neutral-800 bg-black/95' 
+            : 'border-neutral-200 bg-white/95'
+        }`}>
           <nav className="flex flex-col px-6 py-4 space-y-1">
-            <Link href="/utility-token-gaming" className={`px-3 py-3 text-sm transition-colors rounded-lg ${text.secondary} ${text.hover} ${bg.hover}`} onClick={() => setMobileMenuOpen(false)}>Platform Overview</Link>
-            <Link href="/dao-governance" className={`px-3 py-3 text-sm transition-colors rounded-lg ${text.secondary} ${text.hover} ${bg.hover}`} onClick={() => setMobileMenuOpen(false)}>DAO Governance</Link>
-            <Link href="/compliance" className={`px-3 py-3 text-sm transition-colors rounded-lg ${text.secondary} ${text.hover} ${bg.hover}`} onClick={() => setMobileMenuOpen(false)}>Regulatory Compliance</Link>
-            <Link href="/legal/whitepaper" className={`px-3 py-3 text-sm transition-colors rounded-lg ${text.secondary} ${text.hover} ${bg.hover}`} onClick={() => setMobileMenuOpen(false)}>Documentation</Link>
-            <Link href="/legal/terms" className={`px-3 py-3 text-sm transition-colors rounded-lg ${text.secondary} ${text.hover} ${bg.hover}`} onClick={() => setMobileMenuOpen(false)}>Legal Documentation</Link>
+            <Link href="/utility-token-gaming" className={`px-3 py-3 text-sm transition-colors rounded-lg ${
+              isDark 
+                ? 'text-neutral-300 hover:text-white hover:bg-neutral-800' 
+                : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'
+            }`} onClick={() => setMobileMenuOpen(false)}>Platform Overview</Link>
+            <Link href="/dao-governance" className={`px-3 py-3 text-sm transition-colors rounded-lg ${
+              isDark 
+                ? 'text-neutral-300 hover:text-white hover:bg-neutral-800' 
+                : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'
+            }`} onClick={() => setMobileMenuOpen(false)}>DAO Governance</Link>
+            <Link href="/compliance" className={`px-3 py-3 text-sm transition-colors rounded-lg ${
+              isDark 
+                ? 'text-neutral-300 hover:text-white hover:bg-neutral-800' 
+                : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'
+            }`} onClick={() => setMobileMenuOpen(false)}>Regulatory Compliance</Link>
+            <Link href="/legal/whitepaper" className={`px-3 py-3 text-sm transition-colors rounded-lg ${
+              isDark 
+                ? 'text-neutral-300 hover:text-white hover:bg-neutral-800' 
+                : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'
+            }`} onClick={() => setMobileMenuOpen(false)}>Documentation</Link>
+            <Link href="/legal/terms" className={`px-3 py-3 text-sm transition-colors rounded-lg ${
+              isDark 
+                ? 'text-neutral-300 hover:text-white hover:bg-neutral-800' 
+                : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'
+            }`} onClick={() => setMobileMenuOpen(false)}>Legal Documentation</Link>
           </nav>
 
           {/* Mobile Actions */}
@@ -108,7 +156,11 @@ function Nav() {
             {/* Mobile Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className={`flex items-center gap-3 w-full px-3 py-3 text-sm rounded-lg transition-colors ${text.secondary} ${text.hover} ${bg.hover}`}
+              className={`flex items-center gap-3 w-full px-3 py-3 text-sm rounded-lg transition-colors ${
+                isDark 
+                  ? 'text-neutral-300 hover:text-white hover:bg-neutral-800' 
+                  : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'
+              }`}
             >
               {isDark ? (
                 <>

@@ -128,8 +128,7 @@ export default function Footer() {
         
         <div className="mx-auto max-w-7xl mt-4 pt-4 border-t border-neutral-900 text-center">
           <p className="text-xs text-neutral-600">
-            * Gambino Gold operates a utility token gaming platform. Our tokens provide access to gaming features and DAO governance rights. 
-            This is not gambling, securities investment, or financial advice. See our Terms of Service and regulatory documentation.
+            * Gambino Gold provides cryptocurrency mining infrastructure software and community governance platforms through authorized implementation partners. Our utility tokens enable infrastructure access and community governance participation—not as investment products. This is not gambling, securities investment, or financial advice. See our Terms of Service and regulatory documentation.
           </p>
         </div>
       </div>

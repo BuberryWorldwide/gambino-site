@@ -63,14 +63,14 @@ export default function WhitepaperPage() {
               Important: The following definitions establish the specific technical and operational meaning of terms used throughout this document:
             </p>
             <ul className="list-disc pl-5 space-y-2 mt-4">
-              <li><strong>"Mining" or "Computational Mining":</strong> The process of performing computational work to validate transactions and maintain blockchain networks. Does NOT refer to creating new money or generating investment returns.</li>
-              <li><strong>"Infrastructure Operations":</strong> The technical processes of running distributed computing systems for blockchain validation and network maintenance.</li>
-              <li><strong>"Community Development":</strong> Funding allocated to local infrastructure, educational programs, and ecosystem sustainability. Does NOT imply wealth distribution or profit sharing.</li>
-              <li><strong>"Utility Token":</strong> Digital access credentials that enable use of mining infrastructure and participation in governance decisions. Not a store of value, investment vehicle, or currency.</li>
-              <li><strong>"Governance Participation":</strong> The right to vote on operational parameters and platform development decisions. Does NOT include rights to profits, dividends, or financial returns.</li>
-              <li><strong>"Implementation Partner":</strong> Licensed venue operators who deploy Gambino software to run local mining operations. Independent businesses responsible for their own regulatory compliance.</li>
-              <li><strong>"Burn Mechanism":</strong> Consumption of tokens through usage, similar to using credits in a software system. Not a value-creation mechanism.</li>
-              <li><strong>"Development Resources":</strong> Funds or tokens allocated for platform improvements, infrastructure maintenance, and ecosystem growth. Not wealth or profit distribution.</li>
+              <li><strong>&quot;Mining&quot; or &quot;Computational Mining&quot;:</strong> The process of performing computational work to validate transactions and maintain blockchain networks. Does NOT refer to creating new money or generating investment returns.</li>
+              <li><strong>&quot;Infrastructure Operations&quot;:</strong> The technical processes of running distributed computing systems for blockchain validation and network maintenance.</li>
+              <li><strong>&quot;Community Development&quot;:</strong> Funding allocated to local infrastructure, educational programs, and ecosystem sustainability. Does NOT imply wealth distribution or profit sharing.</li>
+              <li><strong>&quot;Utility Token&quot;:</strong> Digital access credentials that enable use of mining infrastructure and participation in governance decisions. Not a store of value, investment vehicle, or currency.</li>
+              <li><strong>&quot;Governance Participation&quot;:</strong> The right to vote on operational parameters and platform development decisions. Does NOT include rights to profits, dividends, or financial returns.</li>
+              <li><strong>&quot;Implementation Partner&quot;:</strong> Licensed venue operators who deploy Gambino software to run local mining operations. Independent businesses responsible for their own regulatory compliance.</li>
+              <li><strong>&quot;Burn Mechanism&quot;:</strong> Consumption of tokens through usage, similar to using credits in a software system. Not a value-creation mechanism.</li>
+              <li><strong>&quot;Development Resources&quot;:</strong> Funds or tokens allocated for platform improvements, infrastructure maintenance, and ecosystem growth. Not wealth or profit distribution.</li>
             </ul>
           </Section>
 
@@ -111,7 +111,7 @@ export default function WhitepaperPage() {
             <p>
               Gambino provides <strong>licensed infrastructure protocol</strong> that converts standard hardware into transparent, 
               compliant computational processing systems. Our technology stack includes <strong>automated operational rules</strong> 
-              where implementation partners' systems direct predetermined fees for:
+              where implementation partners&apos; systems direct predetermined fees for:
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>Ecosystem development contributions</li>
@@ -172,12 +172,12 @@ export default function WhitepaperPage() {
               <li><strong>Infrastructure Access:</strong> Right to use computational processing systems</li>
               <li><strong>Governance Participation:</strong> Voting on platform operational parameters</li>
               <li><strong>No Direct Redemption:</strong> Not redeemable for cash from Gambino</li>
-              <li><strong>No Investment Contract:</strong> No expectation of profits from Gambino's efforts (per Howey test)</li>
+              <li><strong>No Investment Contract:</strong> No expectation of profits from Gambino&apos;s efforts (per Howey test)</li>
             </ul>
             
             <p className="mt-4 font-semibold">Token Mechanics:</p>
             <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Usage Consumption:</strong> Tokens consumed through infrastructure usage (not "burned" for value)</li>
+              <li><strong>Usage Consumption:</strong> Tokens consumed through infrastructure usage (not &quot;burned&quot; for value)</li>
               <li><strong>Capped Supply:</strong> Fixed maximum of 777,000,000 tokens with predetermined emission schedule</li>
               <li><strong>Utility Focus:</strong> Access and governance, not investment or speculation</li>
               <li><strong>Partner Implementation:</strong> Venues control token distribution in their operations</li>
@@ -186,7 +186,7 @@ export default function WhitepaperPage() {
             <div className="mt-4 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
               <p className="text-sm font-semibold">
                 Disclaimer: Tokens are utility access credentials only. Any market value derives from utility demand, 
-                not from Gambino's efforts or promises. Gambino makes no representations about token price, liquidity, or market value.
+                not from Gambino&apos;s efforts or promises. Gambino makes no representations about token price, liquidity, or market value.
               </p>
             </div>
           </Section>
@@ -255,7 +255,7 @@ export default function WhitepaperPage() {
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>No Money Handling:</strong> Gambino never accepts, holds, or transmits customer funds</li>
               <li><strong>Partner Responsibility:</strong> Implementation partners solely responsible for financial operations</li>
-              <li><strong>Software Provider Status:</strong> Following FinCEN's software-provider exemption framework</li>
+              <li><strong>Software Provider Status:</strong> Following FinCEN&apos;s software-provider exemption framework</li>
               <li><strong>Jurisdictional Compliance:</strong> Partners responsible for local licensing requirements</li>
             </ul>
 

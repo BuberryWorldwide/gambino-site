@@ -1,8 +1,8 @@
 // app/legal/whitepaper/layout.js
 export const metadata = {
-  title: 'Gambino White Paper • Farm Luck. Mine Destiny.',
+  title: 'Gambino White Paper • Mining Infrastructure Software Platform',
   description:
-    'Gambino provides cryptocurrency mining infrastructure technology that enables community wealth creation through transparent, compliant token mining operations.'
+    'Gambino provides software infrastructure enabling venues to operate compliant computational processing systems with transparent ecosystem development mechanisms. Technology licensing for blockchain validation operations.'
 }
 
 export default function WhitepaperLayout({ children }) {

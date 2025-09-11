@@ -142,7 +142,7 @@ function Nav() {
             <Link href="/legal/whitepaper" className={`px-3 py-3 text-sm transition-colors rounded-lg ${
               isDark 
                 ? 'text-neutral-300 hover:text-white hover:bg-neutral-800' 
-                : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'
+                : 'text-neut ral-600 hover:text-neutral-900 hover:bg-neutral-100'
             }`} onClick={() => setMobileMenuOpen(false)}>Documentation</Link>
             <Link href="/legal/terms" className={`px-3 py-3 text-sm transition-colors rounded-lg ${
               isDark 

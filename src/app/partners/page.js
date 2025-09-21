@@ -86,7 +86,7 @@ export default function PartnersPage() {
               Two Ways to <span className={styles.text.accent}>Partner</span>
             </h2>
             <p className={`text-lg max-w-2xl mx-auto ${styles.text.secondary}`}>
-              Whether you're a venue looking to host our technology or a contractor wanting to 
+              Whether you&apos;re a venue looking to host our technology or a contractor wanting to 
               deploy it, we have partnership opportunities for you.
             </p>
           </div>
@@ -195,7 +195,7 @@ export default function PartnersPage() {
               <h3 className={`text-xl font-bold mb-4 ${styles.text.primary}`}>1. Connect</h3>
               <p className={styles.text.secondary}>
                 Reach out through our implementation partners or contact us directly. 
-                We'll assess your location and partnership goals.
+                We&apos;ll assess your location and partnership goals.
               </p>
             </div>
             

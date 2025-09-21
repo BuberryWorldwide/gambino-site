@@ -98,7 +98,7 @@ export default function SupportPage() {
                 Contact Support
               </h2>
               <p className={`mb-6 ${styles.text.secondary}`}>
-                Have questions? Send us an email and we'll get back to you.
+                Have questions? Send us an email and we&apos;ll get back to you.
               </p>
               
               <div className="flex flex-col items-center gap-6">

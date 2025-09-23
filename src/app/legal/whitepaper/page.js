@@ -1,4 +1,3 @@
-// app/legal/whitepaper/page.js
 'use client';
 
 import Link from 'next/link'
@@ -23,14 +22,18 @@ export default function WhitepaperPage() {
             White Paper
           </div>
           <h1 className={`mt-6 text-4xl font-extrabold tracking-tight lg:text-5xl ${styles.text.primary}`}>
-            Mining Infrastructure Software Platform
+            Cryptocurrency Infrastructure Platform
           </h1>
           <p className={`mx-auto mt-4 max-w-3xl ${styles.text.secondary}`}>
-            Gambino provides software infrastructure that enables venues to operate compliant computational 
-            processing systems with transparent ecosystem development mechanisms.
+            Gambino Gold provides technology infrastructure that converts entertainment systems 
+            into cryptocurrency distribution mechanisms through innovative edge device integration.
           </p>
           <p className={`mx-auto mt-2 max-w-2xl text-sm ${styles.text.tertiary}`}>
-            Last updated: September 2025
+            Version 1.0 • Last updated: {new Date().toLocaleDateString('en-US', { 
+              year: 'numeric', 
+              month: 'long', 
+              day: 'numeric' 
+            })}
           </p>
         </div>
       </section>
@@ -42,324 +45,418 @@ export default function WhitepaperPage() {
           <div className={`mb-12 ${styles.layout.card}`}>
             <div className={`text-sm font-semibold mb-3 ${styles.text.secondary}`}>Contents</div>
             <ol className={`list-decimal pl-5 space-y-2 text-sm ${styles.text.tertiary}`}>
-              <li><a className={`${styles.text.accentHover}`} href="#definitions">Definitions</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#exec">Executive Summary</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#problem">Problem Statement</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#solution">The Gambino Solution</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#infrastructure">Mining Infrastructure Technology</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#tokenomics">Tokenomics Overview</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#economy">Economic Model</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#governance">Community Governance Framework</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#community">Community Development Allocation</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#compliance">Compliance & Risk</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#architecture">System Architecture Overview</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#roadmap">Roadmap</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#notice">Legal Notice</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#overview">Platform Overview</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#innovation">Technical Innovation</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#architecture">System Architecture</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#business">Business Model</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#tokenomics">Token Utility</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#governance">Community Governance</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#compliance">Compliance Approach</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#roadmap">Development Roadmap</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#risks">Risk Factors</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#legal">Legal Disclaimers</a></li>
             </ol>
           </div>
 
-          <Section id="definitions" title="Definitions" styles={styles}>
-            <p className="font-semibold">
-              Important: The following definitions establish the specific technical and operational meaning of terms used throughout this document:
-            </p>
-            <ul className="list-disc pl-5 space-y-2 mt-4">
-              <li><strong>&quot;Mining&quot; or &quot;Computational Mining&quot;:</strong> The process of performing computational work to validate transactions and maintain blockchain networks. Does NOT refer to creating new money or generating investment returns.</li>
-              <li><strong>&quot;Infrastructure Operations&quot;:</strong> The technical processes of running distributed computing systems for blockchain validation and network maintenance.</li>
-              <li><strong>&quot;Community Development&quot;:</strong> Funding allocated to local infrastructure, educational programs, and ecosystem sustainability. Does NOT imply wealth distribution or profit sharing.</li>
-              <li><strong>&quot;Utility Token&quot;:</strong> Digital access credentials that enable use of mining infrastructure and participation in governance decisions. Not a store of value, investment vehicle, or currency.</li>
-              <li><strong>&quot;Governance Participation&quot;:</strong> The right to vote on operational parameters and platform development decisions. Does NOT include rights to profits, dividends, or financial returns.</li>
-              <li><strong>&quot;Implementation Partner&quot;:</strong> Licensed venue operators who deploy Gambino software to run local mining operations. Independent businesses responsible for their own regulatory compliance.</li>
-              <li><strong>&quot;Burn Mechanism&quot;:</strong> Consumption of tokens through usage, similar to using credits in a software system. Not a value-creation mechanism.</li>
-              <li><strong>&quot;Development Resources&quot;:</strong> Funds or tokens allocated for platform improvements, infrastructure maintenance, and ecosystem growth. Not wealth or profit distribution.</li>
-            </ul>
-          </Section>
-
-          <Section id="exec" title="Executive Summary" styles={styles}>
+          <Section id="overview" title="1. Platform Overview" styles={styles}>
+            <p className="font-semibold mb-3">What We Built:</p>
             <p>
-              Gambino provides <strong>software infrastructure that enables venues to operate compliant computational processing systems</strong>. 
-              Each operation generates utility tokens for users and automatically allocates fixed operational fees to ecosystem development accounts. 
-              <strong>Our role is licensing technology, not handling or redistributing proceeds.</strong>
+              Gambino Gold has developed infrastructure technology that converts entertainment systems 
+              into cryptocurrency distribution mechanisms. Our platform uses edge computing devices to 
+              capture human-triggered events and automatically distribute cryptocurrency rewards with 
+              transparent multi-party accounting.
             </p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Token Holders</strong> access computational infrastructure through utility tokens with governance participation rights</li>
-              <li><strong>Implementation Partners</strong> operate venues using our licensed technology stack</li>
-              <li><strong>Communities</strong> benefit from ecosystem development allocations managed by partner operations</li>
-              <li><strong>Regulators</strong> gain transparent visibility through built-in compliance frameworks</li>
-            </ul>
-            <p className="mt-4 font-semibold">
-              Critical: This is a technology licensing platform. Gambino does not operate venues, handle customer funds, or promise investment returns.
-            </p>
-          </Section>
-
-          <Section id="problem" title="1. Problem Statement" styles={styles}>
-            <p>
-              Traditional cryptocurrency validation operations lack <strong>regulatory transparency</strong> and community integration. 
-              Value concentrates in large mining pools while local communities see no direct benefit from operations in their areas.
-            </p>
-            <p className="mt-3">
-              Current challenges include:
-            </p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Lack of transparent operational frameworks</li>
-              <li>Missing ecosystem development mechanisms</li>
-              <li>Regulatory uncertainty around validation operations</li>
-              <li>Absence of venue-led operations with clear compliance structures</li>
-            </ul>
-          </Section>
-
-          <Section id="solution" title="2. The Gambino Solution" styles={styles}>
-            <p>
-              Gambino provides <strong>licensed infrastructure protocol</strong> that converts standard hardware into transparent, 
-              compliant computational processing systems. Our technology stack includes <strong>automated operational rules</strong> 
-              where implementation partners&apos; systems direct predetermined fees for:
-            </p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Ecosystem development contributions</li>
-              <li>Infrastructure maintenance support</li>
-              <li>Network sustainability reserves</li>
-            </ul>
-            <p className="mt-4">
-              <strong>Gambino provides only the software framework</strong> - venues control all operational aspects and customer interactions. 
-              Partners may modify operational parameters within their deployments.
-            </p>
-          </Section>
-
-          <Section id="infrastructure" title="3. Mining Infrastructure Technology" styles={styles}>
-            <p className="font-semibold mb-3">Clear Role Separation:</p>
             
-            <div className="mb-4">
-              <p className="font-semibold">Gambino = Software Licensor</p>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>Provides computational infrastructure software</li>
-                <li>Maintains technology platform</li>
-                <li>Delivers compliance frameworks</li>
-                <li>Supports implementation partners</li>
-                <li>Does NOT handle any customer funds or transactions</li>
+            <p className="mt-4 font-semibold">How It Works:</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Users interact with entertainment systems at participating venues</li>
+              <li>Edge devices capture interaction data and trigger cryptocurrency distributions</li>
+              <li>Rewards are automatically allocated across users, venues, operators, and community funds</li>
+              <li>All transactions are recorded on blockchain for transparency</li>
+            </ul>
+
+            <p className="mt-4 font-semibold">Business Structure:</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li><strong>Gambino Gold:</strong> Develops and licenses the technology platform</li>
+              <li><strong>Implementation Partners:</strong> Install and operate systems at venues (like VDV)</li>
+              <li><strong>Venue Partners:</strong> Host the entertainment systems and provide customer service</li>
+              <li><strong>Users:</strong> Engage with systems and receive cryptocurrency rewards</li>
+            </ul>
+          </Section>
+
+          <Section id="innovation" title="2. Technical Innovation" styles={styles}>
+            <p className="font-semibold mb-3">Novel Integration Architecture:</p>
+            <p>
+              Our core innovation is the seamless integration of physical entertainment systems 
+              with cryptocurrency infrastructure through custom edge computing devices.
+            </p>
+
+            <div className="mt-4">
+              <p className="font-semibold">Edge Device Integration:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li>Custom hardware that connects to existing entertainment systems</li>
+                <li>Real-time capture of human-triggered random events</li>
+                <li>Cryptographic verification and blockchain submission</li>
+                <li>Offline resilience with automatic synchronization</li>
               </ul>
             </div>
 
-            <div className="mb-4">
-              <p className="font-semibold">Venues = Service Providers</p>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>Operate processing locations independently</li>
-                <li>Manage all customer relationships</li>
-                <li>Handle all financial transactions</li>
-                <li>Control local compliance</li>
-                <li>May use alternative software if desired</li>
+            <div className="mt-4">
+              <p className="font-semibold">Human-Triggered Randomness:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li>Captures genuine human entropy from entertainment interactions</li>
+                <li>Provides verifiable randomness that cannot be algorithmically predicted</li>
+                <li>Creates foundation for transparent, tamper-proof reward distribution</li>
+                <li>Potential future applications in broader cryptocurrency ecosystem</li>
               </ul>
             </div>
 
-            <div className="mb-4">
-              <p className="font-semibold">Customers = Direct Counterparties of Venues</p>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>Interact directly with venues only</li>
-                <li>No contractual relationship with Gambino</li>
-                <li>All transactions through venue operators</li>
-                <li>Gambino has no customer data access</li>
+            <div className="mt-4">
+              <p className="font-semibold">Automated Multi-Party Distribution:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li>Real-time allocation across multiple stakeholders</li>
+                <li>Transparent accounting recorded on blockchain</li>
+                <li>Automated community benefit contributions</li>
+                <li>Compliance-ready transaction logging</li>
               </ul>
+            </div>
+          </Section>
+
+          <Section id="architecture" title="3. System Architecture" styles={styles}>
+            <p className="font-semibold mb-3">Infrastructure Components:</p>
+            
+            <div className="space-y-4">
+              <div>
+                <p className="font-semibold">Edge Computing Layer:</p>
+                <ul className="list-disc pl-5 space-y-1 mt-2">
+                  <li>Raspberry Pi-based devices with custom software</li>
+                  <li>Real-time event capture and processing</li>
+                  <li>Local data storage with cloud synchronization</li>
+                  <li>Cryptographic signing and verification</li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="font-semibold">Backend Infrastructure:</p>
+                <ul className="list-disc pl-5 space-y-1 mt-2">
+                  <li>Node.js application servers with MongoDB databases</li>
+                  <li>Redis caching for real-time session management</li>
+                  <li>Blockchain integration for transaction processing</li>
+                  <li>Multi-partner analytics and reporting systems</li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="font-semibold">Blockchain Integration:</p>
+                <ul className="list-disc pl-5 space-y-1 mt-2">
+                  <li>Solana network for primary token operations</li>
+                  <li>Automated smart contract execution for distributions</li>
+                  <li>On-chain governance and voting mechanisms</li>
+                  <li>Transparent transaction logging for all stakeholders</li>
+                </ul>
+              </div>
+            </div>
+          </Section>
+
+          <Section id="business" title="4. Business Model" styles={styles}>
+            <p className="font-semibold mb-3">Technology Licensing Platform:</p>
+            <p>
+              Gambino Gold operates as a B2B technology licensing company, providing infrastructure 
+              software to authorized implementation partners who deploy and operate systems at venues.
+            </p>
+
+            <div className="mt-4">
+              <p className="font-semibold">Revenue Streams:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li><strong>Software Licensing:</strong> Fees from implementation partners for platform access</li>
+                <li><strong>Revenue Sharing:</strong> Percentage of gross volume from partner operations</li>
+                <li><strong>Technical Services:</strong> Support, maintenance, and custom development</li>
+                <li><strong>Future Services:</strong> Potential API services for broader cryptocurrency ecosystem</li>
+              </ul>
+            </div>
+
+            <div className="mt-4">
+              <p className="font-semibold">Partner Structure:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li><strong>Implementation Partners:</strong> Licensed operators like VDV who manage venue relationships</li>
+                <li><strong>Venue Partners:</strong> Retail locations, entertainment venues, and other customer-facing businesses</li>
+                <li><strong>Community Partners:</strong> Local organizations benefiting from community fund allocations</li>
+              </ul>
+            </div>
+
+            <div className="mt-4">
+              <p className="font-semibold">Competitive Advantages:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li>First-mover advantage in entertainment-to-crypto infrastructure</li>
+                <li>Proven working relationships with implementation partners</li>
+                <li>Scalable technology platform requiring no venue hardware modifications</li>
+                <li>Built-in compliance and transparency features</li>
+              </ul>
+            </div>
+          </Section>
+
+          <Section id="tokenomics" title="5. Token Utility" styles={styles}>
+            <p className="font-semibold mb-3">Gambino Gold Token (GG) Utility Framework:</p>
+            <p>
+              GG tokens provide access to platform infrastructure and community governance participation. 
+              Tokens are earned through platform engagement and consumed through usage.
+            </p>
+
+            <div className="mt-4">
+              <p className="font-semibold">Primary Utility Functions:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li><strong>Platform Access:</strong> Required for engaging with cryptocurrency distribution systems</li>
+                <li><strong>Governance Rights:</strong> Voting power in community governance decisions</li>
+                <li><strong>Tier Advancement:</strong> Performance-based progression through governance tiers</li>
+                <li><strong>Community Benefits:</strong> Access to monthly distribution programs based on tier status</li>
+              </ul>
+            </div>
+
+            <div className="mt-4">
+              <p className="font-semibold">Token Economics:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li><strong>Total Supply:</strong> 777,000,000 tokens maximum</li>
+                <li><strong>Distribution Method:</strong> Earned through platform engagement, not sold directly</li>
+                <li><strong>Usage Consumption:</strong> Tokens consumed through platform interactions</li>
+                <li><strong>Community Allocation:</strong> 15% of platform activity supports community funds</li>
+              </ul>
+            </div>
+
+            <div className="p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg mt-4">
+              <p className="font-semibold text-sm mb-2">Important Token Disclaimers:</p>
+              <ul className="text-sm space-y-1">
+                <li>• GG tokens are utility instruments, not investment vehicles</li>
+                <li>• No guarantees of value, liquidity, or market availability</li>
+                <li>• Third-party trading markets may exist independently of Gambino Gold</li>
+                <li>• Gambino Gold does not provide token redemption services</li>
+              </ul>
+            </div>
+          </Section>
+
+          <Section id="governance" title="6. Community Governance" styles={styles}>
+            <p className="font-semibold mb-3">Performance-Based Governance Tiers:</p>
+            <p>
+              Governance participation is earned through demonstrated platform engagement and successful 
+              participation, not through token holdings or financial contribution.
+            </p>
+
+            <div className="space-y-4 mt-4">
+              <div>
+                <p className="font-semibold">Tier 3: Community Scouts</p>
+                <ul className="list-disc pl-5 space-y-1 mt-2">
+                  <li><strong>Qualification:</strong> 25+ major wins across 5+ venues over 6 months</li>
+                  <li><strong>Benefits:</strong> 0.5% monthly distribution, 1x voting weight</li>
+                  <li><strong>Role:</strong> Regional community representation and opportunity identification</li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="font-semibold">Tier 2: Network Managers</p>
+                <ul className="list-disc pl-5 space-y-1 mt-2">
+                  <li><strong>Qualification:</strong> 100+ major wins across 10+ venues over 12 months</li>
+                  <li><strong>Benefits:</strong> 1.5% monthly distribution, 3x voting weight</li>
+                  <li><strong>Role:</strong> Operational oversight and community fund management</li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="font-semibold">Tier 1: Protocol Stewards</p>
+                <ul className="list-disc pl-5 space-y-1 mt-2">
+                  <li><strong>Qualification:</strong> 500+ major wins across 20+ venues over 24+ months</li>
+                  <li><strong>Benefits:</strong> 2.5% monthly distribution, 5x voting weight</li>
+                  <li><strong>Role:</strong> Long-term platform guidance and strategic decision-making</li>
+                </ul>
+              </div>
             </div>
 
             <p className="mt-4 text-sm italic">
-              This structure aligns with FinCEN exemption for software/network providers as detailed in FinCEN Guidance FIN-2019-G001. 
-              Venues could theoretically operate without Gambino software.
+              Governance decisions focus on platform operations, community fund allocation, 
+              and ecosystem development - not profit distributions or investment returns.
             </p>
           </Section>
 
-          <Section id="tokenomics" title="4. Tokenomics Overview" styles={styles}>
-            <p className="font-semibold mb-3">Utility Token Framework:</p>
-            <p>Gambino tokens are <strong>utility-only</strong> instruments that provide:</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Infrastructure Access:</strong> Right to use computational processing systems</li>
-              <li><strong>Governance Participation:</strong> Voting on platform operational parameters</li>
-              <li><strong>No Direct Redemption:</strong> Not redeemable for cash from Gambino</li>
-              <li><strong>No Investment Contract:</strong> No expectation of profits from Gambino&apos;s efforts (per Howey test)</li>
-            </ul>
-            
-            <p className="mt-4 font-semibold">Token Mechanics:</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Usage Consumption:</strong> Tokens consumed through infrastructure usage (not &quot;burned&quot; for value)</li>
-              <li><strong>Capped Supply:</strong> Fixed maximum of 777,000,000 tokens with predetermined emission schedule</li>
-              <li><strong>Utility Focus:</strong> Access and governance, not investment or speculation</li>
-              <li><strong>Partner Implementation:</strong> Venues control token distribution in their operations</li>
-            </ul>
-
-            <div className="mt-4 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
-              <p className="text-sm font-semibold">
-                Disclaimer: Tokens are utility access credentials only. Any market value derives from utility demand, 
-                not from Gambino&apos;s efforts or promises. Gambino makes no representations about token price, liquidity, or market value.
-              </p>
-            </div>
-          </Section>
-
-          <Section id="economy" title="5. Economic Model" styles={styles}>
-            <p className="font-semibold mb-3">Market Structure Separation:</p>
-            <p>The system distinguishes between:</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Infrastructure Operations:</strong> Token usage for computational access and governance</li>
-              <li><strong>Secondary Markets:</strong> Independent markets that may form without Gambino involvement</li>
-            </ul>
-            
-            <p className="mt-4 font-semibold">Important Clarifications:</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Secondary markets may develop where tokens can be traded between parties</li>
-              <li>Trading functionality is incidental to utility purpose, not a promoted feature</li>
-              <li>Gambino does NOT guarantee, manage, or provide liquidity for any markets</li>
-              <li>Token holders may sell to willing buyers, but Gambino never redeems tokens</li>
-              <li>Price discovery and trading occur independently of Gambino</li>
-              <li>Any token value derives solely from utility demand, not investment characteristics</li>
-            </ul>
-          </Section>
-
-          <Section id="governance" title="6. Community Governance Framework" styles={styles}>
+          <Section id="compliance" title="7. Compliance Approach" styles={styles}>
+            <p className="font-semibold mb-3">Regulatory Framework:</p>
             <p>
-              Governance participation is earned through <strong>operational participation</strong>, not financial contribution:
+              We are committed to operating within applicable legal frameworks and are working 
+              with specialized legal counsel to ensure appropriate compliance as regulations develop.
             </p>
-            <ul className="list-disc pl-5 space-y-2 mt-3">
-              <li><strong>Tier 3 – Ecosystem Contributors (regional):</strong> Up to 100 per jurisdiction; receive governance activity credits (non-monetary participation tracking)</li>
-              <li><strong>Tier 2 – Network Coordinators:</strong> Oversee operational parameters and development recommendations</li>
-              <li><strong>Tier 1 – Protocol Stewards (7):</strong> Long-term guardians of platform mission alignment</li>
-            </ul>
-            <p className={`text-sm mt-4 ${styles.text.tertiary}`}>
-              Key Principle: Voting power derives from platform usage and participation — not capital investment. 
-              Governance decisions relate to platform operations, not financial distributions.
-            </p>
-          </Section>
 
-          <Section id="community" title="7. Community Development Allocation" styles={styles}>
-            <p className="font-semibold mb-3">Automated Operational Rules (Venue-Controlled):</p>
-            
-            <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg mb-4">
-              <p className="font-semibold">
-                Critical Structure: Venue-operated infrastructure includes automatic software rules that direct operational fees 
-                to ecosystem development accounts. Gambino does not collect, control, or distribute these funds.
-              </p>
-            </div>
-
-            <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Infrastructure Maintenance:</strong> Operational fees support platform sustainability</li>
-              <li><strong>Ecosystem Development:</strong> Resources for platform improvements and growth</li>
-              <li><strong>Governance Operations:</strong> Activity tracking for participation metrics</li>
-            </ul>
-            
-            <p className="mt-4">
-              These are <strong>operational costs</strong>, not profit distributions or investment returns. Partners control and may adjust these parameters.
-            </p>
-            
-            <p className="mt-4 font-semibold">
-              Gambino never accepts, holds, or transmits customer funds - all financial operations occur at the venue level under partner control.
-            </p>
-          </Section>
-
-          <Section id="compliance" title="8. Compliance & Risk" styles={styles}>
-            <p className="font-semibold mb-3">Core Principles:</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><strong>No Money Handling:</strong> Gambino never accepts, holds, or transmits customer funds</li>
-              <li><strong>Partner Responsibility:</strong> Implementation partners solely responsible for financial operations</li>
-              <li><strong>Software Provider Status:</strong> Following FinCEN&apos;s software-provider exemption framework</li>
-              <li><strong>Jurisdictional Compliance:</strong> Partners responsible for local licensing requirements</li>
-            </ul>
-
-            <p className="mt-4 font-semibold">Compliance Features:</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Transparent Operations: Built-in reporting and audit capabilities</li>
-              <li>Identity Frameworks: KYC/AML tools for partner implementation</li>
-              <li>Activity Monitoring: Operational tracking systems for compliance</li>
-              <li>Regulatory Cooperation: Proactive framework for oversight engagement</li>
-            </ul>
-
-            <p className="mt-4 text-sm italic">
-              Our model aligns with FinCEN Guidance FIN-2019-G001 and state frameworks distinguishing technology providers from money transmitters. 
-              Model may require adjustment based on evolving regulatory guidance.
-            </p>
-          </Section>
-
-          <Section id="architecture" title="9. System Architecture Overview" styles={styles}>
-            <p className="font-semibold mb-3">Technical Design Preserving Legal Separation:</p>
-            
-            <div className="mb-4">
-              <p className="font-semibold">Gambino Technology Layer:</p>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>Infrastructure software provision</li>
-                <li>Platform maintenance and updates</li>
-                <li>Compliance framework delivery</li>
-                <li>No financial transaction processing</li>
+            <div className="mt-4">
+              <p className="font-semibold">Current Compliance Measures:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li><strong>Legal Structure:</strong> Technology licensing model with clear separation of responsibilities</li>
+                <li><strong>Financial Separation:</strong> Partners handle all customer funds and transactions independently</li>
+                <li><strong>Transparency Systems:</strong> Built-in transaction logging and audit capabilities</li>
+                <li><strong>Partner Requirements:</strong> Implementation partners responsible for local regulatory compliance</li>
               </ul>
             </div>
 
-            <div className="mb-4">
-              <p className="font-semibold">Partner Operation Layer:</p>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>Customer transaction handling</li>
-                <li>Local compliance management</li>
-                <li>Fund flow control</li>
-                <li>Operational parameter adjustment</li>
+            <div className="mt-4">
+              <p className="font-semibold">Regulatory Considerations:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li>Cryptocurrency regulations continue to evolve at federal and state levels</li>
+                <li>Our technology licensing model is designed to adapt to regulatory requirements</li>
+                <li>Implementation partners may need specific licenses depending on jurisdiction</li>
+                <li>System architecture supports compliance reporting and regulatory oversight</li>
               </ul>
             </div>
 
-            <div className="mb-4">
-              <p className="font-semibold">System Components:</p>
-              <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>Transparent Logging: Operational activity recording for audit</li>
-                <li>Usage Mechanics: Token consumption through platform usage</li>
-                <li>Development Layer: Automated fee routing operated by partners</li>
-                <li>Governance Protocol: Participation-based voting systems</li>
-                <li>Licensing Framework: Modular deployment for authorized partners</li>
-              </ul>
-            </div>
-          </Section>
-
-          <Section id="roadmap" title="10. Roadmap" styles={styles}>
-            <ul className="list-disc pl-5 space-y-2">
-              <li><strong>Phase 1 - Foundation:</strong> Implementation partner onboarding, ecosystem partnerships, compliance validation, technology deployment</li>
-              <li><strong>Phase 2 - Expansion:</strong> Multi-jurisdiction deployment (subject to local regulations), ecosystem contributor activation, enhanced compliance frameworks</li>
-              <li><strong>Phase 3 - Governance:</strong> Governance system activation, platform development programs, expanded participation mechanisms</li>
-              <li><strong>Phase 4 - Scale:</strong> Advanced infrastructure features, international licensing (where permitted), enhanced automation systems</li>
-            </ul>
-            <p className="mt-4 text-sm italic">
-              All phases subject to regulatory approval and compliance requirements.
-            </p>
-          </Section>
-
-          <Section id="notice" title="11. Legal Notice" styles={styles}>
-            <div className="p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg mb-4">
-              <p className="font-semibold mb-2">
-                Important Disclaimers:
-              </p>
+            <div className="p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg mt-4">
+              <p className="font-semibold text-sm mb-2">Compliance Disclaimer:</p>
               <p className="text-sm">
-                Gambino tokens are utility access credentials providing infrastructure usage rights and governance participation. 
-                While secondary markets may exist where tokens can be traded between parties, Gambino itself does not redeem 
-                tokens for cash, guarantee any value, or operate trading markets.
+                Our compliance approach is based on current understanding of applicable regulations 
+                and consultation with legal counsel. Regulatory requirements may change, and our 
+                operations may need to be modified accordingly. We cannot guarantee that our current 
+                or future operations will be deemed compliant by all regulatory authorities.
+              </p>
+            </div>
+          </Section>
+
+          <Section id="roadmap" title="8. Development Roadmap" styles={styles}>
+            <div className="space-y-4">
+              <div>
+                <p className="font-semibold">Phase 1: Foundation (Current - Q4 2025)</p>
+                <ul className="list-disc pl-5 space-y-1 mt-2">
+                  <li>Complete VDV partnership deployment and testing</li>
+                  <li>Refine edge device integration and reliability</li>
+                  <li>Establish compliance frameworks with legal counsel</li>
+                  <li>Build operational track record with initial venues</li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="font-semibold">Phase 2: Expansion (Q1-Q3 2026)</p>
+                <ul className="list-disc pl-5 space-y-1 mt-2">
+                  <li>Onboard additional implementation partners</li>
+                  <li>Deploy across multiple jurisdictions (subject to regulatory approval)</li>
+                  <li>Launch community governance tier system</li>
+                  <li>Expand venue partner network significantly</li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="font-semibold">Phase 3: Platform Services (Q4 2026-2027)</p>
+                <ul className="list-disc pl-5 space-y-1 mt-2">
+                  <li>Develop human entropy API for external blockchain projects</li>
+                  <li>Enhanced analytics and reporting capabilities</li>
+                  <li>Advanced governance tools and community features</li>
+                  <li>International expansion opportunities</li>
+                </ul>
+              </div>
+
+              <div>
+                <p className="font-semibold">Phase 4: Ecosystem Platform (2028+)</p>
+                <ul className="list-disc pl-5 space-y-1 mt-2">
+                  <li>Full-scale human randomness infrastructure services</li>
+                  <li>Third-party developer integration capabilities</li>
+                  <li>Advanced AI and machine learning optimization</li>
+                  <li>Global network of implementation partners</li>
+                </ul>
+              </div>
+            </div>
+
+            <p className="mt-4 text-sm italic">
+              All development phases are subject to regulatory approval, market conditions, 
+              and successful execution of preceding phases.
+            </p>
+          </Section>
+
+          <Section id="risks" title="9. Risk Factors" styles={styles}>
+            <p className="font-semibold mb-3">Platform and Investment Risks:</p>
+            <p>
+              Participation in the Gambino Gold ecosystem involves significant risks that 
+              participants should carefully consider.
+            </p>
+
+            <div className="mt-4">
+              <p className="font-semibold">Regulatory Risks:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li>Cryptocurrency regulations may change and affect platform operations</li>
+                <li>Some jurisdictions may prohibit or restrict platform participation</li>
+                <li>Compliance costs may increase and affect platform economics</li>
+                <li>Regulatory enforcement actions could disrupt operations</li>
+              </ul>
+            </div>
+
+            <div className="mt-4">
+              <p className="font-semibold">Technical Risks:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li>Edge device failures or connectivity issues could affect rewards</li>
+                <li>Blockchain network congestion may delay transactions</li>
+                <li>Smart contract bugs or vulnerabilities could cause fund losses</li>
+                <li>System upgrades may temporarily disrupt services</li>
+              </ul>
+            </div>
+
+            <div className="mt-4">
+              <p className="font-semibold">Business Risks:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li>Implementation partners may discontinue operations</li>
+                <li>Venue partners may terminate hosting agreements</li>
+                <li>User adoption may be lower than anticipated</li>
+                <li>Competitive products may gain market share</li>
+              </ul>
+            </div>
+
+            <div className="mt-4">
+              <p className="font-semibold">Token-Related Risks:</p>
+              <ul className="list-disc pl-5 space-y-2 mt-2">
+                <li>Token values may fluctuate significantly or become worthless</li>
+                <li>Secondary markets may have limited liquidity</li>
+                <li>Platform changes may affect token utility or value</li>
+                <li>No guarantee of continued token distribution programs</li>
+              </ul>
+            </div>
+          </Section>
+
+          <Section id="legal" title="10. Legal Disclaimers" styles={styles}>
+            <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg mb-4">
+              <p className="font-semibold text-sm mb-2">Important Legal Notice:</p>
+              <p className="text-sm">
+                This document is for informational purposes only and does not constitute financial, 
+                investment, tax, or legal advice. Gambino Gold tokens are utility instruments that 
+                provide platform access and governance rights, not investment securities.
               </p>
             </div>
 
-            <p className="mb-3">
-              This document is for informational purposes only and does not constitute:
-            </p>
+            <p className="font-semibold mb-3">This document does NOT constitute:</p>
             <ul className="list-disc pl-5 space-y-1 text-sm">
-              <li>An offer of securities or investment opportunity</li>
-              <li>Investment, financial, tax, or legal advice</li>
-              <li>Solicitation for investment or speculation</li>
-              <li>Promise of returns, profits, or financial gain</li>
-              <li>Guarantee of token value or liquidity</li>
+              <li>An offer to sell securities or investment contracts</li>
+              <li>Investment advice or recommendations</li>
+              <li>Guaranteed returns or profit expectations</li>
+              <li>Financial planning or tax guidance</li>
+              <li>Legal advice or regulatory compliance certification</li>
             </ul>
 
-            <p className="mt-4 font-semibold">Regulatory Compliance:</p>
-            <p className="text-sm">
-              Our model aligns with current interpretations of FinCEN Guidance FIN-2019-G001, federal securities law (utility token framework), 
-              and state money transmitter exemptions for software providers. This model may require modification based on regulatory developments. 
-              Certain jurisdictions may be excluded from participation.
-            </p>
+            <div className="mt-4">
+              <p className="font-semibold">Forward-Looking Statements:</p>
+              <p className="text-sm mt-2">
+                This document contains forward-looking statements about our business plans, 
+                technology development, and market opportunities. Actual results may differ 
+                materially from these statements due to various factors including regulatory 
+                changes, market conditions, and technical challenges.
+              </p>
+            </div>
 
-            <p className={`mt-4 ${styles.text.secondary}`}>
-              For complete details, refer to our{' '}
-              <Link href="/legal/terms" className={`${styles.text.accent} ${styles.text.accentHover} underline decoration-dotted`}>
+            <div className="mt-4">
+              <p className="font-semibold">Jurisdiction and Compliance:</p>
+              <p className="text-sm mt-2">
+                Platform availability and token distribution may be restricted in certain 
+                jurisdictions. Participants are responsible for ensuring compliance with 
+                local laws and regulations. Gambino Gold reserves the right to exclude 
+                participants from jurisdictions where operations may not be legally permissible.
+              </p>
+            </div>
+
+            <p className={`mt-6 text-sm ${styles.text.secondary}`}>
+              For complete terms and conditions, please review our{' '}
+              <Link href="/legal/terms" className={`${styles.text.accent} ${styles.text.accentHover} underline`}>
                 Terms of Service
-              </Link>,{' '}
-              <Link href="/legal/privacy" className={`${styles.text.accent} ${styles.text.accentHover} underline decoration-dotted`}>
+              </Link>{' '}
+              and{' '}
+              <Link href="/legal/privacy" className={`${styles.text.accent} ${styles.text.accentHover} underline`}>
                 Privacy Policy
-              </Link>, and{' '}
-              <Link href="/legal/disclosures" className={`${styles.text.accent} ${styles.text.accentHover} underline decoration-dotted`}>
-                Regulatory Disclosures
               </Link>.
             </p>
           </Section>

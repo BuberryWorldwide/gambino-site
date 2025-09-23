@@ -1,4 +1,3 @@
-// app/legal/terms/page.js
 'use client';
 
 import Link from 'next/link'
@@ -12,203 +11,273 @@ export default function TermsPage() {
 
   return (
     <LegalPageLayout
-      title="Clear. Fair. Professional."
-      subtitle="These Terms govern your access to and use of Gambino technology licensing services. Please read them carefully."
-      badgeText="Terms of Service"
-      lastUpdated="September 4, 2025"
+      title="Terms of Service"
+      subtitle="These terms govern your use of our platform. We update them as we grow and regulations develop."
+      badgeText="Legal Agreement"
+      lastUpdated={new Date().toLocaleDateString('en-US', { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+      })}
     >
-      {/* Intro / Acceptance */}
+      {/* Acceptance */}
       <LegalSection title="1. Acceptance of Terms">
         <p>
-          By accessing our technology platform, creating an account, or using any Gambino services
-          (the <strong>&quot;Services&quot;</strong>), you agree to these Terms of Service
-          (the <strong>&quot;Terms&quot;</strong>) and our{' '}
-          <Link href="/legal/privacy" className={`${styles.text.accent} ${styles.text.accentHover} underline decoration-dotted`}>
-            Privacy Policy
-          </Link>.
-          If you do not agree, do not use the Services.
+          By accessing or utilizing the Gambino Gold platform, you acknowledge and agree to be 
+          bound by these Terms of Service. If you do not agree to these terms, you must 
+          discontinue use of our services immediately. These terms are subject to modification 
+          as we continue platform development and engage with legal counsel to ensure regulatory compliance.
         </p>
       </LegalSection>
 
-      {/* Business Model Clarification */}
-      <LegalSection title="2. Technology Licensing Model">
+      {/* What We Do */}
+      <LegalSection title="2. Platform Services">
         <p>
-          Gambino operates as a <strong>technology licensing provider</strong>. We license cryptocurrency 
-          mining infrastructure software to authorized implementation partners who operate mining 
-          facilities. We do not operate consumer-facing mining operations directly.
+          Gambino Gold develops and operates cryptocurrency distribution technology that 
+          integrates with entertainment systems at participating venues. Our platform facilitates:
         </p>
         <ul className="list-disc pl-5 space-y-2">
-          <li><strong>Implementation Partners:</strong> Licensed operators who use our technology to provide mining infrastructure access</li>
-          <li><strong>Utility Tokens:</strong> Provide access to mining infrastructure, not investment opportunities</li>
-          <li><strong>Community Governance:</strong> Democratic participation in network decisions and community fund allocation</li>
+          <li>User interaction with entertainment systems at partner venue locations</li>
+          <li>Real-time cryptocurrency reward distribution triggered by user activity</li>
+          <li>Transparent multi-party transaction accounting and record-keeping</li>
+          <li>Community governance participation based on demonstrated platform engagement</li>
+        </ul>
+        <p className="mt-4">
+          We maintain partnerships with implementation partners, including VDV, who operate 
+          venue-based systems utilizing our technology infrastructure. Gambino Gold provides 
+          the technological framework while implementation partners manage operational aspects 
+          and venue relationships.
+        </p>
+      </LegalSection>
+
+      {/* Who Can Use It */}
+      <LegalSection title="3. Eligibility Requirements">
+        <p>
+          Platform participation requires that you be at least eighteen (18) years of age or 
+          the age of majority in your jurisdiction, whichever is greater, and possess legal 
+          capacity to enter binding contractual agreements. By utilizing our services, you 
+          represent and warrant that you satisfy these eligibility requirements and will 
+          comply with all applicable local, state, and federal laws regarding cryptocurrency participation.
+        </p>
+        <p className="mt-4">
+          Certain jurisdictions may be subject to access restrictions due to evolving regulatory 
+          requirements. We reserve the right to modify geographic availability as compliance 
+          frameworks develop across different legal environments.
+        </p>
+      </LegalSection>
+
+      {/* Your Account */}
+      <LegalSection title="4. Your Account">
+        <p>
+          To participate, you&apos;ll need to create an account. You&apos;re responsible for:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Providing accurate information</li>
+          <li>Keeping your account secure</li>
+          <li>Telling us if someone else accesses your account</li>
+          <li>Following any identity verification requirements</li>
         </ul>
       </LegalSection>
 
-      {/* Eligibility */}
-      <LegalSection title="3. Eligibility">
+      {/* Tokens */}
+      <LegalSection title="5. Gambino Gold Tokens">
         <p>
-          You must be at least 18 years old and legally able to enter contracts in your jurisdiction. 
-          By using our Services, you represent that you meet these requirements and that all 
-          information you provide is accurate.
-        </p>
-      </LegalSection>
-
-      {/* Account Registration */}
-      <LegalSection title="4. Account Registration">
-        <p>
-          Creating an account may require identity verification for compliance purposes. You are 
-          responsible for maintaining account security and promptly notifying us of unauthorized access.
-        </p>
-      </LegalSection>
-
-      {/* Utility Token Access */}
-      <LegalSection title="5. Utility Token Framework">
-        <p>
-          Gambino utility tokens provide access to mining infrastructure services. They are not 
-          securities, investment contracts, or financial instruments. Token holders gain:
+          Our platform distributes GG tokens that provide:
         </p>
         <ul className="list-disc pl-5 space-y-2">
-          <li>Access to licensed mining infrastructure through implementation partners</li>
-          <li>Participation rights in community governance and DAO voting</li>
-          <li>Eligibility for community benefit programs and governance stipends</li>
-          <li>Access to educational resources and community support</li>
+          <li>Access to platform features and services</li>
+          <li>Participation in community governance voting</li>
+          <li>Eligibility for tier-based community benefits</li>
         </ul>
+        
+        <div className="mt-4 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
+          <p className="font-semibold text-sm mb-2">Important: Read This</p>
+          <ul className="text-sm space-y-1">
+            <li>• We don&apos;t guarantee token value or provide investment advice</li>
+            <li>• Token values can go up, down, or become worthless</li>
+            <li>• People may trade tokens independently - we don&apos;t control that</li>
+            <li>• Token features may change as we develop the platform</li>
+            <li>• Regulations may affect how tokens work</li>
+          </ul>
+        </div>
       </LegalSection>
 
-      {/* Prohibited Uses */}
-      <LegalSection title="6. Prohibited Activities">
-        <p>You may not use our Services to:</p>
+      {/* Venue Operations */}
+      <LegalSection title="6. How Venues Work">
+        <p>
+          Our technology operates through partnerships with venues and operators. When you 
+          participate at a venue:
+        </p>
         <ul className="list-disc pl-5 space-y-2">
-          <li>Violate any applicable laws or regulations</li>
-          <li>Manipulate governance systems or engage in vote buying</li>
-          <li>Attempt to disrupt network operations or security systems</li>
-          <li>Misrepresent your identity or provide false information</li>
-          <li>Use automated systems to exploit platform mechanics</li>
-          <li>Engage in money laundering or other financial crimes</li>
+          <li>You deal directly with the venue for customer service</li>
+          <li>The venue handles any cash transactions</li>
+          <li>Our platform distributes cryptocurrency based on your activity</li>
+          <li>Each venue is an independent business with its own rules</li>
         </ul>
+        <p className="mt-4">
+          We provide the technology platform. We&apos;re not responsible for how individual 
+          venues operate or any issues you have with venue staff.
+        </p>
+      </LegalSection>
+
+      {/* What You Can&apos;t Do */}
+      <LegalSection title="7. Prohibited Activities">
+        <p>Don&apos;t use our platform to:</p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Break any laws</li>
+          <li>Cheat, hack, or manipulate the system</li>
+          <li>Lie about who you are</li>
+          <li>Use bots or automated systems</li>
+          <li>Interfere with other users or venue operations</li>
+          <li>Do anything that could harm the platform or community</li>
+        </ul>
+        <p className="mt-4">
+          If you violate these rules, we may suspend or terminate your account.
+        </p>
       </LegalSection>
 
       {/* Community Governance */}
-      <LegalSection title="7. Community Governance Participation">
+      <LegalSection title="8. Community Governance">
         <p>
-          Participation in DAO governance is merit-based and tied to network contribution, not just 
-          token holdings. Governance participants must:
+          Active participants can earn governance rights through our tier system. If you 
+          participate in governance:
         </p>
         <ul className="list-disc pl-5 space-y-2">
-          <li>Act in good faith and in the network&apos;s best interests</li>
-          <li>Comply with governance procedures and voting protocols</li>
-          <li>Maintain active participation to retain governance privileges</li>
-          <li>Disclose conflicts of interest in governance decisions</li>
+          <li>Vote in good faith for the benefit of the community</li>
+          <li>Follow governance procedures</li>
+          <li>Stay active to maintain your governance rights</li>
+          <li>Disclose conflicts of interest</li>
+        </ul>
+        <p className="mt-4">
+          Governance is about platform operations and community decisions, not profit sharing 
+          or investment returns.
+        </p>
+      </LegalSection>
+
+      {/* Our Stuff */}
+      <LegalSection title="9. Our Technology and Content">
+        <p>
+          We own our platform technology, software, and content. You can use it as intended, 
+          but you can&apos;t:
+        </p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Copy, reverse engineer, or steal our technology</li>
+          <li>Use our content for competing services</li>
+          <li>Remove copyright notices or try to claim ownership</li>
         </ul>
       </LegalSection>
 
-      {/* Implementation Partner Responsibilities */}
-      <LegalSection title="8. Implementation Partner Framework">
+      {/* Privacy */}
+      <LegalSection title="10. Privacy">
         <p>
-          Implementation partners are independent operators who license our technology. Gambino&apos;s 
-          responsibilities are limited to technology licensing and platform support. We are not 
-          responsible for implementation partner business decisions, consumer service, or 
-          operational outcomes.
+          We collect and use information as described in our Privacy Policy. By using our 
+          platform, you agree to how we handle your information.
         </p>
       </LegalSection>
 
-      {/* Intellectual Property */}
-      <LegalSection title="9. Intellectual Property Rights">
+      {/* Risks and Disclaimers */}
+      <LegalSection title="11. Risk Disclosure and Disclaimers">
+        <p className="font-semibold">Material Risk Factors - Required Reading:</p>
+        
+        <div className="mt-4 space-y-4">
+          <div>
+            <p className="font-semibold">Technology and Platform Risks:</p>
+            <p>Our platform utilizes emerging technology infrastructure. Users acknowledge that 
+            technical failures, network disruptions, and cryptocurrency system vulnerabilities 
+            are inherent risks. Participation occurs entirely at user discretion and risk tolerance.</p>
+          </div>
+          
+          <div>
+            <p className="font-semibold">Investment Advisory Disclaimer:</p>
+            <p>Gambino Gold does not provide investment advisory services, financial planning, 
+            or trading recommendations. Token participation should not be undertaken with 
+            expectation of investment returns or profit generation.</p>
+          </div>
+          
+          <div>
+            <p className="font-semibold">Regulatory Environment:</p>
+            <p>Cryptocurrency regulations continue evolving across federal and state jurisdictions. 
+            Regulatory developments may materially affect platform functionality, availability, 
+            or operational parameters.</p>
+          </div>
+          
+          <div>
+            <p className="font-semibold">Performance Disclaimers:</p>
+            <p>While we endeavor to maintain reliable platform operations, we provide no 
+            warranties regarding continuous availability, perfect functionality, or universal 
+            geographic accessibility.</p>
+          </div>
+        </div>
+      </LegalSection>
+
+      {/* Liability Limits */}
+      <LegalSection title="12. Liability Limits">
         <p>
-          Gambino retains all rights to our technology, software, and platform. Implementation 
-          partners receive limited licensing rights for authorized operations. Users may not 
-          reverse engineer, copy, or distribute our proprietary technology.
+          TO THE EXTENT LEGALLY ALLOWED, GAMBINO GOLD IS NOT LIABLE FOR INDIRECT OR 
+          CONSEQUENTIAL DAMAGES FROM USING OUR PLATFORM. OUR TOTAL LIABILITY TO YOU 
+          IS LIMITED TO $100 OR THE AMOUNT YOU PAID US IN THE LAST 12 MONTHS, 
+          WHICHEVER IS GREATER.
         </p>
       </LegalSection>
 
-      {/* Privacy and Data */}
-      <LegalSection title="10. Privacy and Data Protection">
+      {/* Your Responsibility */}
+      <LegalSection title="13. Your Responsibility">
         <p>
-          Your privacy is important to us. Please review our{' '}
-          <Link href="/legal/privacy" className={`${styles.text.accent} ${styles.text.accentHover} underline decoration-dotted`}>
-            Privacy Policy
-          </Link>{' '}
-          to understand how we collect, use, and protect your information in compliance with 
-          applicable data protection laws.
+          You agree to cover our legal costs if your use of our platform causes problems, 
+          you break these terms, or you violate someone else&apos;s rights.
         </p>
       </LegalSection>
 
-      {/* Disclaimers */}
-      <LegalSection title="11. Disclaimers">
+      {/* Ending Your Account */}
+      <LegalSection title="14. Account Termination">
         <p>
-          <strong>No Investment Advice:</strong> Nothing on our platform constitutes investment 
-          advice, financial advice, or trading advice. Our utility tokens provide infrastructure 
-          access rights, not investment opportunities.
-        </p>
-        <p>
-          <strong>Technology Licensing:</strong> We provide technology licensing services, not 
-          consumer mining operations. Users access mining infrastructure through authorized 
-          implementation partners.
-        </p>
-        <p>
-          <strong>No Guarantees:</strong> We make no guarantees about mining profitability, 
-          token value, or operational outcomes. Cryptocurrency mining involves inherent risks.
+          We can suspend or close your account if you break these terms, do something 
+          illegal, or for other reasonable safety or legal reasons. You can close your 
+          account anytime by contacting us.
         </p>
       </LegalSection>
 
-      {/* Limitation of Liability */}
-      <LegalSection title="12. Limitation of Liability">
-        <p>
-          To the maximum extent permitted by law, Gambino shall not be liable for any indirect, 
-          incidental, special, consequential, or punitive damages, including but not limited to 
-          loss of profits, data, or business opportunities.
-        </p>
-        <p>
-          Our total liability for any claims shall not exceed the amount you paid for our services 
-          in the twelve months preceding the claim.
-        </p>
-      </LegalSection>
-
-      {/* Indemnification */}
-      <LegalSection title="13. Indemnification">
-        <p>
-          You agree to indemnify and hold harmless Gambino from any claims, damages, or expenses 
-          arising from your use of our Services, violation of these Terms, or infringement of 
-          third-party rights.
-        </p>
-      </LegalSection>
-
-      {/* Termination */}
-      <LegalSection title="14. Termination">
-        <p>
-          We may suspend or terminate your access to our Services at any time for violation of 
-          these Terms, illegal activity, or other reasonable cause. You may terminate your 
-          account at any time by contacting support.
-        </p>
-      </LegalSection>
-
-      {/* Changes to Terms */}
+      {/* Changes */}
       <LegalSection title="15. Changes to These Terms">
         <p>
-          We may update these Terms to reflect changes in law, technology, or our services. 
-          Material changes will be communicated through our platform and the updated Terms 
-          will be posted here with a new effective date.
+          We&apos;ll update these terms as we develop our platform and get proper legal counsel. 
+          Big changes will be announced on our platform. Keep using our services after 
+          changes means you agree to the new terms.
         </p>
       </LegalSection>
 
-      {/* Governing Law */}
-      <LegalSection title="16. Governing Law and Disputes">
+      {/* Legal Stuff */}
+      <LegalSection title="16. Legal Details">
         <p>
-          These Terms are governed by applicable jurisdictional laws. Any disputes will be 
-          resolved through binding arbitration rather than court proceedings. Class actions 
-          are not permitted.
+          These terms are governed by Florida law. If we have disputes, we&apos;ll try to 
+          work them out. If we can&apos;t, they&apos;ll be resolved through binding arbitration 
+          rather than courts.
+        </p>
+        <p className="mt-4">
+          If part of these terms becomes unenforceable, the rest still applies. These 
+          terms represent our complete agreement about using our platform.
         </p>
       </LegalSection>
 
       {/* Contact */}
-      <LegalSection title="17. Contact Information">
+      <LegalSection title="17. Contact Us">
         <p>
-          Questions about these Terms or our technology licensing services? Contact us at{' '}
+          Questions about these terms or our platform? Contact us at{' '}
           <a href="mailto:support@gambino.gold" className={`${styles.text.accent} ${styles.text.accentHover} underline decoration-dotted`}>
             support@gambino.gold
           </a>.
         </p>
       </LegalSection>
+
+      {/* Development Notice */}
+      <div className="mt-8 p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
+        <p className="font-semibold text-sm mb-2">Platform Development Notice</p>
+        <p className="text-sm">
+          We&apos;re actively developing our platform and working with legal counsel to ensure 
+          proper compliance. These terms will be updated regularly as we grow and as 
+          regulatory requirements become clearer. Check back periodically for updates.
+        </p>
+      </div>
     </LegalPageLayout>
   );
 }

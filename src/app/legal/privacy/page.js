@@ -198,7 +198,7 @@ export default function PrivacyPage() {
         </p>
         <p className="mt-4">
           For time-sensitive privacy matters or requests requiring immediate attention, please 
-          clearly indicate "PRIVACY REQUEST" in your subject line.
+          clearly indicate &quot;PRIVACY REQUEST&quot; in your subject line.
         </p>
       </LegalSection>
 

@@ -121,9 +121,9 @@ export default function ArtShowcase() {
         </div>
       </section>
 
-      {/* Gaming Aesthetics */}
+      {/* Digital Aesthetics */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-8">
-        <h2 className={`text-2xl font-bold mb-6 ${styles.text.primary}`}>Gaming Aesthetics</h2>
+        <h2 className={`text-2xl font-bold mb-6 ${styles.text.primary}`}>Digital Aesthetics</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           <PatternCard
@@ -142,7 +142,7 @@ export default function ArtShowcase() {
           </PatternCard>
 
           <PatternCard
-            title="Hex Gaming"
+            title="Hex Pattern"
             patternStyle={{
               background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)',
             }}

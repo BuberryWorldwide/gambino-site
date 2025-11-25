@@ -41,7 +41,7 @@ function Nav() {
         <nav className={`hidden gap-8 text-sm md:flex lg:gap-10 ${
           isDark ? 'text-neutral-300' : 'text-neutral-600'
         }`}>
-          <Link href="/utility-token-gaming" className={`transition-colors ${
+          <Link href="/platform" className={`transition-colors ${
             isDark ? 'hover:text-white' : 'hover:text-neutral-900'
           }`}>Platform</Link>
           <Link href="/dao-governance" className={`transition-colors ${
@@ -124,7 +124,7 @@ function Nav() {
             : 'border-neutral-200 bg-white/95'
         }`}>
           <nav className="flex flex-col px-6 py-4 space-y-1">
-            <Link href="/utility-token-gaming" className={`px-3 py-3 text-sm transition-colors rounded-lg ${
+            <Link href="/platform" className={`px-3 py-3 text-sm transition-colors rounded-lg ${
               isDark 
                 ? 'text-neutral-300 hover:text-white hover:bg-neutral-800' 
                 : 'text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100'

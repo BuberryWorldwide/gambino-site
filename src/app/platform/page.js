@@ -37,6 +37,24 @@ export default function PlatformPage() {
 
       {/* PLATFORM OVERVIEW */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
+        {/* Proof-of-Luck Explainer */}
+        <div className={`${styles.layout.card} mb-16`}>
+          <div className="text-center mb-6">
+            <h2 className={`text-2xl font-bold ${styles.text.primary}`}>
+              Proof-of-Luck <span className={styles.text.accent}>Mining Protocol</span>
+            </h2>
+          </div>
+          <p className={`text-center max-w-3xl mx-auto ${styles.text.secondary}`}>
+            Similar to how <strong>Helium</strong> uses Proof-of-Coverage for wireless networks and <strong>Filecoin</strong> uses
+            Proof-of-Storage for decentralized storage, Gambino Gold operates a <strong>Proof-of-Luck</strong> protocol.
+            Instead of burning electricity (Proof-of-Work) or staking capital (Proof-of-Stake), participants engage
+            at licensed venues where human-triggered randomness creates verifiable computational work.
+          </p>
+          <p className={`text-center max-w-2xl mx-auto mt-4 text-sm ${styles.text.tertiary}`}>
+            GAMBINO tokens function as mining protocol utility tokens with DAO governance rights and network access.
+          </p>
+        </div>
+
         <div className="text-center mb-12">
           <h2 className={`text-3xl font-bold lg:text-4xl mb-4 ${styles.text.primary}`}>
             How Our <span className={styles.text.accent}>Platform Works</span>
@@ -53,7 +71,7 @@ export default function PlatformPage() {
               <div className="order-2 lg:order-1">
                 <div className={styles.layout.card}>
                   <div className="flex items-center gap-4 mb-6">
-                    <div className={`flex h-16 w-16 items-center justify-center rounded-full border-2 ${styles.text.accent} ${isDark ? 'bg-yellow-500/20 border-yellow-500/30' : 'bg-yellow-600/20 border-yellow-600/30'}`}>
+                    <div className={`flex h-16 w-16 items-center justify-center rounded-full border-2 ${isDark ? 'bg-neutral-800/50 border-neutral-700' : 'bg-neutral-100 border-neutral-300'}`}>
                       <span className={`text-2xl font-bold ${styles.text.accent}`}>1</span>
                     </div>
                     <div>
@@ -63,39 +81,39 @@ export default function PlatformPage() {
                       </p>
                     </div>
                   </div>
-            
+
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
-                      <div className={`w-2 h-2 rounded-full mt-2 ${isDark ? 'bg-yellow-400' : 'bg-yellow-600'}`}></div>
+                      <div className={`w-2 h-2 rounded-full mt-2 ${styles.text.accent} bg-current opacity-60`}></div>
                       <p className={styles.text.secondary}>
                         Comprehensive mining infrastructure software stack
                       </p>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className={`w-2 h-2 rounded-full mt-2 ${isDark ? 'bg-yellow-400' : 'bg-yellow-600'}`}></div>
+                      <div className={`w-2 h-2 rounded-full mt-2 ${styles.text.accent} bg-current opacity-60`}></div>
                       <p className={styles.text.secondary}>
                         Community governance and management tools
                       </p>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className={`w-2 h-2 rounded-full mt-2 ${isDark ? 'bg-yellow-400' : 'bg-yellow-600'}`}></div>
+                      <div className={`w-2 h-2 rounded-full mt-2 ${styles.text.accent} bg-current opacity-60`}></div>
                       <p className={styles.text.secondary}>
                         Transparent, auditable operations framework
                       </p>
                     </div>
                   </div>
-            
-                  <div className={`mt-6 pt-6 border-t ${isDark ? 'border-yellow-500/20' : 'border-yellow-600/20'}`}>
+
+                  <div className={`mt-6 pt-6 border-t ${isDark ? 'border-neutral-700' : 'border-neutral-300'}`}>
                     <div className={`text-sm ${styles.text.tertiary}`}>
                       <strong>Access:</strong> Available to authorized implementation partners and community operators.
                     </div>
                   </div>
                 </div>
               </div>
-              
+
               <div className="order-1 lg:order-2">
                 <div className={`${styles.layout.cardLarge} text-center`}>
-                  <div className={`w-24 h-24 mx-auto mb-6 rounded-full flex items-center justify-center ${isDark ? 'bg-yellow-500/20' : 'bg-yellow-600/20'}`}>
+                  <div className={`w-24 h-24 mx-auto mb-6 rounded-full flex items-center justify-center ${isDark ? 'bg-neutral-800/50 border border-neutral-700' : 'bg-neutral-100 border border-neutral-300'}`}>
                     <span className={`text-4xl ${styles.text.accent}`}>⚙️</span>
                   </div>
                   <h4 className={`text-xl font-bold mb-3 ${styles.text.primary}`}>
@@ -115,32 +133,32 @@ export default function PlatformPage() {
               <div>
                 <div className={styles.layout.card}>
                   <div className="flex items-center gap-4 mb-6">
-                    <div className={`flex h-16 w-16 items-center justify-center rounded-full border-2 ${styles.text.accent} ${isDark ? 'bg-blue-500/20 border-blue-500/30' : 'bg-blue-600/20 border-blue-600/30'}`}>
-                      <span className={`text-2xl font-bold ${isDark ? 'text-blue-300' : 'text-blue-600'}`}>2</span>
+                    <div className={`flex h-16 w-16 items-center justify-center rounded-full border-2 ${isDark ? 'bg-neutral-800/50 border-neutral-700' : 'bg-neutral-100 border-neutral-300'}`}>
+                      <span className={`text-2xl font-bold ${styles.text.accent}`}>2</span>
                     </div>
                     <div>
                       <h3 className={`text-2xl font-bold ${styles.text.primary}`}>Community Access</h3>
-                      <p className={`font-semibold ${isDark ? 'text-blue-300' : 'text-blue-600'}`}>
+                      <p className={`font-semibold ${styles.text.accent}`}>
                         Token-based infrastructure access
                       </p>
                     </div>
                   </div>
-            
+
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
-                      <div className={`w-2 h-2 rounded-full mt-2 ${isDark ? 'bg-blue-400' : 'bg-blue-600'}`}></div>
+                      <div className={`w-2 h-2 rounded-full mt-2 ${styles.text.accent} bg-current opacity-60`}></div>
                       <p className={styles.text.secondary}>
                         Utility tokens provide access to mining infrastructure
                       </p>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className={`w-2 h-2 rounded-full mt-2 ${isDark ? 'bg-blue-400' : 'bg-blue-600'}`}></div>
+                      <div className={`w-2 h-2 rounded-full mt-2 ${styles.text.accent} bg-current opacity-60`}></div>
                       <p className={styles.text.secondary}>
                         Democratic governance through community participation
                       </p>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className={`w-2 h-2 rounded-full mt-2 ${isDark ? 'bg-blue-400' : 'bg-blue-600'}`}></div>
+                      <div className={`w-2 h-2 rounded-full mt-2 ${styles.text.accent} bg-current opacity-60`}></div>
                       <p className={styles.text.secondary}>
                         Revenue sharing based on community contribution
                       </p>
@@ -148,11 +166,11 @@ export default function PlatformPage() {
                   </div>
                 </div>
               </div>
-              
+
               <div>
                 <div className={`${styles.layout.cardLarge} text-center`}>
-                  <div className={`w-24 h-24 mx-auto mb-6 rounded-full flex items-center justify-center ${isDark ? 'bg-blue-500/20' : 'bg-blue-600/20'}`}>
-                    <span className={`text-4xl ${isDark ? 'text-blue-300' : 'text-blue-600'}`}>🏛️</span>
+                  <div className={`w-24 h-24 mx-auto mb-6 rounded-full flex items-center justify-center ${isDark ? 'bg-neutral-800/50 border border-neutral-700' : 'bg-neutral-100 border border-neutral-300'}`}>
+                    <span className={`text-4xl ${styles.text.accent}`}>🏛️</span>
                   </div>
                   <h4 className={`text-xl font-bold mb-3 ${styles.text.primary}`}>
                     Community Governance
@@ -171,32 +189,32 @@ export default function PlatformPage() {
               <div className="order-2 lg:order-1">
                 <div className={styles.layout.card}>
                   <div className="flex items-center gap-4 mb-6">
-                    <div className={`flex h-16 w-16 items-center justify-center rounded-full border-2 ${isDark ? 'bg-green-500/20 border-green-500/30' : 'bg-green-600/20 border-green-600/30'}`}>
-                      <span className={`text-2xl font-bold ${isDark ? 'text-green-300' : 'text-green-600'}`}>3</span>
+                    <div className={`flex h-16 w-16 items-center justify-center rounded-full border-2 ${isDark ? 'bg-neutral-800/50 border-neutral-700' : 'bg-neutral-100 border-neutral-300'}`}>
+                      <span className={`text-2xl font-bold ${styles.text.accent}`}>3</span>
                     </div>
                     <div>
                       <h3 className={`text-2xl font-bold ${styles.text.primary}`}>Compliance Framework</h3>
-                      <p className={`font-semibold ${isDark ? 'text-green-300' : 'text-green-600'}`}>
+                      <p className={`font-semibold ${styles.text.accent}`}>
                         Transparent, auditable operations
                       </p>
                     </div>
                   </div>
-            
+
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
-                      <div className={`w-2 h-2 rounded-full mt-2 ${isDark ? 'bg-green-400' : 'bg-green-600'}`}></div>
+                      <div className={`w-2 h-2 rounded-full mt-2 ${styles.text.accent} bg-current opacity-60`}></div>
                       <p className={styles.text.secondary}>
                         Built-in regulatory compliance and reporting tools
                       </p>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className={`w-2 h-2 rounded-full mt-2 ${isDark ? 'bg-green-400' : 'bg-green-600'}`}></div>
+                      <div className={`w-2 h-2 rounded-full mt-2 ${styles.text.accent} bg-current opacity-60`}></div>
                       <p className={styles.text.secondary}>
                         Transparent financial tracking and community auditing
                       </p>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className={`w-2 h-2 rounded-full mt-2 ${isDark ? 'bg-green-400' : 'bg-green-600'}`}></div>
+                      <div className={`w-2 h-2 rounded-full mt-2 ${styles.text.accent} bg-current opacity-60`}></div>
                       <p className={styles.text.secondary}>
                         Legal framework support for community operations
                       </p>
@@ -204,11 +222,11 @@ export default function PlatformPage() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="order-1 lg:order-2">
                 <div className={`${styles.layout.cardLarge} text-center`}>
-                  <div className={`w-24 h-24 mx-auto mb-6 rounded-full flex items-center justify-center ${isDark ? 'bg-green-500/20' : 'bg-green-600/20'}`}>
-                    <span className={`text-4xl ${isDark ? 'text-green-300' : 'text-green-600'}`}>🛡️</span>
+                  <div className={`w-24 h-24 mx-auto mb-6 rounded-full flex items-center justify-center ${isDark ? 'bg-neutral-800/50 border border-neutral-700' : 'bg-neutral-100 border border-neutral-300'}`}>
+                    <span className={`text-4xl ${styles.text.accent}`}>🛡️</span>
                   </div>
                   <h4 className={`text-xl font-bold mb-3 ${styles.text.primary}`}>
                     Legal Compliance

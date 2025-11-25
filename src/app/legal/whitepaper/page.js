@@ -78,7 +78,7 @@ export default function WhitepaperPage() {
             <p className="mt-4 font-semibold">Business Structure:</p>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>Gambino Gold:</strong> Develops and licenses the technology platform</li>
-              <li><strong>Implementation Partners:</strong> Install and operate systems at venues (like VDV)</li>
+              <li><strong>Implementation Partners:</strong> Install and operate systems at venues</li>
               <li><strong>Venue Partners:</strong> Host the entertainment systems and provide customer service</li>
               <li><strong>Users:</strong> Engage with systems and receive cryptocurrency rewards</li>
             </ul>
@@ -178,7 +178,7 @@ export default function WhitepaperPage() {
             <div className="mt-4">
               <p className="font-semibold">Partner Structure:</p>
               <ul className="list-disc pl-5 space-y-2 mt-2">
-                <li><strong>Implementation Partners:</strong> Licensed operators like VDV who manage venue relationships</li>
+                <li><strong>Implementation Partners:</strong> Licensed operators who manage venue relationships</li>
                 <li><strong>Venue Partners:</strong> Retail locations, entertainment venues, and other customer-facing businesses</li>
                 <li><strong>Community Partners:</strong> Local organizations benefiting from community fund allocations</li>
               </ul>
@@ -318,7 +318,7 @@ export default function WhitepaperPage() {
               <div>
                 <p className="font-semibold">Phase 1: Foundation (Current - Q4 2025)</p>
                 <ul className="list-disc pl-5 space-y-1 mt-2">
-                  <li>Complete VDV partnership deployment and testing</li>
+                  <li>Complete initial partnership deployment and testing</li>
                   <li>Refine edge device integration and reliability</li>
                   <li>Establish compliance frameworks with legal counsel</li>
                   <li>Build operational track record with initial venues</li>

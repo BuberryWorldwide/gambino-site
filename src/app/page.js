@@ -36,7 +36,7 @@ export default function Home() {
 
           {/* CTAs - using theme styles */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="/utility-token-gaming" className={styles.buttons.primary}>
+            <a href="/platform" className={styles.buttons.primary}>
               <span className="relative z-10">Learn How It Works</span>
             </a>
             <a
@@ -188,6 +188,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* COMPLIANCE NOTICE - Minimal */}
+      <section className="relative z-10 mx-auto max-w-4xl px-6 py-8">
+        <div className={`flex flex-wrap items-center justify-center gap-4 text-sm ${styles.text.tertiary}`}>
+          <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${isDark ? 'border-neutral-700 bg-neutral-800/50' : 'border-neutral-300 bg-neutral-100/50'}`}>
+            <span className="text-amber-500">18+</span> Licensed Venues Only
+          </span>
+          <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${isDark ? 'border-neutral-700 bg-neutral-800/50' : 'border-neutral-300 bg-neutral-100/50'}`}>
+            Software Infrastructure Provider
+          </span>
+          <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${isDark ? 'border-neutral-700 bg-neutral-800/50' : 'border-neutral-300 bg-neutral-100/50'}`}>
+            Utility Tokens for Governance
+          </span>
+          <a href="/compliance" className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-full border transition-colors ${isDark ? 'border-yellow-500/30 text-yellow-400 hover:bg-yellow-500/10' : 'border-yellow-600/30 text-yellow-600 hover:bg-yellow-500/10'}`}>
+            View Compliance Details
+            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="relative z-10 mx-auto max-w-4xl px-6 py-16 text-center">
         <div className={styles.layout.cardLarge}>
@@ -199,7 +220,7 @@ export default function Home() {
             we&apos;re here to help you get started.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/utility-token-gaming" className={styles.buttons.primary}>
+            <a href="/platform" className={styles.buttons.primary}>
               Explore Platform
             </a>
             <a

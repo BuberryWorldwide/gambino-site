@@ -52,7 +52,7 @@ export default function PrivacyPage() {
           We may share your personal information in the following circumstances:
         </p>
         <ul className="list-disc pl-5 space-y-2">
-          <li><strong>Implementation Partners:</strong> Limited operational data sharing with partners like VDV for service delivery and compliance</li>
+          <li><strong>Implementation Partners:</strong> Limited operational data sharing with licensed implementation partners for service delivery and compliance</li>
           <li><strong>Regulatory Authorities:</strong> Information disclosure as required by applicable laws, regulations, or regulatory investigations</li>
           <li><strong>Service Providers:</strong> Third-party vendors who provide technical infrastructure, security, or operational support under confidentiality agreements</li>
           <li><strong>Legal Obligations:</strong> Disclosure pursuant to legal process, court orders, subpoenas, or law enforcement requests</li>

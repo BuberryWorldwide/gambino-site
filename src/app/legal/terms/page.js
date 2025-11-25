@@ -43,7 +43,7 @@ export default function TermsPage() {
           <li>Community governance participation based on demonstrated platform engagement</li>
         </ul>
         <p className="mt-4">
-          We maintain partnerships with implementation partners, including VDV, who operate 
+          We maintain partnerships with licensed implementation partners who operate
           venue-based systems utilizing our technology infrastructure. Gambino Gold provides 
           the technological framework while implementation partners manage operational aspects 
           and venue relationships.
@@ -60,8 +60,13 @@ export default function TermsPage() {
           comply with all applicable local, state, and federal laws regarding cryptocurrency participation.
         </p>
         <p className="mt-4">
-          Certain jurisdictions may be subject to access restrictions due to evolving regulatory 
-          requirements. We reserve the right to modify geographic availability as compliance 
+          <strong>Age verification is required at all licensed partner venues.</strong> Participation
+          is restricted to individuals 18 years of age or older.
+        </p>
+        <p className="mt-4">
+          <strong>Current Operations:</strong> We are currently in a development phase pilot testing
+          in Tennessee. Certain jurisdictions may be subject to access restrictions due to evolving
+          regulatory requirements. We reserve the right to modify geographic availability as compliance
           frameworks develop across different legal environments.
         </p>
       </LegalSection>

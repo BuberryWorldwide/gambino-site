@@ -237,13 +237,11 @@ export default function PartnersPage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="https://vdv.gold" 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <a
+                href="mailto:partners@gambino.gold"
                 className={styles.buttons.primary}
               >
-                <span className="relative z-10">Contact VDV Implementation</span>
+                <span className="relative z-10">Become an Implementation Partner</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a 

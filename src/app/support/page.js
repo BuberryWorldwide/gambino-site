@@ -154,7 +154,7 @@ export default function SupportPage() {
               <p className={`mb-6 ${styles.text.secondary}`}>
                 Your wallet is automatically created when you sign up. Access it through your dashboard.
               </p>
-              <Link href="/utility-token-gaming" className="border border-yellow-500 hover:bg-yellow-500/10 text-yellow-500 px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2">
+              <Link href="/platform" className="border border-yellow-500 hover:bg-yellow-500/10 text-yellow-500 px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2">
                 Learn More
               </Link>
             </div>
@@ -213,13 +213,11 @@ export default function SupportPage() {
               For venue-related questions or technical issues with equipment, 
               contact our implementation partner.
             </p>
-            <a 
-              href="https://vdv.gold" 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <a
+              href="/partners"
               className="border border-yellow-500 hover:bg-yellow-500/10 text-yellow-500 px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center gap-2"
             >
-              Contact VDV <ExternalLink className="w-4 h-4" />
+              Contact Implementation Partner <ExternalLink className="w-4 h-4" />
             </a>
           </div>
         </div>

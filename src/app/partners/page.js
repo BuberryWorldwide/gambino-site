@@ -50,11 +50,6 @@ export default function PartnersPage() {
       <section className="relative z-10 py-20 lg:py-32">
         <div className="mx-auto max-w-6xl px-6">
           <div className="text-center mb-16">
-            <div className={styles.badges.primary}>
-              <div className={`h-2 w-2 rounded-full ${styles.badges.success}`}></div>
-              Licensed • Professional • Nationwide
-            </div>
-            
             <h1 className="text-4xl lg:text-6xl font-bold mb-6">
               <span className={styles.text.primary}>Partner with</span>{" "}
               <span className={styles.text.gradient}>Gambino Gold</span>

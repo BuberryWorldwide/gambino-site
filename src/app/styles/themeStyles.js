@@ -68,57 +68,66 @@ export const getThemeStyles = (isDark) => {
   };
 };
 
-// Background effects component with theme-aware yellows
+// Background effects component - abstract gold ambient with floating shapes
 export const BackgroundEffects = ({ isDark }) => {
   return (
-    <>
-      {/* Floating particles - all with theme-aware yellows */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className={`absolute top-20 left-10 w-3 h-3 rounded-full animate-pulse ${isDark ? 'bg-yellow-400/50' : 'bg-yellow-600/60'}`}></div>
-        <div className={`absolute top-40 right-20 w-2 h-2 rounded-full animate-pulse delay-1000 ${isDark ? 'bg-yellow-300/60' : 'bg-yellow-700/50'}`}></div>
-        <div className={`absolute top-60 left-1/3 w-4 h-4 rounded-full animate-pulse delay-2000 ${isDark ? 'bg-amber-400/40' : 'bg-amber-600/50'}`}></div>
-        <div className={`absolute bottom-40 right-10 w-3 h-3 rounded-full animate-pulse delay-3000 ${isDark ? 'bg-yellow-500/50' : 'bg-yellow-700/40'}`}></div>
-        <div className={`absolute bottom-20 left-20 w-2 h-2 rounded-full animate-pulse delay-500 ${isDark ? 'bg-yellow-400/60' : 'bg-yellow-600/60'}`}></div>
-        <div className={`absolute top-1/3 right-1/4 w-2 h-2 rounded-full animate-pulse delay-1500 ${isDark ? 'bg-amber-300/50' : 'bg-amber-700/40'}`}></div>
-        
-        {/* Mid-section particles */}
-        <div className={`absolute top-1/2 left-16 w-3 h-3 rounded-full animate-pulse delay-2500 ${isDark ? 'bg-yellow-500/45' : 'bg-yellow-600/45'}`}></div>
-        <div className={`absolute top-3/4 right-32 w-2 h-2 rounded-full animate-pulse delay-4000 ${isDark ? 'bg-amber-400/55' : 'bg-amber-600/45'}`}></div>
-        <div className={`absolute top-1/4 left-2/3 w-2.5 h-2.5 rounded-full animate-pulse delay-3500 ${isDark ? 'bg-yellow-300/50' : 'bg-yellow-700/40'}`}></div>
-        <div className={`absolute bottom-1/3 left-1/2 w-2 h-2 rounded-full animate-pulse delay-1200 ${isDark ? 'bg-yellow-400/60' : 'bg-yellow-600/60'}`}></div>
-        <div className={`absolute top-2/3 right-16 w-3 h-3 rounded-full animate-pulse delay-2800 ${isDark ? 'bg-amber-500/45' : 'bg-amber-700/40'}`}></div>
-        <div className={`absolute bottom-1/4 left-1/4 w-2 h-2 rounded-full animate-pulse delay-800 ${isDark ? 'bg-yellow-500/55' : 'bg-yellow-600/50'}`}></div>
+    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+      {/* Top right glow */}
+      <div className={`absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full blur-3xl ${isDark ? 'bg-yellow-500/15' : 'bg-yellow-500/10'}`}></div>
 
-        {/* Floating sparkles - theme aware */}
-        <div className={`absolute top-16 left-1/2 w-1 h-1 rounded-full animate-ping ${isDark ? 'bg-yellow-200/70' : 'bg-yellow-800/60'}`} style={{animationDuration: '3s', animationDelay: '0.5s'}}></div>
-        <div className={`absolute top-3/4 left-1/3 w-1 h-1 rounded-full animate-ping ${isDark ? 'bg-amber-200/70' : 'bg-amber-800/60'}`} style={{animationDuration: '2.5s', animationDelay: '1.2s'}}></div>
-        <div className={`absolute bottom-16 right-1/2 w-1 h-1 rounded-full animate-ping ${isDark ? 'bg-yellow-100/80' : 'bg-yellow-900/70'}`} style={{animationDuration: '3.5s', animationDelay: '2.1s'}}></div>
-      </div>
+      {/* Bottom left glow */}
+      <div className={`absolute -bottom-48 -left-32 w-[600px] h-[600px] rounded-full blur-3xl ${isDark ? 'bg-amber-600/12' : 'bg-amber-500/8'}`}></div>
 
-      {/* Background geometric shapes - theme aware gradients */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className={`absolute top-0 right-0 w-96 h-96 rounded-full blur-3xl transform translate-x-32 -translate-y-32 ${isDark ? 'bg-gradient-to-br from-yellow-500/12 to-amber-600/8' : 'bg-gradient-to-br from-yellow-700/8 to-amber-800/6'}`}></div>
-        <div className={`absolute bottom-0 left-0 w-80 h-80 rounded-full blur-3xl transform -translate-x-24 translate-y-24 ${isDark ? 'bg-gradient-to-tr from-amber-600/15 to-yellow-500/8' : 'bg-gradient-to-tr from-amber-700/10 to-yellow-700/6'}`}></div>
-        <div className={`absolute top-1/2 right-1/4 w-64 h-64 rounded-full blur-2xl ${isDark ? 'bg-gradient-to-br from-yellow-400/8 to-transparent' : 'bg-gradient-to-br from-yellow-600/6 to-transparent'}`}></div>
-        <div className={`absolute top-1/4 left-1/4 w-48 h-48 rounded-full blur-xl ${isDark ? 'bg-gradient-to-tr from-amber-500/10 to-transparent' : 'bg-gradient-to-tr from-amber-700/8 to-transparent'}`}></div>
-        
-        {/* Grid pattern - theme aware opacity and color */}
-        <div className={`absolute inset-0 ${isDark ? 'opacity-[0.15]' : 'opacity-[0.08]'}`}>
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(234, 179, 8, ${isDark ? '0.3' : '0.15'}) 1px, transparent 0)`,
-            backgroundSize: '80px 80px'
-          }}></div>
-        </div>
-        
-        {/* Animated geometric shapes - theme aware borders */}
-        <div className={`absolute top-1/4 left-1/4 w-32 h-32 border rounded-lg rotate-45 animate-spin ${isDark ? 'border-yellow-500/20' : 'border-yellow-600/30'}`} style={{animationDuration: '25s'}}></div>
-        <div className={`absolute bottom-1/3 right-1/3 w-24 h-24 border rounded-full animate-ping ${isDark ? 'border-amber-400/15' : 'border-amber-600/25'}`} style={{animationDuration: '5s'}}></div>
-        <div className={`absolute top-3/4 left-2/3 w-20 h-20 border-2 rounded-lg rotate-12 animate-pulse ${isDark ? 'border-yellow-300/12' : 'border-yellow-700/20'}`} style={{animationDuration: '6s'}}></div>
-        
-        {/* Moving lines - theme aware */}
-        <div className={`absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent to-transparent ${isDark ? 'via-yellow-500/20' : 'via-yellow-600/15'}`}></div>
-        <div className={`absolute bottom-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent to-transparent ${isDark ? 'via-amber-400/15' : 'via-amber-600/12'}`}></div>
-      </div>
-    </>
+      {/* Center subtle radial - draws focus */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: isDark
+            ? 'radial-gradient(ellipse at 50% 30%, rgba(234, 179, 8, 0.06) 0%, transparent 60%)'
+            : 'radial-gradient(ellipse at 50% 30%, rgba(234, 179, 8, 0.04) 0%, transparent 60%)'
+        }}
+      ></div>
+
+      {/* Floating abstract shapes */}
+      {/* Ring - top left area */}
+      <div
+        className={`absolute top-[15%] left-[10%] w-32 h-32 rounded-full border ${isDark ? 'border-yellow-500/10' : 'border-yellow-600/8'}`}
+      ></div>
+
+      {/* Filled circle - right side mid */}
+      <div
+        className={`absolute top-[45%] right-[8%] w-20 h-20 rounded-full ${isDark ? 'bg-amber-500/5' : 'bg-amber-500/4'}`}
+      ></div>
+
+      {/* Small ring - bottom right */}
+      <div
+        className={`absolute bottom-[25%] right-[20%] w-16 h-16 rounded-full border ${isDark ? 'border-yellow-400/8' : 'border-yellow-600/6'}`}
+      ></div>
+
+      {/* Larger ring - left side lower */}
+      <div
+        className={`absolute top-[60%] left-[5%] w-48 h-48 rounded-full border ${isDark ? 'border-amber-500/6' : 'border-amber-600/5'}`}
+      ></div>
+
+      {/* Small filled - top center-right */}
+      <div
+        className={`absolute top-[20%] right-[30%] w-8 h-8 rounded-full ${isDark ? 'bg-yellow-500/8' : 'bg-yellow-500/6'}`}
+      ></div>
+
+      {/* Medium ring - bottom left area */}
+      <div
+        className={`absolute bottom-[15%] left-[25%] w-24 h-24 rounded-full border ${isDark ? 'border-yellow-500/8' : 'border-yellow-600/6'}`}
+      ></div>
+
+      {/* Vignette - subtle darkening at edges */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background: isDark
+            ? 'radial-gradient(ellipse at 50% 50%, transparent 40%, rgba(0, 0, 0, 0.4) 100%)'
+            : 'radial-gradient(ellipse at 50% 50%, transparent 50%, rgba(0, 0, 0, 0.08) 100%)'
+        }}
+      ></div>
+    </div>
   );
 };

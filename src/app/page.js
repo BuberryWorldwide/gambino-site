@@ -15,12 +15,6 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-24 text-center">
         <div className="mx-auto max-w-4xl">
-          {/* Badge - using theme styles */}
-          <div className={styles.badges.primary}>
-            <div className={`h-2 w-2 rounded-full ${styles.badges.dot}`}></div>
-            Community-Powered Mining Network
-          </div>
-          
           <h1 className="text-5xl font-extrabold tracking-tight lg:text-7xl mb-6">
             <span className={styles.text.primary}>Mining Infrastructure</span>{' '}
             <span className={styles.text.gradient}>
@@ -144,15 +138,15 @@ export default function Home() {
       {/* TRUST & VALUES */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
         <div className="text-center">
-          <h2 className={`text-3xl font-bold mb-8 ${styles.text.primary}`}>
+          <h2 className={`text-3xl font-bold mb-12 ${styles.text.primary}`}>
             Built on <span className={styles.text.accent}>Trust &amp; Transparency</span>
           </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
+
+          <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className={`w-12 h-12 mx-auto mb-4 rounded-lg flex items-center justify-center ${isDark ? 'bg-green-500/20' : 'bg-green-500/10'}`}>
-                <svg className={`w-6 h-6 ${isDark ? 'text-green-400' : 'text-green-600'}`} fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              <div className={`w-10 h-10 mx-auto mb-4 flex items-center justify-center ${styles.text.accent}`}>
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
                 </svg>
               </div>
               <h3 className={`text-lg font-semibold mb-2 ${styles.text.primary}`}>Regulatory Compliant</h3>
@@ -160,11 +154,11 @@ export default function Home() {
                 Full compliance framework ensuring legitimate, transparent operations
               </p>
             </div>
-            
+
             <div className="text-center">
-              <div className={`w-12 h-12 mx-auto mb-4 rounded-lg flex items-center justify-center ${isDark ? 'bg-blue-500/20' : 'bg-blue-500/10'}`}>
-                <svg className={`w-6 h-6 ${isDark ? 'text-blue-400' : 'text-blue-600'}`} fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+              <div className={`w-10 h-10 mx-auto mb-4 flex items-center justify-center ${styles.text.accent}`}>
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                 </svg>
               </div>
               <h3 className={`text-lg font-semibold mb-2 ${styles.text.primary}`}>Community Focused</h3>
@@ -172,11 +166,11 @@ export default function Home() {
                 Every operation designed to benefit local communities and participants
               </p>
             </div>
-            
+
             <div className="text-center">
-              <div className={`w-12 h-12 mx-auto mb-4 rounded-lg flex items-center justify-center ${isDark ? 'bg-purple-500/20' : 'bg-purple-500/10'}`}>
-                <svg className={`w-6 h-6 ${isDark ? 'text-purple-400' : 'text-purple-600'}`} fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+              <div className={`w-10 h-10 mx-auto mb-4 flex items-center justify-center ${styles.text.accent}`}>
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
                 </svg>
               </div>
               <h3 className={`text-lg font-semibold mb-2 ${styles.text.primary}`}>Built with Care</h3>
@@ -188,19 +182,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* COMPLIANCE NOTICE - Minimal */}
+      {/* COMPLIANCE NOTICE - Clean text */}
       <section className="relative z-10 mx-auto max-w-4xl px-6 py-8">
-        <div className={`flex flex-wrap items-center justify-center gap-4 text-sm ${styles.text.tertiary}`}>
-          <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${isDark ? 'border-neutral-700 bg-neutral-800/50' : 'border-neutral-300 bg-neutral-100/50'}`}>
-            <span className="text-amber-500">18+</span> Licensed Venues Only
-          </span>
-          <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${isDark ? 'border-neutral-700 bg-neutral-800/50' : 'border-neutral-300 bg-neutral-100/50'}`}>
-            Software Infrastructure Provider
-          </span>
-          <span className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border ${isDark ? 'border-neutral-700 bg-neutral-800/50' : 'border-neutral-300 bg-neutral-100/50'}`}>
-            Utility Tokens for Governance
-          </span>
-          <a href="/compliance" className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-full border transition-colors ${isDark ? 'border-yellow-500/30 text-yellow-400 hover:bg-yellow-500/10' : 'border-yellow-600/30 text-yellow-600 hover:bg-yellow-500/10'}`}>
+        <div className={`text-center text-sm ${styles.text.tertiary}`}>
+          <p className="mb-2">
+            <span className={styles.text.accent}>18+</span> Licensed Venues Only · Software Infrastructure Provider · Utility Tokens for Governance
+          </p>
+          <a href="/compliance" className={`inline-flex items-center gap-1 transition-colors ${styles.text.accent} ${styles.text.accentHover}`}>
             View Compliance Details
             <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

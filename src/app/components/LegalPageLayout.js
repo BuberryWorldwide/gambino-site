@@ -5,12 +5,11 @@ import Link from 'next/link'
 import { useTheme } from './ThemeProvider'
 import { getThemeStyles, BackgroundEffects } from '../styles/themeStyles'
 
-export default function LegalPageLayout({ 
-  title, 
-  subtitle, 
-  badgeText, 
-  lastUpdated, 
-  children 
+export default function LegalPageLayout({
+  title,
+  subtitle,
+  lastUpdated,
+  children
 }) {
   const { isDark } = useTheme();
   const styles = getThemeStyles(isDark);
@@ -25,11 +24,7 @@ export default function LegalPageLayout({
       }`}>
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="text-center">
-            <div className={styles.badges.primary}>
-              <div className={`h-2 w-2 rounded-full ${styles.badges.dot}`} />
-              {badgeText}
-            </div>
-            <h1 className={`mt-6 text-4xl font-extrabold tracking-tight lg:text-5xl ${styles.text.primary}`}>
+            <h1 className={`text-4xl font-extrabold tracking-tight lg:text-5xl ${styles.text.primary}`}>
               {title}
             </h1>
             {subtitle && (

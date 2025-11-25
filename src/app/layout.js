@@ -5,12 +5,26 @@ import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
 
 export const metadata = {
-  title: 'Gambino Gold — Farm Luck. Mine Destiny.',
-  description: 'Cryptocurrency mining infrastructure technology that enables community wealth creation through transparent, compliant token mining operations.',
+  title: 'Gambino Gold | Proof-of-Luck Mining Infrastructure',
+  description: 'Community-owned cryptocurrency mining infrastructure. Transparent, compliant blockchain technology for sustainable community wealth creation.',
+  keywords: ['cryptocurrency', 'mining infrastructure', 'proof of luck', 'blockchain', 'community governance', 'utility tokens'],
+  authors: [{ name: 'Gambino Holdings LLC' }],
+  openGraph: {
+    title: 'Gambino Gold | Proof-of-Luck Mining Infrastructure',
+    description: 'Community-owned cryptocurrency mining infrastructure. Transparent, compliant blockchain technology for sustainable community wealth creation.',
+    url: 'https://gambino.gold',
+    siteName: 'Gambino Gold',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gambino Gold | Proof-of-Luck Mining Infrastructure',
+    description: 'Community-owned cryptocurrency mining infrastructure. Transparent, compliant blockchain technology.',
+  },
   icons: {
-    icon: '/favicon.ico',            // default favicon
-    shortcut: '/favicon.ico',        // legacy browsers
-    apple: '/apple-touch-icon.png',  // for iOS home screens (optional, if you add one)
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
 }
 

@@ -15,11 +15,6 @@ export default function WhyLocalCommunitiesPage() {
       {/* HERO SECTION */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-24">
         <div className="text-center mb-16">
-          <div className={styles.badges.primary}>
-            <div className={`h-2 w-2 rounded-full ${styles.badges.dot}`}></div>
-            Local Infrastructure • Community Wealth • Economic Sovereignty
-          </div>
-
           <h1 className="text-5xl font-extrabold leading-tight tracking-tight lg:text-6xl mb-6">
             <span className={styles.text.primary}>Why Local Communities Need</span>{" "}
             <span className={styles.text.gradient}>

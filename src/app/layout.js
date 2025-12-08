@@ -3,6 +3,7 @@ import { ThemeProvider } from './components/ThemeProvider'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
+import FloatingCTA from './components/FloatingCTA'
 
 export const metadata = {
   title: 'Gambino Gold | Proof-of-Luck Mining Infrastructure',
@@ -41,6 +42,7 @@ export default function RootLayout({ children }) {
           </main>
           <Footer />
           <CookieBanner />
+          <FloatingCTA />
         </ThemeProvider>
       </body>
     </html>

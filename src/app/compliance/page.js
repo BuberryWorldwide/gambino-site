@@ -307,9 +307,9 @@ export default function Page() {
             <div className={`p-4 rounded-lg ${isDark ? 'bg-neutral-800/50' : 'bg-neutral-100/50'}`}>
               <h3 className={`font-bold mb-2 ${styles.text.primary}`}>Current Operations</h3>
               <p className={styles.text.secondary}>
-                <strong>Development phase pilot testing in Tennessee.</strong> Operations are currently limited to
+                <strong>Development phase pilot testing in Tennessee, Virginia, and Missouri.</strong> Operations are currently limited to
                 high-traffic retail venues including gas stations, convenience stores, and authorized entertainment
-                facilities within Tennessee&apos;s virtual currency framework.
+                facilities within each state&apos;s virtual currency framework.
               </p>
             </div>
 

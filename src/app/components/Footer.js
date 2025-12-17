@@ -108,6 +108,9 @@ export default function Footer() {
           <p className={`text-xs ${isDark ? 'text-neutral-600' : 'text-neutral-500'}`}>
             * <strong>18+ only at licensed partner venues.</strong> Gambino Gold provides software infrastructure only—all money transmission handled by licensed financial entities. Utility tokens enable governance and network access—not investment products. Not gambling or securities. See <a href="/legal/terms" className={`underline ${isDark ? 'hover:text-neutral-400' : 'hover:text-neutral-700'}`}>Terms</a> and <a href="/compliance" className={`underline ${isDark ? 'hover:text-neutral-400' : 'hover:text-neutral-700'}`}>Compliance</a>.
           </p>
+          <p className={`text-xs mt-2 ${isDark ? 'text-neutral-600' : 'text-neutral-500'}`}>
+            Gambino Gold does not control or operate secondary token markets.
+          </p>
         </div>
       </div>
     </footer>

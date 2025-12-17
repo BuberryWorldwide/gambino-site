@@ -23,9 +23,10 @@ export default function Home() {
           </h1>
           
           <p className={`text-xl mb-12 max-w-3xl mx-auto leading-relaxed ${styles.text.secondary}`}>
-            Gambino Gold provides cryptocurrency mining infrastructure software and community management 
-            platforms to authorized implementation partners. Building sustainable community wealth through 
-            transparent, distributed technology licensing.
+            Proof-of-Luck mining infrastructure — where verified low-probability events from partner
+            gaming systems generate utility token mining opportunities. Unlike traditional proof-of-work
+            computation, our protocol captures naturally occurring randomness as cryptographic proof of
+            network participation.
           </p>
 
           {/* CTAs - using theme styles */}

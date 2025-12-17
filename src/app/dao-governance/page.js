@@ -21,12 +21,32 @@ export default function Page() {
               Governance
             </span>
           </h1>
-          
+
           <p className={`mt-6 max-w-3xl mx-auto text-xl leading-relaxed ${styles.text.secondary}`}>
-            Advance through three governance tiers based on your <strong>actual performance</strong> in the network. 
+            Advance through three governance tiers based on your <strong>actual performance</strong> in the network.
             Achieve major wins, engage across multiple venues, and earn both <strong>monthly disbursements</strong> and{' '}
             <strong>voting rights</strong> that reflect your demonstrated success and sustained participation.
           </p>
+        </div>
+
+        {/* Governance Maturity Notice */}
+        <div className={`max-w-3xl mx-auto p-6 rounded-xl border ${isDark ? 'bg-amber-950/20 border-amber-500/30' : 'bg-amber-50 border-amber-300'}`}>
+          <div className="flex items-start gap-3">
+            <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center ${isDark ? 'bg-amber-500/20' : 'bg-amber-200'}`}>
+              <svg className={`w-4 h-4 ${isDark ? 'text-amber-400' : 'text-amber-700'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className={`font-semibold mb-2 ${isDark ? 'text-amber-300' : 'text-amber-800'}`}>Governance Maturity Notice</h3>
+              <p className={`text-sm leading-relaxed ${isDark ? 'text-amber-200/80' : 'text-amber-900/80'}`}>
+                Gambino Gold operates a phased governance model. During the current growth phase, financial market
+                operations, liquidity management, and treasury decisions are managed by Gambino Gold Inc. Community
+                governance focuses on platform features, network parameters, and community benefit allocation. Full
+                DAO authority will transfer according to defined maturity thresholds in our governance roadmap.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

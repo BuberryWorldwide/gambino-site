@@ -325,6 +325,49 @@ export default function Page() {
         </div>
       </section>
 
+      {/* REGULATORY FRAMEWORK */}
+      <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
+        <div className={`${styles.layout.card} ${isDark ? 'border-blue-500/30 bg-gradient-to-br from-blue-950/20 to-neutral-950/60' : 'border-blue-600/30 bg-gradient-to-br from-blue-100/40 to-white/80'}`}>
+          <div className="text-center mb-8">
+            <h2 className={`text-2xl font-bold mb-4 ${styles.text.primary}`}>
+              Regulatory Framework
+            </h2>
+          </div>
+
+          <div className="space-y-6 text-sm">
+            <div className={`p-4 rounded-lg ${isDark ? 'bg-neutral-800/50' : 'bg-neutral-100/50'}`}>
+              <p className={styles.text.secondary}>
+                Gambino Gold Inc. operates under Florida FinTech Sandbox provisions and established software licensing
+                precedent. Implementation partners and participants are responsible for ensuring compliance with their
+                local jurisdictional requirements. Service availability may vary by location.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECONDARY MARKET DISCLAIMER */}
+      <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
+        <div className={`${styles.layout.card} ${isDark ? 'border-purple-500/30 bg-gradient-to-br from-purple-950/20 to-neutral-950/60' : 'border-purple-600/30 bg-gradient-to-br from-purple-100/40 to-white/80'}`}>
+          <div className="text-center mb-8">
+            <h2 className={`text-2xl font-bold mb-4 ${styles.text.primary}`}>
+              Secondary Market Disclaimer
+            </h2>
+          </div>
+
+          <div className="space-y-6 text-sm">
+            <div className={`p-4 rounded-lg ${isDark ? 'bg-neutral-800/50' : 'bg-neutral-100/50'}`}>
+              <p className={styles.text.secondary}>
+                Gambino Gold provides software infrastructure for Proof-of-Luck mining and network participation.
+                Gambino Gold does not operate or control secondary market trading, liquidity pools, or third-party
+                exchanges. Any external market activity involving GG tokens occurs independently of the platform
+                and is not managed, endorsed, or guaranteed by Gambino Gold Inc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* LEGAL DISCLAIMERS */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
         <div className={`${styles.layout.card} ${isDark ? 'border-orange-500/30 bg-gradient-to-br from-orange-950/20 to-neutral-950/60' : 'border-orange-600/30 bg-gradient-to-br from-orange-100/40 to-white/80'}`}>

@@ -85,7 +85,7 @@ export default function Footer() {
       <div className={`border-t px-6 py-6 ${isDark ? 'border-neutral-900' : 'border-neutral-200'}`}>
         <div className={`mx-auto max-w-7xl flex flex-col gap-4 text-xs lg:flex-row lg:items-center lg:justify-between ${isDark ? 'text-neutral-500' : 'text-neutral-500'}`}>
           <div className="flex flex-col gap-2 lg:flex-row lg:items-center lg:gap-6">
-            <div>© {new Date().getFullYear()} Gambino Holdings LLC. All rights reserved.</div>
+            <div>© {new Date().getFullYear()} Gambino Gold, Inc. All rights reserved.</div>
             <div className="flex gap-4">
               <span className="flex items-center gap-1">
                 <div className={`h-1.5 w-1.5 rounded-full ${isDark ? 'bg-amber-400' : 'bg-amber-500'}`}></div>
@@ -110,6 +110,9 @@ export default function Footer() {
           </p>
           <p className={`text-xs mt-2 ${isDark ? 'text-neutral-600' : 'text-neutral-500'}`}>
             Gambino Gold does not control or operate secondary token markets.
+          </p>
+          <p className={`text-xs mt-2 ${isDark ? 'text-neutral-600' : 'text-neutral-500'}`}>
+            Account holders are network participants. Participation services provided by licensed operators and venues.
           </p>
         </div>
       </div>

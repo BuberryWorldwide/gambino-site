@@ -37,7 +37,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className={styles.buttons.primary}
             >
-              <span className="relative z-10">Start Earning GG</span>
+              <span className="relative z-10">Join the Network</span>
             </a>
             <a href="/platform" className={styles.buttons.secondary}>
               How It Works
@@ -53,13 +53,13 @@ export default function Home() {
             Three Ways to <span className={styles.text.accent}>Get Involved</span>
           </h2>
           <p className={`text-lg max-w-2xl mx-auto ${styles.text.tertiary}`}>
-            Whether you&apos;re a player looking to earn, a venue partner, or a token holder
-            seeking governance rights, our platform creates value for everyone.
+            Whether you&apos;re a participant looking to join the network, a venue partner, or a token holder
+            seeking governance rights, the Gambino Gold network creates value for everyone.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {/* For Players - Primary CTA */}
+          {/* For Participants - Primary CTA */}
           <div className={`${styles.layout.card} ring-2 ring-yellow-500/50`}>
             <div className={`w-16 h-16 mb-6 rounded-xl flex items-center justify-center bg-gradient-to-br from-yellow-500 to-amber-500`}>
               <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 24 24">
@@ -67,25 +67,26 @@ export default function Home() {
               </svg>
             </div>
             <div className="flex items-center gap-2 mb-4">
-              <h3 className={`text-2xl font-bold ${styles.text.primary}`}>For Players</h3>
+              <h3 className={`text-2xl font-bold ${styles.text.primary}`}>For Participants</h3>
               <span className="px-2 py-0.5 text-xs font-semibold bg-yellow-500 text-black rounded-full">Popular</span>
             </div>
             <p className={`mb-6 leading-relaxed ${styles.text.secondary}`}>
-              Start earning GG tokens by playing at participating venues. Sign up in minutes and
-              begin your journey with Gambino Gold&apos;s proof-of-luck mining system.
+              Create your network account and wallet to participate at Gambino Gold venues.
+              Your account provides access to the protocol — participation services are provided
+              by venues and licensed implementation partners.
             </p>
             <ul className={`space-y-3 mb-6 ${styles.text.tertiary}`}>
               <li className="flex items-start gap-3">
                 <div className={`w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 ${styles.lists.bullet}`}></div>
-                <span>Quick signup - start earning in minutes</span>
+                <span>Create your account in minutes</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className={`w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 ${styles.lists.bullet}`}></div>
-                <span>Earn GG tokens at participating venues</span>
+                <span>Earn GG tokens through mining participation at venues</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className={`w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 ${styles.lists.bullet}`}></div>
-                <span>Track your earnings and rewards in real-time</span>
+                <span>Track your mining activity and tokens in real-time</span>
               </li>
             </ul>
             <a
@@ -94,7 +95,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className={`inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-400 hover:to-amber-400 text-black font-semibold rounded-lg transition-all duration-200`}
             >
-              Start Earning GG
+              Join the Network
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
@@ -110,28 +111,28 @@ export default function Home() {
             </div>
             <h3 className={`text-2xl font-bold mb-4 ${styles.text.primary}`}>For Venue Partners</h3>
             <p className={`mb-6 leading-relaxed ${styles.text.secondary}`}>
-              Bring Gambino Gold to your venue. License our mining infrastructure and give your
-              customers a new way to earn while they play.
+              Deploy Gambino Gold systems at your venue through our authorized implementation
+              partner network. Full compliance framework and operational support included.
             </p>
             <ul className={`space-y-3 mb-6 ${styles.text.tertiary}`}>
               <li className="flex items-start gap-3">
                 <div className={`w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 ${styles.lists.bullet}`}></div>
-                <span>Complete mining infrastructure licensing</span>
+                <span>Equipment and infrastructure through licensed operators</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className={`w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 ${styles.lists.bullet}`}></div>
-                <span>Customer engagement and loyalty tools</span>
+                <span>Participant engagement and network access tools</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className={`w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0 ${styles.lists.bullet}`}></div>
-                <span>Full compliance and support framework</span>
+                <span>Full compliance and operational support framework</span>
               </li>
             </ul>
             <a
-              href="/compliance"
+              href="/partners"
               className={`inline-flex items-center gap-2 transition-colors font-semibold ${styles.text.accent} ${styles.text.accentHover}`}
             >
-              Become a Partner Venue
+              Explore Partnership
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -243,11 +244,11 @@ export default function Home() {
       <section className="relative z-10 mx-auto max-w-4xl px-6 py-16 text-center">
         <div className={styles.layout.cardLarge}>
           <h2 className={`text-3xl font-bold mb-4 ${styles.text.primary}`}>
-            Ready to Start Earning?
+            Ready to Join the Network?
           </h2>
           <p className={`text-lg mb-8 ${styles.text.secondary}`}>
-            Join thousands of players earning GG tokens at participating venues.
-            Sign up takes just a few minutes.
+            Join thousands of participants in the Gambino Gold network.
+            Account creation takes just a few minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -256,7 +257,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className={styles.buttons.primary}
             >
-              Sign Up Now
+              Create Account
             </a>
             <a href="/platform" className={styles.buttons.secondary}>
               Learn More

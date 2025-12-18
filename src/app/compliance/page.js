@@ -325,6 +325,46 @@ export default function Page() {
         </div>
       </section>
 
+      {/* NETWORK PARTICIPATION STRUCTURE */}
+      <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
+        <div className={`${styles.layout.card} ${isDark ? 'border-green-500/30 bg-gradient-to-br from-green-950/20 to-neutral-950/60' : 'border-green-600/30 bg-gradient-to-br from-green-100/40 to-white/80'}`}>
+          <div className="text-center mb-8">
+            <h2 className={`text-2xl font-bold mb-4 ${styles.text.primary}`}>
+              Network Participation Structure
+            </h2>
+          </div>
+
+          <div className="space-y-6 text-sm">
+            <div className={`p-4 rounded-lg ${isDark ? 'bg-neutral-800/50' : 'bg-neutral-100/50'}`}>
+              <p className={styles.text.secondary}>
+                Gambino Gold provides blockchain infrastructure including account creation, wallet generation, and token
+                protocol services. <strong>Account holders are network participants, not customers of Gambino Gold.</strong>
+              </p>
+            </div>
+
+            <div className={`p-4 rounded-lg ${isDark ? 'bg-neutral-800/50' : 'bg-neutral-100/50'}`}>
+              <p className={styles.text.secondary}>
+                Participation at physical venues requires payment to the venue for access. Venues operate under licensed
+                implementation partners who manage compliance and settlement. <strong>Gambino Gold does not receive, hold,
+                or process participant funds.</strong>
+              </p>
+            </div>
+
+            <div className={`p-4 rounded-lg ${isDark ? 'bg-neutral-800/50' : 'bg-neutral-100/50'}`}>
+              <h3 className={`font-bold mb-2 ${styles.text.primary}`}>Three-Party Structure</h3>
+              <ul className={`space-y-2 ${styles.text.secondary}`}>
+                <li>• <strong>Gambino Gold, Inc.</strong> — Software infrastructure and token protocol technology</li>
+                <li>• <strong>Licensed Operators</strong> — Equipment, settlement services, and operational support</li>
+                <li>• <strong>Partner Venues</strong> — Facility hosting and participant interface services</li>
+              </ul>
+              <p className={`mt-3 text-xs ${isDark ? 'text-neutral-500' : 'text-neutral-500'}`}>
+                Each entity maintains separate business operations, licensing, and liability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* REGULATORY FRAMEWORK */}
       <section className="relative z-10 mx-auto max-w-6xl px-6 py-16">
         <div className={`${styles.layout.card} ${isDark ? 'border-blue-500/30 bg-gradient-to-br from-blue-950/20 to-neutral-950/60' : 'border-blue-600/30 bg-gradient-to-br from-blue-100/40 to-white/80'}`}>

@@ -24,7 +24,7 @@ export default function Home() {
           
           <p className={`text-xl mb-12 max-w-3xl mx-auto leading-relaxed ${styles.text.secondary}`}>
             Proof-of-Luck mining infrastructure — where verified low-probability events from partner
-            gaming systems generate utility token mining opportunities. Unlike traditional proof-of-work
+            gaming systems generate token mining emissions. Unlike traditional proof-of-work
             computation, our protocol captures naturally occurring randomness as cryptographic proof of
             network participation.
           </p>
@@ -229,7 +229,7 @@ export default function Home() {
       <section className="relative z-10 mx-auto max-w-4xl px-6 py-8">
         <div className={`text-center text-sm ${styles.text.tertiary}`}>
           <p className="mb-2">
-            <span className={styles.text.accent}>18+</span> Licensed Venues Only · Software Infrastructure Provider · Utility Tokens for Governance
+            <span className={styles.text.accent}>18+</span> Licensed Venues Only · Software Infrastructure Provider · Mining Emissions Protocol
           </p>
           <a href="/compliance" className={`inline-flex items-center gap-1 transition-colors ${styles.text.accent} ${styles.text.accentHover}`}>
             View Compliance Details

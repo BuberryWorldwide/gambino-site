@@ -49,7 +49,7 @@ export default function WhitepaperPage() {
               <li><a className={`${styles.text.accentHover}`} href="#innovation">Technical Innovation</a></li>
               <li><a className={`${styles.text.accentHover}`} href="#architecture">System Architecture</a></li>
               <li><a className={`${styles.text.accentHover}`} href="#business">Business Model</a></li>
-              <li><a className={`${styles.text.accentHover}`} href="#tokenomics">Token Utility</a></li>
+              <li><a className={`${styles.text.accentHover}`} href="#tokenomics">Token Distribution</a></li>
               <li><a className={`${styles.text.accentHover}`} href="#governance">Community Governance</a></li>
               <li><a className={`${styles.text.accentHover}`} href="#compliance">Compliance Approach</a></li>
               <li><a className={`${styles.text.accentHover}`} href="#roadmap">Development Roadmap</a></li>
@@ -195,20 +195,20 @@ export default function WhitepaperPage() {
             </div>
           </Section>
 
-          <Section id="tokenomics" title="5. Token Utility" styles={styles}>
-            <p className="font-semibold mb-3">Gambino Gold Token (GG) Utility Framework:</p>
+          <Section id="tokenomics" title="5. Token Distribution" styles={styles}>
+            <p className="font-semibold mb-3">Gambino Gold Token (GG) Mining Emissions:</p>
             <p>
-              GG tokens provide access to platform infrastructure and community governance participation. 
-              Tokens are earned through platform engagement and consumed through usage.
+              GG tokens are mining emissions distributed through proof-of-engagement on RNG infrastructure.
+              Tokens are mined through participation, freely tradeable on open markets like any cryptocurrency.
             </p>
 
             <div className="mt-4">
-              <p className="font-semibold">Primary Utility Functions:</p>
+              <p className="font-semibold">Distribution Characteristics:</p>
               <ul className="list-disc pl-5 space-y-2 mt-2">
-                <li><strong>Platform Access:</strong> Required for engaging with cryptocurrency distribution systems</li>
-                <li><strong>Governance Rights:</strong> Voting power in community governance decisions</li>
-                <li><strong>Tier Advancement:</strong> Performance-based progression through governance tiers</li>
-                <li><strong>Community Benefits:</strong> Access to monthly distribution programs based on tier status</li>
+                <li><strong>Mining Method:</strong> Human-powered entropy generation via RNG interfaces</li>
+                <li><strong>Fixed Supply:</strong> 777 million maximum supply, algorithmically distributed</li>
+                <li><strong>Tradeable:</strong> Freely tradeable on Solana DEXs like any cryptocurrency</li>
+                <li><strong>No Guarantees:</strong> No promised utility, value, or obligations from any party</li>
               </ul>
             </div>
 
@@ -404,7 +404,7 @@ export default function WhitepaperPage() {
               <ul className="list-disc pl-5 space-y-2 mt-2">
                 <li>Token values may fluctuate significantly or become worthless</li>
                 <li>Secondary markets may have limited liquidity</li>
-                <li>Platform changes may affect token utility or value</li>
+                <li>Platform changes may affect token distribution or value</li>
                 <li>No guarantee of continued token distribution programs</li>
               </ul>
             </div>
@@ -414,9 +414,9 @@ export default function WhitepaperPage() {
             <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg mb-4">
               <p className="font-semibold text-sm mb-2">Important Legal Notice:</p>
               <p className="text-sm">
-                This document is for informational purposes only and does not constitute financial, 
-                investment, tax, or legal advice. Gambino Gold tokens are utility instruments that 
-                provide platform access and governance rights, not investment securities.
+                This document is for informational purposes only and does not constitute financial,
+                investment, tax, or legal advice. Gambino Gold tokens are mining emissions distributed
+                through proof-of-engagement protocol, not investment securities or utility instruments.
               </p>
             </div>
 

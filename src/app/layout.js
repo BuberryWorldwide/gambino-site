@@ -8,7 +8,7 @@ import FloatingCTA from './components/FloatingCTA'
 export const metadata = {
   title: 'Gambino Gold | Proof-of-Luck Mining Infrastructure',
   description: 'Community-owned cryptocurrency mining infrastructure. Transparent, compliant blockchain technology for sustainable community wealth creation.',
-  keywords: ['cryptocurrency', 'mining infrastructure', 'proof of luck', 'blockchain', 'community governance', 'utility tokens'],
+  keywords: ['cryptocurrency', 'mining infrastructure', 'proof of luck', 'blockchain', 'community governance', 'mining emissions', 'proof of engagement'],
   authors: [{ name: 'Gambino Holdings LLC' }],
   openGraph: {
     title: 'Gambino Gold | Proof-of-Luck Mining Infrastructure',

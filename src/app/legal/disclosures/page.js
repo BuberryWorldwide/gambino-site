@@ -19,9 +19,9 @@ export default function DisclosuresPage() {
     >
       <LegalSection title="1. No Investment or Financial Advice">
         <p>
-          <strong>Gambino provides technology licensing services, not financial or investment advice.</strong> 
-          Our utility tokens provide access to mining infrastructure, not investment opportunities. 
-          Nothing on our platform should be construed as a recommendation to buy, sell, or hold 
+          <strong>Gambino provides technology licensing services, not financial or investment advice.</strong>
+          Our tokens are mining emissions from proof-of-engagement protocol, not investment products.
+          Nothing on our platform should be construed as a recommendation to buy, sell, or hold
           any financial instrument.
         </p>
       </LegalSection>

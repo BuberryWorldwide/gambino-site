@@ -46,7 +46,7 @@ export default function PlatformPage() {
             at licensed venues where human-triggered randomness creates verifiable computational work.
           </p>
           <p className={`text-center max-w-2xl mx-auto mt-4 text-sm ${styles.text.tertiary}`}>
-            GAMBINO tokens function as mining protocol utility tokens with DAO governance rights and network access.
+            GAMBINO tokens are mining emissions distributed through proof-of-engagement, freely tradeable on open markets.
           </p>
         </div>
 
@@ -143,7 +143,7 @@ export default function PlatformPage() {
                     <div className="flex items-start gap-3">
                       <div className={`w-2 h-2 rounded-full mt-2 ${styles.text.accent} bg-current opacity-60`}></div>
                       <p className={styles.text.secondary}>
-                        Utility tokens provide access to mining infrastructure
+                        Mining emissions distributed through proof-of-engagement
                       </p>
                     </div>
                     <div className="flex items-start gap-3">

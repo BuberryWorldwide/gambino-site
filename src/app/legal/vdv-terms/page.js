@@ -19,7 +19,7 @@ export default function VDVTermsPage() {
       {/* Version Notice */}
       <div className="mb-8 p-4 bg-amber-500/10 border border-amber-500/20 rounded-lg">
         <p className="text-sm">
-          <strong>Document Version:</strong> vdv-tos-v1.0 | <strong>Effective Date:</strong> January 2025
+          <strong>Document Version:</strong> vdv-tos-v1.1-2025-01-01 | <strong>Effective Date:</strong> January 2025
         </p>
       </div>
 
@@ -133,7 +133,7 @@ export default function VDVTermsPage() {
         <ul className="list-disc pl-5 mt-2 space-y-2">
           <li>You interact with VDV-operated equipment at the Venue</li>
           <li>Cash transactions are processed through VDV&apos;s settlement system</li>
-          <li>Utility tokens are distributed based on your activity</li>
+          <li>Mining emissions are distributed based on your participation</li>
           <li>The Venue provides the physical location; VDV provides the service</li>
         </ul>
 
@@ -151,26 +151,30 @@ export default function VDVTermsPage() {
 
         <p className="font-semibold mt-6">4.3 Token Distribution</p>
         <p className="mt-2">
-          Based on your activity, you may receive utility tokens (&quot;GG Tokens&quot; or &quot;GAMBINO&quot;).
+          GG tokens (&quot;GAMBINO&quot;) are cryptocurrency mining emissions distributed by the
+          Gambino protocol. Token distribution occurs automatically when qualifying
+          mining events are recorded on the blockchain.
         </p>
         <div className="mt-4 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
-          <p className="font-semibold text-sm mb-2">UTILITY TOKEN DISCLOSURE - READ CAREFULLY</p>
+          <p className="font-semibold text-sm mb-2">MINING EMISSIONS DISCLOSURE - READ CAREFULLY</p>
           <p className="text-sm mb-3">
-            GG Tokens are <strong>utility tokens only</strong>. They are:
+            <strong>Tokens are NOT:</strong>
           </p>
           <ul className="list-disc pl-5 text-sm space-y-1">
-            <li><strong>NOT securities</strong> - They do not represent ownership, equity, or investment contracts</li>
-            <li><strong>NOT investment products</strong> - They are not offered with expectation of profit from others&apos; efforts</li>
-            <li><strong>NOT currency</strong> - They are not legal tender or a medium of exchange</li>
+            <li>Compensation for labor or services</li>
+            <li>Gambling prizes or winnings</li>
+            <li>Securities or investment contracts</li>
+            <li>Guaranteed or promised by any party</li>
           </ul>
           <p className="text-sm mt-3">
-            GG Tokens provide:
+            The protocol distributes tokens algorithmically. Neither VDV nor Gambino
+            owes participants any tokens, value, or compensation. Distribution is
+            autonomous and governed by the blockchain protocol.
           </p>
-          <ul className="list-disc pl-5 text-sm space-y-1">
-            <li>Access to platform features and services</li>
-            <li>Participation in community governance voting</li>
-            <li>Eligibility for tier-based community benefits</li>
-          </ul>
+          <p className="text-sm mt-3">
+            Any value tokens may have derives from open market dynamics, not from
+            promises or obligations of any party.
+          </p>
           <p className="text-sm mt-3 font-semibold">
             Token value may fluctuate or become worthless. Do not participate with funds you cannot afford to lose.
           </p>
@@ -304,7 +308,7 @@ export default function VDVTermsPage() {
         <p className="font-semibold mt-6">8.3 Regulatory Risks</p>
         <ul className="list-disc pl-5 mt-2 space-y-1">
           <li>Cryptocurrency regulations are evolving</li>
-          <li>Future laws may affect platform operations or token utility</li>
+          <li>Future laws may affect platform operations or token distribution</li>
           <li>VDV may need to modify services to comply with regulations</li>
         </ul>
 
@@ -316,14 +320,14 @@ export default function VDVTermsPage() {
             Specifically:
           </p>
           <ul className="list-disc pl-5 mt-2 text-sm space-y-1">
-            <li>Users receive utility tokens for platform access, not gambling payouts</li>
-            <li>Token distribution is based on participation, not chance wagering</li>
-            <li>Tokens provide governance and access rights, not prize winnings</li>
+            <li>Users mine tokens through proof-of-engagement, not gambling payouts</li>
+            <li>Token emissions are algorithmic protocol distributions, not chance winnings</li>
+            <li>Tokens are mined like Bitcoin, freely tradeable on open markets</li>
             <li>VDV does not operate games of chance or accept wagers</li>
           </ul>
           <p className="text-sm mt-3">
-            The entertainment terminals at Venues are the mechanism for measuring user
-            participation in the token distribution system.
+            The entertainment terminals at Venues are RNG mining interfaces. Players are
+            miners generating human-powered entropy, not gamblers placing wagers.
           </p>
         </div>
 
@@ -542,7 +546,7 @@ export default function VDVTermsPage() {
         </p>
         <div className="mt-4 pt-4 border-t border-yellow-500/20 text-center text-xs">
           <p><strong>Document:</strong> VDV Terms of Service</p>
-          <p><strong>Version:</strong> vdv-tos-v1.0</p>
+          <p><strong>Version:</strong> vdv-tos-v1.1-2025-01-01</p>
           <p><strong>Last Updated:</strong> January 2025</p>
         </div>
       </div>
